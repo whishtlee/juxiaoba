@@ -1,0 +1,102 @@
+.shop-page{padding-top:46px;background: #ecf0f2;}
+.shop-banner{width:100%;height:300px;overflow:hidden; position:relative;}
+.shop-banner a{display: block; width:100%;height:100%; background-position: center top; background-repeat: repeat-x;text-indent: -9999px;overflow:hidden; background-size: auto 100%;}
+.shop-banner .swiper-container{width:100%;height:100%;}
+.shop-body{width:1000px;margin:0 auto;padding:30px 0;}
+.shop-nav{width:100%;}
+.shop-nav li{display:inline-block;line-height:50px;margin-right:20px;position: relative;}
+.shop-nav li a{display:block;width:120px; text-align: center;font-size:16px;border-radius:4px;background: #fff;box-shadow: 1px 1px 2px rgba(0,0,0,0.05);border: 1px solid #eaeaea;}
+.shop-nav li.active a{background:#ffbb33;color:#fff;}
+.shop-nav li.active a:after{content:"◆";position: absolute;left:50%;margin-left:-15px;bottom:-13px;height:30px;line-height:30px;width:30px;font-size:30px;color:#ffbb33;}
+.shop-nav li.my{float:right;margin-right:0;}
+.shop-nav li.my a{border-color:#f60;}
+.shop-nav li.my a:hover{border-color:#ffbb33;}
+.shop-plist{padding-bottom:40px;}
+.shop-plist-item{float:left;width:279px;overflow:hidden;padding:40px 0 0 40px;}
+.shop-plist-item a{display:block;}
+.shop-plist-item .img{width:277px;height:277px;border:1px #e3e3e3 solid;border-radius:4px;overflow:hidden;}
+.shop-plist-item .img img{display:block;width:100%;height:100%; transition: all 0.4s;}
+.shop-plist-item a:hover img{width:110%;height:110%;margin:-5% 0 0 -5%;}
+.shop-plist-item .name{margin:10px 0;font-size:17px;line-height:25px;height:50px;overflow:hidden;}
+.shop-plist-item .price{line-height:20px;color:#bbb;}
+.shop-plist-item .price strong{font-size:18px;padding:0 5px;}
+.shop-plist-item .price .jb +.zjb{padding-left:5px;}
+.shop-plist-item .price .jb,.shop-pshow .price .jb{color:#ffbb33;}
+.shop-plist-item .price .zjb,.shop-pshow .price .zjb{color:#f60;}
+.shop-pshow{padding-left:420px;position: relative;min-height:380px;}
+.shop-pshow .img{position:absolute;left:0;top:0;width:380px;height:380px;}
+.shop-pshow .img img{display:block;width:100%;height:100%;}
+.shop-pshow .name{font-size:25px;line-height:32px;}
+.shop-pshow .price{padding:20px 0;border-bottom:1px #e3e3e3 dotted;}
+.shop-pshow .price span{padding:0 10px;}
+.shop-pshow .price span strong{font-size:24px;}
+.shop-pshow .info{padding:20px 0;}
+.shop-pshow .info p{display:inline-block;margin-right:50px;}
+.shop-pshow .info span{padding:0 10px;}
+.shop-pshow .pay{line-height:40px;}
+.shop-pshow .pay button{display:inline-block;border-radius:4px;border:1px solid #e3e3e3;margin-left:10px;width:100px; text-align: center;color:#666;position: relative; background: #fff;line-height:40px;cursor: pointer;}
+.shop-pshow .pay button.false{color:#bbb;cursor:default; background-color: #f9f9f9;}
+.shop-pshow .pay button.false:after{content: "该商品不支持此支付方式";position: absolute;top:-55px;line-height:20px;font-size:12px;padding:5px 10px;left:0; background-color: #f7f7f7;color:#bbb;border-radius:4px;display:none;}
+.shop-pshow .pay button.false:hover:after{display:block;}
+.shop-pshow .pay button.active{border-color:#ffbb33;color:#ffbb33;}
+.shop-pshow .btn{margin:20px 0;border-top:1px #e3e3e3 dotted;padding:20px 0;}
+.shop-pshow .btn .submit-button{line-height:40px;padding:0 40px;font-size:16px;margin-left:51px;}
+.shop-pshow .btn .backhome{line-height:60px;padding:0 60px;font-size:18px;margin-left:51px; background: #f60;color:#fff;display:inline-block;border-radius:4px;}
+.shop-pshow .btn .backhome:hover{background:#ffbb33;}
+.shop-pshow .paycheck{position:absolute;bottom:0;background: #fff;border-radius:4px;box-shadow: 0 0 20px rgba(0,0,0,0.1);border:1px solid #e3e3e3;padding:20px;display: none; z-index: 999;width:300px;height:104px;}
+.shop-pshow .paycheck .txt{font-size:16px;margin-bottom:10px;}
+.shop-pshow .paycheck p{margin:10px 0;font-size:12px;}
+.shop-pshow .paycheck button{line-height:40px;padding:0 40px;}
+.shop-pshow .paycheck button:first-child{margin-right:20px;}
+.shop-pshow .adrcheck{position:fixed;top:50%;left:50%;background: #fff;border-radius:4px;box-shadow: 0 0 20px rgba(0,0,0,0.1);border:1px solid #e3e3e3;padding:20px;display: none; z-index: 999;}
+.shop-pshow .adr{padding:20px 0 0;}
+.shop-pshow .adr span{display: inline-block;overflow:hidden;max-width:350px; text-overflow: ellipsis;white-space: nowrap;vertical-align: top;}
+.shop-pshow .adr span.tips:after{content:"需要提供准确的收货地址";color:#f60;animation: error-tips 0.6s infinite alternate ease-out;-webkit-animation: error-tips 0.6s infinite alternate ease-out;-moz-animation: error-tips 0.6s infinite alternate ease-out;}
+@keyframes error-tips {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+.shop-now{border-bottom:1px #e3e3e3 solid;padding-bottom:10px;margin:-20px 0 20px;line-height:30px;font-size:12px;}
+.shop-now .fc-red{border:1px #f60 solid;border-radius:4px;padding:0 5px;line-height:28px;}
+.shop-now .fc-red:hover{border-color:#ffbb33;}
+.shop-pshow .adrcheck{line-height:40px;width:500px;height:352px;margin:-176px 0 0 -250px;}
+.shop-pshow .adrcheck .input-text{line-height:40px;padding:0 10px;width:220px;}
+.shop-pshow .adrcheck .Validform_checktip{margin-top:-10px;}
+.shop-pshow .adrcheck .form-bline{padding-left:130px;}
+.shop-pshow .adrcheck .form-bline button{line-height:40px;padding:0 40px;}
+
+.shop-pshow .apptips{border:1px solid #e3e3e3; background: #f7f7f7 url(../../images/outwinmbg.png) 0 bottom no-repeat; border-radius:4px;padding:20px 20px 20px 100px;position: relative;margin-top:30px;}
+.shop-pshow .apptips strong{font-size:16px;display:block;}
+.shop-pshow .apptips .submit-button{position: absolute;right:20px;top:20px;line-height:44px;padding:0 20px;}
+
+.shop-main{font-size:16px;position:relative;border-top:1px solid #eaeaea;padding-top:20px;}
+.shop-main p{margin-bottom:15px;word-wrap: break-word;line-height:28px;}
+.shop-main p:last-of-type{margin-bottom:0;}
+.shop-main h2{border-top:3px solid #ffbb33;border-bottom:1px dotted #ddd;padding:5px 14px;margin:30px 0 10px;font-weight:bold;}
+.shop-main h3{margin:30px 0 10px;line-height:20px;padding-left:10px;border-left:4px solid #ffbb33;}
+.shop-main a{color:#0077EE;}
+.shop-main img{max-width:100%;height:auto;}
+.shop-main embed{max-width:100%;}
+
+.shop-orders{}
+.shop-orders li{border:1px #e3e3e3 solid;border-radius:4px;overflow:hidden;margin:20px 0;}
+.orders-info{ background:#f7f7f7;line-height:30px;font-size:12px;padding:0 20px;position: relative;}
+.orders-info .time,.orders-info .num{width:30%; display: inline-block;}
+.orders-info .rebuy{position: absolute;right:20px;top:0;}
+.orders-show{padding:20px;}
+.orders-show .img{width:80px;height:80px;overflow:hidden;float:left;}
+.orders-show .img img{width:100%;height:100%;}
+.orders-show .name{margin:0 20px;float:left;width:400px;height:80px;overflow:hidden;}
+.orders-show .name em{display:block;height:40px;overflow:hidden;}
+.orders-show .name p{font-size:12px;height:40px;overflow:hidden;}
+.orders-show .price{font-size:12px;border-right:1px #e3e3e3 solid;border-left:1px #e3e3e3 solid;height:80px;float:left;width:120px;padding:0 20px;text-align: center;}
+.orders-show .state{border-top:1px #e3e3e3 solid;line-height:50px;margin-top:9px;}
+.orders-show .msg{float:right;width:200px;font-size:12px;}
+
+.shop-nothing{height:100px; background:#f9f9f9 url(../../images/shopnothing.png) 140px 50px no-repeat;border-radius:4px;border:1px solid #e3e3e3;padding:100px 50px 100px 260px;}
+.shop-nothing strong{font-size:24px;line-height:30px;margin-bottom:10px; display: block;}
+.shop-nothing p{font-size:16px;}
