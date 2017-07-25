@@ -1,0 +1,49 @@
+/* 
+ * My97 DatePicker 4.8 datafiles
+ */
+html,body,td,tr,table,div,span{margin:0;padding:0;}
+input { outline: none; }
+.WdateDiv { width: 100%; }
+.WdateDiv2 { width: 360px; }
+.WdateDiv * { font-size:12px;}
+.WdateDiv .navImg{height:30px;width:30px;}
+.WdateDiv .NavImg a { display: block; cursor: pointer; height: 30px; width: 30px; background:url(bg.png) 0 0 no-repeat;}
+.WdateDiv .NavImgl{float:left;}
+.WdateDiv .NavImgll{float:left;}
+.WdateDiv .NavImgr{float:right;}
+.WdateDiv .NavImgrr{float:right;}
+.WdateDiv .NavImgll a {  background-position:0 -30px}
+.WdateDiv .NavImgl a {  background-position:0 0;}
+.WdateDiv .NavImgr a {  background-position:-30px 0}
+.WdateDiv .NavImgrr a {  background-position:-30px -30px}
+.WdateDiv #dpTitle {padding:5px; position:relative;height:30px;}
+.WdateDiv .yminput { text-align: center; height: 30px; border: 0px; width: 70px; cursor: pointer;}
+.WdateDiv .yminputfocus { text-align: center; font-weight: bold; height: 28px; color:#819cb9; border: #eaeaea 1px solid; width: 68px;border-radius:4px;}
+.WdateDiv .menuSel { z-index: 1; position: absolute; background-color: #FFFFFF; border: #eaeaea 1px solid; display: none;}
+.WdateDiv .invalidMenu { color: #aaa; }
+.WdateDiv .YMenu { margin-top: 27px;width:68px; }
+.WdateDiv .MMenu { margin-top: 27px;width:68px;}
+.WdateDiv  table{width:100%; text-align:center;line-height:20px;height:20px;}
+.WdateDiv  table:nth-child(2) td{width:33.33%;}
+.WdateDiv .menu{width:50%;padding:0;cursor: pointer; background-color: #fff; }
+.WdateDiv .menuOn { cursor: pointer; background-color: #819cb9; color: #fff; }
+.WdateDiv .hhMenu { margin-top: -90px; margin-left: 26px; }
+.WdateDiv .mmMenu { margin-top: -46px; margin-left: 26px; }
+.WdateDiv .ssMenu { margin-top: -24px; margin-left: 26px; }
+.WdateDiv .Wweek { text-align: center; background: #DAF3F5; border-right: #BDEBEE 1px solid; }
+.WdateDiv .MTitle { background-color: #F4F6F8; color: #999;line-height:30px;}
+.WdateDiv .MTitle td{border-bottom:3px solid #fff}
+.WdateDiv .WdayTable2 { border-collapse: collapse;background: #fff; }
+.WdateDiv .WdayTable2 table { border: 0; }
+.WdateDiv .WdayTable { line-height: 20px;background: #fff; }
+.WdateDiv .WdayTable td { text-align: center;height:30px;}
+.WdateDiv .Wday { cursor: pointer; }
+.WdateDiv .WdayOn { cursor: pointer; background-color: #ECF0F2;}
+.WdateDiv .Wwday { cursor: pointer; color:#F66; }
+.WdateDiv .WwdayOn { cursor: pointer;  background-color: #ECF0F2; }
+.WdateDiv .Wtoday { cursor: pointer;color:#09C}
+.WdateDiv .Wselday { background-color:#819cb9;color:#fff;}
+.WdateDiv .WspecialDay { background-color: #66F4DF; }
+.WdateDiv .WotherDay { cursor: pointer; color: #999; }
+.WdateDiv .WotherDayOn { cursor: pointer; background-color: #ECF0F2;}
+.WdateDiv .WinvalidDay { color: #aaa; }
