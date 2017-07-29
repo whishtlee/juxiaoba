@@ -30,7 +30,7 @@ abstract class Controller {
 
    /**
      * 架构函数 取得模板对象实例
-     * @access public
+     * @access Public
      */
     public function __construct() {
         //实例化视图类
@@ -125,7 +125,7 @@ abstract class Controller {
 
     /**
      * 检测模板变量的值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @return boolean
      */
@@ -135,7 +135,7 @@ abstract class Controller {
 
     /**
      * 魔术方法 有不存在的操作的时候执行
-     * @access public
+     * @access Public
      * @param string $method 方法名
      * @param array $args 参数
      * @return mixed

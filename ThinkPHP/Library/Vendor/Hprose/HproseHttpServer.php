@@ -72,7 +72,7 @@ class HproseHttpServer {
         $this->onSendError = NULL;
     }
     /*
-      __filterHandler & __errorHandler must be public,
+      __filterHandler & __errorHandler must be Public,
       however we should never call them directly.
     */
     public function __filterHandler($data) {

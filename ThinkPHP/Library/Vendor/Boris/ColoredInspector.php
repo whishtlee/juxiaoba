@@ -95,7 +95,7 @@ class ColoredInspector implements Inspector {
   /**
    * Returns an associative array of an object's properties.
    *
-   * This method is public so that subclasses may override it.
+   * This method is Public so that subclasses may override it.
    *
    * @param object $value
    * @return array

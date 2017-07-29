@@ -40,7 +40,7 @@ class Mysqli
 
     /**
      * 打开Session
-     * @access public
+     * @access Public
      * @param string $savePath
      * @param mixed $sessName
      */
@@ -111,7 +111,7 @@ class Mysqli
 
     /**
      * 关闭Session
-     * @access public
+     * @access Public
      */
     public function close()
     {
@@ -125,7 +125,7 @@ class Mysqli
 
     /**
      * 读取Session
-     * @access public
+     * @access Public
      * @param string $sessID
      */
     public function read($sessID)
@@ -141,7 +141,7 @@ class Mysqli
 
     /**
      * 写入Session
-     * @access public
+     * @access Public
      * @param string $sessID
      * @param String $sessData
      */
@@ -157,7 +157,7 @@ class Mysqli
 
     /**
      * 删除Session
-     * @access public
+     * @access Public
      * @param string $sessID
      */
     public function destroy($sessID)
@@ -171,7 +171,7 @@ class Mysqli
 
     /**
      * Session 垃圾回收
-     * @access public
+     * @access Public
      * @param string $sessMaxLifeTime
      */
     public function gc($sessMaxLifeTime)

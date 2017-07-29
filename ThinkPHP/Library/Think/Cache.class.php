@@ -30,7 +30,7 @@ class Cache {
 
     /**
      * 连接缓存
-     * @access public
+     * @access Public
      * @param string $type 缓存类型
      * @param array $options  配置数组
      * @return object
@@ -48,7 +48,7 @@ class Cache {
     /**
      * 取得缓存类实例
      * @static
-     * @access public
+     * @access Public
      * @return mixed
      */
     static function getInstance($type='',$options=array()) {

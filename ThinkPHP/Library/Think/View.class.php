@@ -29,7 +29,7 @@ class View {
 
     /**
      * 模板变量赋值
-     * @access public
+     * @access Public
      * @param mixed $name
      * @param mixed $value
      */
@@ -43,7 +43,7 @@ class View {
 
     /**
      * 取得模板变量的值
-     * @access public
+     * @access Public
      * @param string $name
      * @return mixed
      */
@@ -56,7 +56,7 @@ class View {
 
     /**
      * 加载模板和页面输出 可以返回输出内容
-     * @access public
+     * @access Public
      * @param string $templateFile 模板文件名
      * @param string $charset 模板输出字符集
      * @param string $contentType 输出类型
@@ -97,7 +97,7 @@ class View {
 
     /**
      * 解析和获取模板内容 用于输出
-     * @access public
+     * @access Public
      * @param string $templateFile 模板文件名
      * @param string $content 模板输出内容
      * @param string $prefix 模板缓存前缀
@@ -189,7 +189,7 @@ class View {
 
     /**
      * 设置当前输出的模板主题
-     * @access public
+     * @access Public
      * @param  mixed $theme 主题名称
      * @return View
      */

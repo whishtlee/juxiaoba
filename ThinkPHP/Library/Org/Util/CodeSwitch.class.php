@@ -27,7 +27,7 @@ class CodeSwitch {
 	 * 支持以下转换
 	 * GB2312、UTF-8 WITH BOM转换为UTF-8
 	 * UTF-8、UTF-8 WITH BOM转换为GB2312
-     * @access public
+     * @access Public
      * @param string $filename		文件名
 	 * @param string $out_charset	转换后的文件编码,与iconv使用的参数一致
      * @return void
@@ -128,7 +128,7 @@ class CodeSwitch {
 
 	/**
      * 目录遍历函数
-     * @access public
+     * @access Public
      * @param string $path		要遍历的目录名
      * @param string $mode		遍历模式,一般取FILES,这样只返回带路径的文件名
      * @param array $file_types		文件后缀过滤数组
@@ -177,7 +177,7 @@ class CodeSwitch {
 
 	/**
      * 对整个项目目录中的PHP和HTML文件行进编码转换
-     * @access public
+     * @access Public
      * @param string $app		要遍历的项目路径
      * @param string $mode		遍历模式,一般取FILES,这样只返回带路径的文件名
      * @param array $file_types		文件后缀过滤数组

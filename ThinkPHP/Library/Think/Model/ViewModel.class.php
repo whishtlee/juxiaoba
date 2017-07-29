@@ -26,7 +26,7 @@ class ViewModel extends Model {
 
     /**
      * 得到完整的数据表名
-     * @access public
+     * @access Public
      * @return string
      */
     public function getTableName() {

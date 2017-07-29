@@ -16,7 +16,7 @@ class App {
 
     /**
      * 应用程序初始化
-     * @access public
+     * @access Public
      * @return void
      */
     static public function init() {
@@ -51,7 +51,7 @@ class App {
 
     /**
      * 执行应用程序
-     * @access public
+     * @access Public
      * @return void
      */
     static public function exec() {
@@ -138,7 +138,7 @@ class App {
 
     /**
      * 运行应用实例 入口文件使用的快捷方法
-     * @access public
+     * @access Public
      * @return void
      */
     static public function run() {

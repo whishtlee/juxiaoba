@@ -28,7 +28,7 @@ class Sqlsrv extends Driver{
 
     /**
      * 解析pdo连接的dsn信息
-     * @access public
+     * @access Public
      * @param array $config 连接信息
      * @return string
      */
@@ -42,7 +42,7 @@ class Sqlsrv extends Driver{
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getFields($tableName) {
@@ -72,7 +72,7 @@ class Sqlsrv extends Driver{
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getTables($dbName='') {
@@ -113,7 +113,7 @@ class Sqlsrv extends Driver{
 
     /**
      * limit
-     * @access public
+     * @access Public
      * @param mixed $limit
      * @return string
      */
@@ -129,7 +129,7 @@ class Sqlsrv extends Driver{
 
     /**
      * 更新记录
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @return false | integer
@@ -148,7 +148,7 @@ class Sqlsrv extends Driver{
 
     /**
      * 删除记录
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return false | integer
      */

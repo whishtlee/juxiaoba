@@ -302,7 +302,7 @@ dog', $this->yaml['many_lines']);
       $this->assertSame (array ('1' => 'nummer 1', '0' => 'Stunde 0'), $this->yaml['werte']);
     }
 
-    /* public function testNoIndent() {
+    /* Public function testNoIndent() {
       $this->assertSame (array(
         array ('record1'=>'value1'),
         array ('record2'=>'value2')

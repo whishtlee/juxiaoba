@@ -22,7 +22,7 @@ class Oracle extends Driver{
 
     /**
      * 解析pdo连接的dsn信息
-     * @access public
+     * @access Public
      * @param array $config 连接信息
      * @return string
      */
@@ -36,7 +36,7 @@ class Oracle extends Driver{
 
     /**
      * 执行语句
-     * @access public
+     * @access Public
      * @param string $str  sql指令
      * @param boolean $fetchSql  不执行只是获取SQL     
      * @return integer
@@ -92,7 +92,7 @@ class Oracle extends Driver{
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      */
      public function getFields($tableName) {
         list($tableName) = explode(' ', $tableName);
@@ -118,7 +118,7 @@ class Oracle extends Driver{
 
     /**
      * 取得数据库的表信息（暂时实现取得用户表信息）
-     * @access public
+     * @access Public
      */
     public function getTables($dbName='') {
         $result = $this->query("select table_name from user_tables");
@@ -131,7 +131,7 @@ class Oracle extends Driver{
 
     /**
      * SQL指令安全过滤
-     * @access public
+     * @access Public
      * @param string $str  SQL指令
      * @return string
      */
@@ -141,7 +141,7 @@ class Oracle extends Driver{
 
     /**
      * limit
-     * @access public
+     * @access Public
      * @return string
      */
 	public function parseLimit($limit) {

@@ -13,7 +13,7 @@ class String {
 
     /**
      * 生成UUID 单机使用
-     * @access public
+     * @access Public
      * @return string
      */
      static public function uuid() {
@@ -71,7 +71,7 @@ class String {
     /**
      * 字符串截取，支持中文和其他编码
      * @static
-     * @access public
+     * @access Public
      * @param string $str 需要转换的字符串
      * @param string $start 开始位置
      * @param string $length 截取长度

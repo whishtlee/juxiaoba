@@ -1,0 +1,337 @@
+[ 2017-07-26T08:46:08+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_flink` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_flink` WHERE ( status=0 ) ORDER BY ordid asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_tags` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_tags` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_level` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_level` ORDER BY level asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user_joke` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 1 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 2 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 4 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 3 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( created_time >= 1500825599 and status=2 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_audit` [ RunTime:0.0050s ]
+SQL: SELECT j.id,j.status,a.joke_id,a.user_id FROM `jxb_user_audit` a left join jxb_user_joke j on a.joke_id=j.id  WHERE ( j.status=2 and a.type < 4 and a.created_time >=1500825599 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jxb_user_joke` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( status=2 ) ORDER BY audit_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-26T09:11:26+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 172 bytes C:\Users\Administrator\Desktop\juxiaoba\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `jxb_flink` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_flink` WHERE ( status=0 ) ORDER BY ordid asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_joke` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 1 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 2 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 4 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 3 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( created_time >= 1500825599 and status=2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user_audit` [ RunTime:0.0100s ]
+SQL: SELECT j.id,j.status,a.joke_id,a.user_id FROM `jxb_user_audit` a left join jxb_user_joke j on a.joke_id=j.id  WHERE ( j.status=2 and a.type < 4 and a.created_time >=1500825599 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jxb_user_joke` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( status=2 ) ORDER BY audit_time desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user_record` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-26T09:11:27+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_joke` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 1 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 2 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 4 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 3 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( created_time >= 1500825599 and status=2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user_audit` [ RunTime:0.0170s ]
+SQL: SELECT j.id,j.status,a.joke_id,a.user_id FROM `jxb_user_audit` a left join jxb_user_joke j on a.joke_id=j.id  WHERE ( j.status=2 and a.type < 4 and a.created_time >=1500825599 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jxb_user_joke` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( status=2 ) ORDER BY audit_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_record` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=7 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-26T09:12:12+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_joke` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 1 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 2 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 4 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( type = 3 and status = 2 and commend=1 ) ORDER BY rand() LIMIT 0,10   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( created_time >= 1500825599 and status=2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user_audit` [ RunTime:0.0110s ]
+SQL: SELECT j.id,j.status,a.joke_id,a.user_id FROM `jxb_user_audit` a left join jxb_user_joke j on a.joke_id=j.id  WHERE ( j.status=2 and a.type < 4 and a.created_time >=1500825599 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jxb_user_joke` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( status=2 ) ORDER BY audit_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user_record` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user_record` WHERE ( user_id="2a41r876g3rttqkaje1o8e08t6" and joke_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jxb_user_joke` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `jxb_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-26T09:14:04+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:31:46+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:08+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:09+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:10+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:11+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:12+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:14+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T09:34:17+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T10:09:13+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T10:17:42+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T10:18:16+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T10:18:49+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-07-26T10:24:16+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+

@@ -133,7 +133,7 @@ class Date {
      * 创建一个Date对象
      * @param mixed $date  日期
      * @static
-     * @access public
+     * @access Public
      */
     public function __construct($date='') {
         //分析日期
@@ -145,7 +145,7 @@ class Date {
      * 日期分析
      * 返回时间戳
      * @static
-     * @access public
+     * @access Public
      * @param mixed $date 日期
      * @return string
      */
@@ -180,7 +180,7 @@ class Date {
 
     /**
      * 验证日期数据是否有效
-     * @access public
+     * @access Public
      * @param mixed $date 日期数据
      * @return string
      */
@@ -191,7 +191,7 @@ class Date {
     /**
      * 日期参数设置
      * @static
-     * @access public
+     * @access Public
      * @param integer $date  日期时间戳
      * @return void
      */
@@ -220,7 +220,7 @@ class Date {
     /**
      * 日期格式化
      * 默认返回 1970-01-01 11:30:45 格式
-     * @access public
+     * @access Public
      * @param string $format  格式化参数
      * @return string
      */
@@ -231,7 +231,7 @@ class Date {
     /**
      * 是否为闰年
      * @static
-     * @access public
+     * @access Public
      * @return string
      */
     public function isLeapYear($year='') {
@@ -250,7 +250,7 @@ class Date {
      *  m - minutes
      *  s - seconds
      * @static
-     * @access public
+     * @access Public
      * @param mixed $date 要比较的日期
      * @param string $elaps  比较跨度
      * @return integer
@@ -290,7 +290,7 @@ class Date {
     /**
      * 人性化的计算日期差
      * @static
-     * @access public
+     * @access Public
      * @param mixed $time 要比较的时间
      * @param mixed $precision 返回的精度
      * @return string
@@ -320,7 +320,7 @@ class Date {
 
     /**
      * 返回周的某一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function getDayOfWeek($n){
@@ -330,7 +330,7 @@ class Date {
 
     /**
      * 计算周的第一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function firstDayOfWeek() {
@@ -339,7 +339,7 @@ class Date {
 
     /**
      * 计算月份的第一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function firstDayOfMonth() {
@@ -348,7 +348,7 @@ class Date {
 
     /**
      * 计算年份的第一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function firstDayOfYear() {
@@ -357,7 +357,7 @@ class Date {
 
     /**
      * 计算周的最后一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function lastDayOfWeek() {
@@ -366,7 +366,7 @@ class Date {
 
     /**
      * 计算月份的最后一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function lastDayOfMonth() {
@@ -375,7 +375,7 @@ class Date {
 
     /**
      * 计算年份的最后一天 返回Date对象
-     * @access public
+     * @access Public
      * @return Date
      */
     public function lastDayOfYear() {
@@ -384,7 +384,7 @@ class Date {
 
     /**
      * 计算月份的最大天数
-     * @access public
+     * @access Public
      * @return integer
      */
     public function maxDayOfMonth() {
@@ -405,7 +405,7 @@ class Date {
      *    h    - 小时
      *    n    - 分钟
      *    s    - 秒
-     * @access public
+     * @access Public
      * @param integer $number 间隔数目
      * @param string $interval  比较类型
      * @return Date
@@ -475,7 +475,7 @@ class Date {
      * 日期数字转中文
      * 用于日和月、周
      * @static
-     * @access public
+     * @access Public
      * @param integer $number 日期数字
      * @return string
      */
@@ -502,7 +502,7 @@ class Date {
     /**
      * 年份数字转中文
      * @static
-     * @access public
+     * @access Public
      * @param integer $yearStr 年份数字
      * @param boolean $flag 是否显示公元
      * @return string
@@ -521,7 +521,7 @@ class Date {
      *  type 参数：XZ 星座 GZ 干支 SX 生肖
      *
      * @static
-     * @access public
+     * @access Public
      * @param string $type  获取信息类型
      * @return string
      */

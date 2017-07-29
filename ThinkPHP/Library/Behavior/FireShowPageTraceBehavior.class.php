@@ -1576,7 +1576,7 @@ class FirePHP {
                     $name = 'static:'.$name;
                 }
                 if ($property->isPublic()) {
-                    $name = 'public:'.$name;
+                    $name = 'Public:'.$name;
                 } else
                 if ($property->isPrivate()) {
                     $name = 'private:'.$name;
@@ -1823,7 +1823,7 @@ class FirePHP {
     *                           to be in ASCII or UTF-8 format!
     *
     * @return   mixed   JSON string representation of input var or an error if a problem occurs
-    * @access   public
+    * @access   Public
     */
     private function json_encode($var)
     {

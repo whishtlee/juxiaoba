@@ -25,7 +25,7 @@
  */
 
 class Template_Lite_Compiler extends Template_Lite {
-	// public configuration variables
+	// Public configuration variables
 	var $left_delimiter			= "";
 	var $right_delimiter			= "";
 	var $plugins_dir			= "";

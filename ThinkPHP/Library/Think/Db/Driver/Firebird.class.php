@@ -19,7 +19,7 @@ class Firebird extends Driver{
 
     /**
      * 解析pdo连接的dsn信息
-     * @access public
+     * @access Public
      * @param array $config 连接信息
      * @return string
      */
@@ -30,7 +30,7 @@ class Firebird extends Driver{
     
     /**
      * 执行语句
-     * @access public
+     * @access Public
      * @param string $str  sql指令
      * @param boolean $fetchSql  不执行只是获取SQL
      * @return mixed
@@ -77,7 +77,7 @@ class Firebird extends Driver{
     
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      */
     public function getFields($tableName) {
         $this->initConnect(true);
@@ -108,7 +108,7 @@ class Firebird extends Driver{
     
     /**
      * 取得数据库的表信息
-     * @access public
+     * @access Public
      */
     public function getTables($dbName='') {
         $sql='SELECT DISTINCT RDB$RELATION_NAME FROM RDB$RELATION_FIELDS WHERE RDB$SYSTEM_FLAG=0';
@@ -122,7 +122,7 @@ class Firebird extends Driver{
     
     /**
      * SQL指令安全过滤
-     * @access public
+     * @access Public
      * @param string $str  SQL指令
      * @return string
      */
@@ -132,7 +132,7 @@ class Firebird extends Driver{
 
     /**
      * limit
-     * @access public
+     * @access Public
      * @param $limit limit表达式
      * @return string
      */

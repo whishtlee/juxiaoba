@@ -25,7 +25,7 @@ class RelationModel extends Model {
 
     /**
      * 动态方法实现
-     * @access public
+     * @access Public
      * @param string $method 方法名称
      * @param array $args 调用参数
      * @return mixed
@@ -44,7 +44,7 @@ class RelationModel extends Model {
 
     /**
      * 得到关联的数据表名
-     * @access public
+     * @access Public
      * @return string
      */
     public function getRelationTableName($relation) {
@@ -389,7 +389,7 @@ class RelationModel extends Model {
 
     /**
      * 进行关联查询
-     * @access public
+     * @access Public
      * @param mixed $name 关联名称
      * @return Model
      */
@@ -400,7 +400,7 @@ class RelationModel extends Model {
 
     /**
      * 关联数据获取 仅用于查询后
-     * @access public
+     * @access Public
      * @param string $name 关联名称
      * @return array
      */

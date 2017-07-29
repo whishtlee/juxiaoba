@@ -24,7 +24,7 @@ class Sae {
 
     /**
      * 日志写入接口
-     * @access public
+     * @access Public
      * @param string $log 日志信息
      * @param string $destination  写入目标
      * @return void

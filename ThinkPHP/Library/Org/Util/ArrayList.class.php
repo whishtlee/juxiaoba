@@ -27,7 +27,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      * @param string $elements  初始化数组元素
      */
     public function __construct($elements = array()) {
@@ -38,7 +38,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 若要获得迭代因子，通过getIterator方法实现
-     * @access public
+     * @access Public
      * @return ArrayObject
      */
     public function getIterator() {
@@ -47,7 +47,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 增加元素
-     * @access public
+     * @access Public
      * @param mixed $element  要添加的元素
      * @return boolean
      */
@@ -67,7 +67,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 增加元素列表
-     * @access public
+     * @access Public
      * @param ArrayList $list  元素列表
      * @return boolean
      */
@@ -82,7 +82,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 清除所有元素
-     * @access public
+     * @access Public
      */
     public function clear() {
         $this->_elements = array();
@@ -90,7 +90,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 是否包含某个元素
-     * @access public
+     * @access Public
      * @param mixed $element  查找元素
      * @return string
      */
@@ -100,7 +100,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 根据索引取得元素
-     * @access public
+     * @access Public
      * @param integer $index 索引
      * @return mixed
      */
@@ -111,7 +111,7 @@ class ArrayList implements \IteratorAggregate {
     /**
      * 查找匹配元素，并返回第一个元素所在位置
      * 注意 可能存在0的索引位置 因此要用===False来判断查找失败
-     * @access public
+     * @access Public
      * @param mixed $element  查找元素
      * @return integer
      */
@@ -121,7 +121,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 判断元素是否为空
-     * @access public
+     * @access Public
      * @return boolean
      */
     public function isEmpty() {
@@ -130,7 +130,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 最后一个匹配的元素位置
-     * @access public
+     * @access Public
      * @param mixed $element  查找元素
      * @return integer
      */
@@ -147,7 +147,7 @@ class ArrayList implements \IteratorAggregate {
     /**
      * 根据索引移除元素
      * 返回被移除的元素
-     * @access public
+     * @access Public
      * @param integer $index 索引
      * @return mixed
      */
@@ -159,7 +159,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 移出一定范围的数组列表
-     * @access public
+     * @access Public
      * @param integer $offset  开始移除位置
      * @param integer $length  移除长度
      */
@@ -169,7 +169,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 移出重复的值
-     * @access public
+     * @access Public
      */
     public function unique() {
         $this->_elements = array_unique($this->_elements);
@@ -177,7 +177,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 取出一定范围的数组列表
-     * @access public
+     * @access Public
      * @param integer $offset  开始位置
      * @param integer $length  长度
      */
@@ -188,7 +188,7 @@ class ArrayList implements \IteratorAggregate {
     /**
      * 设置列表元素
      * 返回修改之前的值
-     * @access public
+     * @access Public
      * @param integer $index 索引
      * @param mixed $element  元素
      * @return mixed
@@ -201,7 +201,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 获取列表长度
-     * @access public
+     * @access Public
      * @return integer
      */
     public function size() {
@@ -210,7 +210,7 @@ class ArrayList implements \IteratorAggregate {
 
     /**
      * 转换成数组
-     * @access public
+     * @access Public
      * @return array
      */
     public function toArray() {

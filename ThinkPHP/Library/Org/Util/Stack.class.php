@@ -21,7 +21,7 @@ class Stack extends ArrayList {
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      * @param array $values  初始化数组元素
      */
     public function __construct($values = array()) {
@@ -30,7 +30,7 @@ class Stack extends ArrayList {
 
     /**
      * 将堆栈的内部指针指向第一个单元
-     * @access public
+     * @access Public
      * @return mixed
      */
     public function peek() {
@@ -39,7 +39,7 @@ class Stack extends ArrayList {
 
     /**
      * 元素进栈
-     * @access public
+     * @access Public
      * @param mixed $value
      * @return mixed
      */

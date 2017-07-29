@@ -138,7 +138,7 @@ class IpLocation {
     /**
      * 根据所给 IP 地址或域名返回所在地区信息
      *
-     * @access public
+     * @access Public
      * @param string $ip
      * @return array
      */

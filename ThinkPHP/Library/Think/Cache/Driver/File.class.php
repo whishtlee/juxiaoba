@@ -18,7 +18,7 @@ class File extends Cache {
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      */
     public function __construct($options=array()) {
         if(!empty($options)) {
@@ -70,7 +70,7 @@ class File extends Cache {
 
     /**
      * 读取缓存
-     * @access public
+     * @access Public
      * @param string $name 缓存变量名
      * @return mixed
      */
@@ -111,7 +111,7 @@ class File extends Cache {
 
     /**
      * 写入缓存
-     * @access public
+     * @access Public
      * @param string $name 缓存变量名
      * @param mixed $value  存储数据
      * @param int $expire  有效时间 0为永久
@@ -149,7 +149,7 @@ class File extends Cache {
 
     /**
      * 删除缓存
-     * @access public
+     * @access Public
      * @param string $name 缓存变量名
      * @return boolean
      */
@@ -159,7 +159,7 @@ class File extends Cache {
 
     /**
      * 清除缓存
-     * @access public
+     * @access Public
      * @param string $name 缓存变量名
      * @return boolean
      */

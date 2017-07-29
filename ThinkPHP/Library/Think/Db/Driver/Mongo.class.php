@@ -26,7 +26,7 @@ class Mongo extends Driver {
 
     /**
      * 架构函数 读取数据库配置信息
-     * @access public
+     * @access Public
      * @param array $config 数据库配置数组
      */
     public function __construct($config=''){
@@ -43,7 +43,7 @@ class Mongo extends Driver {
 
     /**
      * 连接数据库方法
-     * @access public
+     * @access Public
      */
     public function connect($config='',$linkNum=0) {
         if ( !isset($this->linkID[$linkNum]) ) {
@@ -60,7 +60,7 @@ class Mongo extends Driver {
 
     /**
      * 切换当前操作的Db和Collection
-     * @access public
+     * @access Public
      * @param string $collection  collection
      * @param string $db  db
      * @param boolean $master 是否主服务器
@@ -94,7 +94,7 @@ class Mongo extends Driver {
 
     /**
      * 释放查询结果
-     * @access public
+     * @access Public
      */
     public function free() {
         $this->_cursor = null;
@@ -102,7 +102,7 @@ class Mongo extends Driver {
 
     /**
      * 执行命令
-     * @access public
+     * @access Public
      * @param array $command  指令
      * @return array
      */
@@ -138,7 +138,7 @@ class Mongo extends Driver {
 
     /**
      * 执行语句
-     * @access public
+     * @access Public
      * @param string $code  sql指令
      * @param array $args  参数
      * @return mixed
@@ -159,7 +159,7 @@ class Mongo extends Driver {
 
     /**
      * 关闭数据库
-     * @access public
+     * @access Public
      */
     public function close() {
         if($this->_linkID) {
@@ -173,7 +173,7 @@ class Mongo extends Driver {
 
     /**
      * 数据库错误信息
-     * @access public
+     * @access Public
      * @return string
      */
     public function error() {
@@ -184,7 +184,7 @@ class Mongo extends Driver {
 
     /**
      * 插入记录
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 参数表达式
      * @param boolean $replace 是否replace
@@ -221,7 +221,7 @@ class Mongo extends Driver {
 
     /**
      * 插入多条记录
-     * @access public
+     * @access Public
      * @param array $dataList 数据
      * @param array $options 参数表达式
      * @return bool
@@ -245,7 +245,7 @@ class Mongo extends Driver {
 
     /**
      * 生成下一条记录ID 用于自增非MongoId主键
-     * @access public
+     * @access Public
      * @param string $pk 主键名
      * @return integer
      */
@@ -266,7 +266,7 @@ class Mongo extends Driver {
 
     /**
      * 更新记录
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @return bool
@@ -302,7 +302,7 @@ class Mongo extends Driver {
 
     /**
      * 删除记录
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return false | integer
      */
@@ -329,7 +329,7 @@ class Mongo extends Driver {
 
     /**
      * 清空记录
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return false | integer
      */
@@ -355,7 +355,7 @@ class Mongo extends Driver {
 
     /**
      * 查找记录
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return iterator
      */
@@ -420,7 +420,7 @@ class Mongo extends Driver {
 
     /**
      * 查找某个记录
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return array
      */
@@ -432,7 +432,7 @@ class Mongo extends Driver {
 
     /**
      * 统计记录数
-     * @access public
+     * @access Public
      * @param array $options 表达式
      * @return iterator
      */
@@ -501,7 +501,7 @@ class Mongo extends Driver {
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getFields($collection=''){
@@ -536,7 +536,7 @@ class Mongo extends Driver {
 
     /**
      * 取得当前数据库的collection信息
-     * @access public
+     * @access Public
      */
     public function getTables(){
         if($this->config['debug']) {
@@ -556,7 +556,7 @@ class Mongo extends Driver {
 
     /**
      * 取得当前数据库的对象
-     * @access public
+     * @access Public
      * @return object mongoClient
      */
     public function getDB(){
@@ -565,7 +565,7 @@ class Mongo extends Driver {
     
     /**
      * 取得当前集合的对象
-     * @access public
+     * @access Public
      * @return object MongoCollection
      */
     public function getCollection(){

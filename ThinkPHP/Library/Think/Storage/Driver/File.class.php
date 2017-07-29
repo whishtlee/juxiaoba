@@ -17,14 +17,14 @@ class File extends Storage{
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      */
     public function __construct() {
     }
 
     /**
      * 文件内容读取
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @return string     
      */
@@ -34,7 +34,7 @@ class File extends Storage{
 
     /**
      * 文件写入
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @param string $content  文件内容
      * @return boolean         
@@ -54,7 +54,7 @@ class File extends Storage{
 
     /**
      * 文件追加写入
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @param string $content  追加的文件内容
      * @return boolean        
@@ -68,7 +68,7 @@ class File extends Storage{
 
     /**
      * 加载文件
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @param array $vars  传入变量
      * @return void        
@@ -82,7 +82,7 @@ class File extends Storage{
 
     /**
      * 文件是否存在
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @return boolean     
      */
@@ -92,7 +92,7 @@ class File extends Storage{
 
     /**
      * 文件删除
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @return boolean     
      */
@@ -103,7 +103,7 @@ class File extends Storage{
 
     /**
      * 读取文件信息
-     * @access public
+     * @access Public
      * @param string $filename  文件名
      * @param string $name  信息名 mtime或者content
      * @return boolean     

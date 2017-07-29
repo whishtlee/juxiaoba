@@ -36,7 +36,7 @@
 		/**
 		* Error messages
 		*
-		* @access public
+		* @access Public
 		*/
 		var $error;
 

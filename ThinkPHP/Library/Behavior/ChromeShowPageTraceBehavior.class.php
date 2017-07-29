@@ -511,7 +511,7 @@ class ChromePhp{
     {
         $static = $property->isStatic() ? ' static' : '';
         if ($property->isPublic()) {
-            return 'public' . $static . ' ' . $property->getName();
+            return 'Public' . $static . ' ' . $property->getName();
         }
 
         if ($property->isProtected()) {

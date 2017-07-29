@@ -37,7 +37,7 @@ class Db {
 
     /**
      * 打开Session 
-     * @access public 
+     * @access Public
      * @param string $savePath 
      * @param mixed $sessName  
      */
@@ -104,7 +104,7 @@ class Db {
 
     /**
      * 关闭Session 
-     * @access public 
+     * @access Public
      */
    public function close() {
        if(is_array($this->hander)){
@@ -117,7 +117,7 @@ class Db {
 
     /**
      * 读取Session 
-     * @access public 
+     * @access Public
      * @param string $sessID 
      */
    public function read($sessID) { 
@@ -132,7 +132,7 @@ class Db {
 
     /**
      * 写入Session 
-     * @access public 
+     * @access Public
      * @param string $sessID 
      * @param String $sessData  
      */
@@ -148,7 +148,7 @@ class Db {
 
     /**
      * 删除Session 
-     * @access public 
+     * @access Public
      * @param string $sessID 
      */
    public function destroy($sessID) { 
@@ -161,7 +161,7 @@ class Db {
 
     /**
      * Session 垃圾回收
-     * @access public 
+     * @access Public
      * @param string $sessMaxLifeTime 
      */
    public function gc($sessMaxLifeTime) { 

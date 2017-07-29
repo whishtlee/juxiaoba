@@ -24,7 +24,7 @@ class MergeModel extends Model {
     /**
      * 架构函数
      * 取得DB类的实例对象 字段检查
-     * @access public
+     * @access Public
      * @param string $name 模型名称
      * @param string $tablePrefix 表前缀
      * @param mixed $connection 数据库连接信息
@@ -60,7 +60,7 @@ class MergeModel extends Model {
 
     /**
      * 得到完整的数据表名
-     * @access public
+     * @access Public
      * @return string
      */
     public function getTableName() {
@@ -84,7 +84,7 @@ class MergeModel extends Model {
 
     /**
      * 新增聚合数据
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @param boolean $replace 是否replace
@@ -169,7 +169,7 @@ class MergeModel extends Model {
 
     /**
      * 保存聚合模型数据
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @return boolean
@@ -220,7 +220,7 @@ class MergeModel extends Model {
 
     /**
      * 删除聚合模型数据
-     * @access public
+     * @access Public
      * @param mixed $options 表达式
      * @return mixed
      */
@@ -393,7 +393,7 @@ class MergeModel extends Model {
 
     /**
      * 获取数据表字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getDbFields(){

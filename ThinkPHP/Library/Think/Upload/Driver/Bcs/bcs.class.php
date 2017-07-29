@@ -82,13 +82,13 @@ class BaiduBCS {
 			self::BCS_SDK_ACL_EFFECT_DENY );
 	//ACL_TYPE:
 	//公开读权限
-	const BCS_SDK_ACL_TYPE_PUBLIC_READ = "public-read";
+	const BCS_SDK_ACL_TYPE_PUBLIC_READ = "Public-read";
 	//公开写权限（不具备删除权限）
-	const BCS_SDK_ACL_TYPE_PUBLIC_WRITE = "public-write";
+	const BCS_SDK_ACL_TYPE_PUBLIC_WRITE = "Public-write";
 	//公开读写权限（不具备删除权限）
-	const BCS_SDK_ACL_TYPE_PUBLIC_READ_WRITE = "public-read-write";
+	const BCS_SDK_ACL_TYPE_PUBLIC_READ_WRITE = "Public-read-write";
 	//公开所有权限
-	const BCS_SDK_ACL_TYPE_PUBLIC_CONTROL = "public-control";
+	const BCS_SDK_ACL_TYPE_PUBLIC_CONTROL = "Public-control";
 	//私有权限，仅bucket所有者具有所有权限
 	const BCS_SDK_ACL_TYPE_PRIVATE = "private";
 	//SDK中开放此上五种acl_tpe

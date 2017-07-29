@@ -35,7 +35,7 @@ class AdvModel extends Model {
 
     /**
      * 利用__call方法重载 实现一些特殊的Model方法 （魔术方法）
-     * @access public
+     * @access Public
      * @param string $method 方法名称
      * @param mixed $args 调用参数
      * @return mixed
@@ -194,7 +194,7 @@ class AdvModel extends Model {
 
     /**
      * 查找前N个记录
-     * @access public
+     * @access Public
      * @param integer $count 记录个数
      * @param array $options 查询表达式
      * @return array
@@ -207,7 +207,7 @@ class AdvModel extends Model {
     /**
      * 查询符合条件的第N条记录
      * 0 表示第一条记录 -1 表示最后一条记录
-     * @access public
+     * @access Public
      * @param integer $position 记录位置
      * @param array $options 查询表达式
      * @return mixed
@@ -225,7 +225,7 @@ class AdvModel extends Model {
 
     /**
      * 获取满足条件的第一条记录
-     * @access public
+     * @access Public
      * @param array $options 查询表达式
      * @return mixed
      */
@@ -235,7 +235,7 @@ class AdvModel extends Model {
 
     /**
      * 获取满足条件的最后一条记录
-     * @access public
+     * @access Public
      * @param array $options 查询表达式
      * @return mixed
      */
@@ -245,7 +245,7 @@ class AdvModel extends Model {
 
     /**
      * 返回数据
-     * @access public
+     * @access Public
      * @param array $data 数据
      * @param string $type 返回类型 默认为数组
      * @return mixed
@@ -515,7 +515,7 @@ class AdvModel extends Model {
     /**
      * 批处理执行SQL语句
      * 批处理的指令都认为是execute操作
-     * @access public
+     * @access Public
      * @param array $sql  SQL批处理指令
      * @return boolean
      */
@@ -542,7 +542,7 @@ class AdvModel extends Model {
 
     /**
      * 得到分表的的数据表名
-     * @access public
+     * @access Public
      * @param array $data 操作的数据
      * @return string
      */

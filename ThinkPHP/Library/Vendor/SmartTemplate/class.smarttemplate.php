@@ -33,7 +33,7 @@
 		/**
 		* Whether to store compiled php code or not (for debug purpose)
 		*
-		* @access public
+		* @access Public
 		*/
 		var $reuse_code		= true;
 
@@ -41,7 +41,7 @@
 		* Directory where all templates are stored
 		* Can be overwritten by global configuration array $_CONFIG['template_dir']
 		*
-		* @access public
+		* @access Public
 		*/
 		var $template_dir	= 'templates/';
 
@@ -49,7 +49,7 @@
 		* Where to store compiled templates
 		* Can be overwritten by global configuration array $_CONFIG['smarttemplate_compiled']
 		*
-		* @access public
+		* @access Public
 		*/
 		var $temp_dir		= 'templates_c/';
 
@@ -57,7 +57,7 @@
 		* Temporary folder for output cache storage
 		* Can be overwritten by global configuration array $_CONFIG['smarttemplate_cache']
 		*
-		* @access public
+		* @access Public
 		*/
 		var $cache_dir      =  'templates_c/';
 
@@ -65,7 +65,7 @@
 		* Default Output Cache Lifetime in Seconds
 		* Can be overwritten by global configuration array $_CONFIG['cache_lifetime']
 		*
-		* @access public
+		* @access Public
 		*/
 		var $cache_lifetime =  600;
 
@@ -114,7 +114,7 @@
 		/**
 		* SmartTemplate Constructor
 		*
-		* @access public
+		* @access Public
 		* @param string $template_filename Template Filename
 		*/
 		function SmartTemplate ( $template_filename = '' )
@@ -157,7 +157,7 @@
 		*                                 array( 'ID' => 124,  'NAME' => 'Jack Doe' ),
 		*                             );
 		*
-		* @access public
+		* @access Public
 		* @param string $name Parameter Name
 		* @param mixed $value Parameter Value
 		* @desc Assign Template Content
@@ -185,7 +185,7 @@
 		* $page->append( 'userlist',  array( 'ID' => 123,  'NAME' => 'John Doe' ) );
 		* $page->append( 'userlist',  array( 'ID' => 124,  'NAME' => 'Jack Doe' ) );
 		*
-		* @access public
+		* @access Public
 		* @param string $name Parameter Name
 		* @param mixed $value Parameter Value
 		* @desc Assign Template Content
@@ -207,7 +207,7 @@
 		* Parser Wrapper
 		* Returns Template Output as a String
 		*
-		* @access public
+		* @access Public
 		* @param array $_top Content Array
 		* @return string  Parsed Template
 		* @desc Output Buffer Parser Wrapper
@@ -226,7 +226,7 @@
 		* Execute parsed Template
 		* Prints Parsing Results to Standard Output
 		*
-		* @access public
+		* @access Public
 		* @param array $_top Content Array
 		* @desc Execute parsed Template
 		*/
@@ -302,7 +302,7 @@
 		/**
 		* Debug Template
 		*
-		* @access public
+		* @access Public
 		* @param array $_top Content Array
 		* @desc Debug Template
 		*/
@@ -333,7 +333,7 @@
 		* $page->use_cache();
 		* ...
 		*
-		* @access public
+		* @access Public
 		* @desc Output Cache
 		*/
 		function use_cache ( $key = '' )

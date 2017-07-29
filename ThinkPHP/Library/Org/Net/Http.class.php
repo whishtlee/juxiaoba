@@ -18,7 +18,7 @@ class Http {
 
     /**
      * 采集远程文件
-     * @access public
+     * @access Public
      * @param string $remote 远程文件名
      * @param string $local 本地保存文件名
      * @return mixed
@@ -38,7 +38,7 @@ class Http {
     * 如果主机或服务器没有开启 CURL 扩展可考虑使用
     * fsockopen 比 CURL 稍慢,但性能稳定
     * @static
-    * @access public
+    * @access Public
     * @param string $url 远程URL
     * @param array $conf 其他配置信息
     *        int   limit 分段读取字符个数
@@ -135,7 +135,7 @@ class Http {
      * 可以指定下载显示的文件名，并自动发送相应的Header信息
      * 如果指定了content参数，则下载该参数的内容
      * @static
-     * @access public
+     * @access Public
      * @param string $filename 下载文件名
      * @param string $showname 下载显示的文件名
      * @param string $content  下载的内容
@@ -164,7 +164,7 @@ class Http {
 			$type	=	"application/octet-stream";
 		}
         //发送Http Header信息 开始下载
-        header("Pragma: public");
+        header("Pragma: Public");
         header("Cache-control: max-age=".$expire);
         //header('Cache-Control: no-store, no-cache, must-revalidate');
         header("Expires: " . gmdate("D, d M Y H:i:s",time()+$expire) . "GMT");

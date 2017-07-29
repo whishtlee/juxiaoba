@@ -15,7 +15,7 @@ namespace Think\Template\Driver;
 class Mobile {
     /**
      * 渲染模板输出
-     * @access public
+     * @access Public
      * @param string $templateFile 模板文件名
      * @param array $var 模板变量
      * @return void

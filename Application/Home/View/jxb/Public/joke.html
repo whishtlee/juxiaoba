@@ -1,0 +1,108 @@
+<ul class="cont-list">
+    <volist name="user_joke" id="val">
+        <li class="cont-item">
+            <div class="title-tag"><if condition="$val.user_info.id eq 1 ">原创 <else /> 聚友投稿 </if></div>
+            <h2 class="cont-list-title">
+                <a href="/xiaohua/{$val.id}.html" target="_blank" title="{$val.title}" data-id="{$val.id}">{$val.title}</a>
+            </h2>
+            <div class="cont-list-info fc-gray">
+                <span class="icon iconfont">&#xe608;</span> {$val['audit_time']|date='Y-m-d H:i',###}
+                <!--<span class="sp">&nbsp;</span>-->
+                <!--<span class="icon iconfont">&#xe61f;</span>-->
+                <!--<a href="http://www.fanjian.net/jianwen" target="_blank" class="fc-gray">贱文</a>-->
+                <span class="sp">&nbsp;</span>
+                <span class="icon iconfont">&#xe62a;</span>
+                <a href="/user/{$val.user_info.id}" target="_blank" title="{$val.user_info.username}" class="fc-gray cont-list-editor">{$val.user_info.username}</a>
+                <!--<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe620;</span> 22710-->
+            </div>
+            <div class="cont-list-reward" rid="{$val.user_info.id}">
+                <a href="/user/{$val.user_info.id}" target="_blank" class="user-head" data-id="118340_4802" title="{$val.user_info.username}">
+                    <img src="{$val.user_info.avatar}" alt="{$val.user_info.username}" height="180" width="180">
+                    <i class="headstyle hs0101"></i>
+                </a>
+            </div>
+            <div class="cont-list-main">
+                <?php
+					if($val['type'] == 3) {
+						$content = htmlspecialchars_decode(stripcslashes($val['content']));
+						$image = str_replace('m_','',$val['image']);
+						$image = str_replace('/w5','',$image);
+						$content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" src="'.$val['image'].'"',$content);
+						$content = str_replace('alt=""','alt="'.$val['title'].'"',$content);
+						echo $content;
+						echo '<span class="gif-play-btn" style="display:none">播放GIF</span>';
+                    }else if($val['type'] == 2){
+                    $image = $val['image'];
+                    $content = htmlspecialchars_decode(stripcslashes($val['content']));
+                    $content = str_replace('alt=""','alt="'.$val['title'].'"',$content);
+                    $pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+                    preg_match_all($pattern,$content,$match);
+                    $count = count($match[0]);
+                    if($count > 1){
+                    echo '<div class="article-content">' . "\r\n";
+                    echo '	<div class="multiple-article-wrapper">' . "\r\n";
+                        echo '	  <div class="multiple-article-zone clearfix">' . "\r\n";
+                            echo '	    <div class="multiple-article-arrow prev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n";
+                            echo '	    <div class="multiple-pics-wrapper">' . "\r\n";
+                                echo '	      <div class="multiple-pics-zone">' . "\r\n";
+                                    echo '	        <ul class="multiple-pics-list">' . "\r\n";
+                                        for($i=0;$i<$count;$i++){
+                                        if($i == 0){
+                                        echo '<li class="active">'.$match[0][$i].'</li>' . "\r\n";
+                                        }else{
+                                        echo '<li>'.$match[0][$i].'</li>' . "\r\n";
+                                        }
+                                        }
+                                        echo '</ul>' . "\r\n";
+                                    echo '	      </div>' . "\r\n";
+                                echo '	    </div>' . "\r\n";
+                            echo '	    <div class="multiple-article-arrow next"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n";
+                            echo '	  </div>' . "\r\n";
+                        echo '	  <div class="multiple-thumbnail-zone clearfix">' . "\r\n";
+                            echo '	    <div class="multiple-thumbnail-arrow thumbprev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n";
+                            echo '	    <div class="multiple-thumbnail-area">' . "\r\n";
+                                echo '	      <ul class="multiple-thumbnail-list">' . "\r\n";
+                                    echo '</ul>' . "\r\n";
+                                echo '	    </div>' . "\r\n";
+                            echo '	    <div class="multiple-thumbnail-arrow thumbnext"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n";
+                            echo '	  </div>' . "\r\n";
+                        echo '	</div>' . "\r\n";
+                    echo '</div>' . "\r\n";
+                    }else{
+                    $content = htmlspecialchars_decode(stripcslashes($val['content']));
+                    $content = str_ireplace("alt=\"\"" ,"alt=\"".$val['title']."\" ",$content);
+                    echo $content;
+                    }
+                    }else if($val['type'] == 4){
+                    echo '<div id="video-'.$val['id'].'" style="width:600px;height:340px; margin-left:auto; margin-right:auto"></div>';
+                    }else{
+                    if(strlen(htmlspecialchars_decode(stripcslashes($val['content']))) > 400) {
+                    echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($val['content']))),0,400,'utf-8').'……';
+                    echo '<br/>';
+                    echo '<div><a href="/xiaohua/'.$val['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+                    }else {
+                    echo htmlspecialchars_decode(stripcslashes($val['content']));
+                    }
+                    }
+                ?>
+            </div>
+            <div class="cont-list-in"><a href="/xiaohua/{$val.id}.html" target="_blank" class="fc-blue">浏览原文 &raquo;</a></div>
+            <div class="cont-list-sub clearfix">
+                <div class="cont-list-tags">
+                    <span class="icon iconfont fc-gray">&#xe612;</span>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/31971" target="_blank">一周热评</a>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/33419" target="_blank">愿望成真</a>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/173" target="_blank">球迷</a>
+                </div>
+                <div class="cont-list-tools" rid="{$val.id}" tid="{$val.id}">
+                    <a class="fc-gray like" title="赞"><b class="icon iconfont ">&#xe600;</b> <i>{$val.good_num}</i></a>
+                    <a class="fc-gray unlike" title="踩"><b class="icon iconfont ">&#xe625;</b> <i>{$val.bad_num}</i></a>
+                    <a class="fc-gray" title="评论" href="/xiaohua/{$val.id}.html#anchor-comment" target="_blank"><b class="icon iconfont">&#xe611;</b> <i>{$val.id|review}</i></a>
+                    <a class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a>
+                    <a class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
+                    <div class="bdsharebuttonbox share"><a href="/xiaohua/{$val.id}.html" class="bds_more" data-cmd="more"></a></div>
+                </div>
+            </div>
+        </li>
+    </volist>
+</ul>

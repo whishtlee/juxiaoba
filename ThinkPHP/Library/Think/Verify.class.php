@@ -35,7 +35,7 @@ class Verify {
 
     /**
      * 架构方法 设置参数
-     * @access public     
+     * @access Public
      * @param  array $config 配置参数
      */    
     public function __construct($config=array()){
@@ -44,7 +44,7 @@ class Verify {
 
     /**
      * 使用 $this->name 获取配置
-     * @access public     
+     * @access Public
      * @param  string $name 配置名称
      * @return multitype    配置值
      */
@@ -54,7 +54,7 @@ class Verify {
 
     /**
      * 设置验证码配置
-     * @access public     
+     * @access Public
      * @param  string $name 配置名称
      * @param  string $value 配置值     
      * @return void
@@ -67,7 +67,7 @@ class Verify {
 
     /**
      * 检查配置
-     * @access public     
+     * @access Public
      * @param  string $name 配置名称
      * @return bool
      */
@@ -77,7 +77,7 @@ class Verify {
 
     /**
      * 验证验证码是否正确
-     * @access public
+     * @access Public
      * @param string $code 用户验证码
      * @param string $id 验证码标识     
      * @return bool 用户验证码是否正确
@@ -106,7 +106,7 @@ class Verify {
     /**
      * 输出验证码并把验证码的值保存的session中
      * 验证码保存到session的格式为： array('verify_code' => '验证码值', 'verify_time' => '验证码创建时间');
-     * @access public     
+     * @access Public
      * @param string $id 要生成验证码的标识   
      * @return void
      */

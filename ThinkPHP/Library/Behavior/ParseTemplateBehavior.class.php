@@ -50,7 +50,7 @@ class ParseTemplateBehavior {
     /**
      * 检查缓存文件是否有效
      * 如果无效则需要重新编译
-     * @access public
+     * @access Public
      * @param string $tmplTemplateFile  模板文件名
      * @return boolean
      */
@@ -81,7 +81,7 @@ class ParseTemplateBehavior {
     /**
      * 检查缓存内容是否有效
      * 如果无效则需要重新编译
-     * @access public
+     * @access Public
      * @param string $tmplContent  模板内容
      * @return boolean
      */

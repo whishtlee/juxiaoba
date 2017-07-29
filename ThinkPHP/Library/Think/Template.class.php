@@ -28,7 +28,7 @@ class  Template {
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      */
     public function __construct(){
         $this->config['cache_path']         =   C('CACHE_PATH');
@@ -65,7 +65,7 @@ class  Template {
 
     /**
      * 加载模板
-     * @access public
+     * @access Public
      * @param string $templateFile 模板文件
      * @param array  $templateVar 模板变量
      * @param string $prefix 模板标识前缀
@@ -79,7 +79,7 @@ class  Template {
 
     /**
      * 加载主模板并缓存
-     * @access public
+     * @access Public
      * @param string $templateFile 模板文件
      * @param string $prefix 模板标识前缀
      * @return string
@@ -138,7 +138,7 @@ class  Template {
     /**
      * 模板解析入口
      * 支持普通标签和TagLib解析 支持自定义标签库
-     * @access public
+     * @access Public
      * @param string $content 要解析的模板内容
      * @return string
      */
@@ -360,7 +360,7 @@ class  Template {
     /**
      * 搜索模板页面中包含的TagLib库
      * 并返回列表
-     * @access public
+     * @access Public
      * @param string $content  模板内容
      * @return string|false
      */
@@ -379,7 +379,7 @@ class  Template {
 
     /**
      * TagLib库解析
-     * @access public
+     * @access Public
      * @param string $tagLib 要解析的标签库
      * @param string $content 要解析的模板内容
      * @param boolean $hide 是否隐藏标签库前缀
@@ -434,7 +434,7 @@ class  Template {
     /**
      * 解析标签库的标签
      * 需要调用对应的标签库文件解析类
-     * @access public
+     * @access Public
      * @param object $tagLib  标签库对象实例
      * @param string $tag  标签名
      * @param string $attr  标签属性
@@ -453,7 +453,7 @@ class  Template {
     /**
      * 模板标签解析
      * 格式： {TagName:args [|content] }
-     * @access public
+     * @access Public
      * @param string $tagStr 标签内容
      * @return string
      */
@@ -484,7 +484,7 @@ class  Template {
     /**
      * 模板变量解析,支持使用函数
      * 格式： {$varname|function1|function2=arg1,arg2}
-     * @access public
+     * @access Public
      * @param string $varStr 变量数据
      * @return string
      */
@@ -546,7 +546,7 @@ class  Template {
     /**
      * 对模板变量使用函数
      * 格式 {$varname|function1|function2=arg1,arg2}
-     * @access public
+     * @access Public
      * @param string $name 变量名
      * @param array $varArray  函数列表
      * @return string
@@ -585,7 +585,7 @@ class  Template {
     /**
      * 特殊模板变量解析
      * 格式 以 $Think. 打头的变量属于特殊模板变量
-     * @access public
+     * @access Public
      * @param string $varStr  变量字符串
      * @return string
      */

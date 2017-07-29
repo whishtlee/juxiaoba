@@ -32,7 +32,7 @@
 
 class PHPRPC_Date {
 
-// public fields
+// Public fields
 
     var $year = 1;
     var $month = 1;
@@ -69,7 +69,7 @@ class PHPRPC_Date {
         }
     }
 
-// public instance methods
+// Public instance methods
 
     function addMilliseconds($milliseconds) {
         if (!is_int($milliseconds)) return false;
@@ -377,7 +377,7 @@ class PHPRPC_Date {
         return $this->toString();
     }
 
-// public instance & static methods
+// Public instance & static methods
 
     function dayOfWeek() {
         $num = func_num_args();
@@ -415,7 +415,7 @@ class PHPRPC_Date {
         return $days[$m - 1] + $d;
     }
 
-// public static methods
+// Public static methods
 
     function now() {
         $date = new PHPRPC_Date();

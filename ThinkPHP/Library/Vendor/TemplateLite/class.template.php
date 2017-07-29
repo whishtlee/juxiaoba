@@ -29,7 +29,7 @@ if (!defined('TEMPLATE_LITE_DIR')) {
 }
 
 class Template_Lite {
-	// public configuration variables
+	// Public configuration variables
 	var $left_delimiter			= "{";		// the left delimiter for template tags
 	var $right_delimiter			= "}";		// the right delimiter for template tags
 	var $cache			= false;	// whether or not to allow caching of files

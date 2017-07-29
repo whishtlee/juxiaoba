@@ -60,7 +60,7 @@ class TagLib {
 
     /**
      * 架构函数
-     * @access public
+     * @access Public
      */
     public function __construct() {
         $this->tagLib  = strtolower(substr(get_class($this),6));
@@ -69,7 +69,7 @@ class TagLib {
 
     /**
      * TagLib标签属性分析 返回标签属性数组
-     * @access public
+     * @access Public
      * @param string $tagStr 标签内容
      * @return array
      */
@@ -119,7 +119,7 @@ class TagLib {
 
     /**
      * 解析条件表达式
-     * @access public
+     * @access Public
      * @param string $condition 表达式标签内容
      * @return array
      */
@@ -143,7 +143,7 @@ class TagLib {
 
     /**
      * 自动识别构建变量
-     * @access public
+     * @access Public
      * @param string $name 变量描述
      * @return string
      */
@@ -185,7 +185,7 @@ class TagLib {
     /**
      * 用于标签属性里面的特殊模板变量解析
      * 格式 以 Think. 打头的变量属于特殊模板变量
-     * @access public
+     * @access Public
      * @param string $varStr  变量字符串
      * @return string
      */

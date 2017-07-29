@@ -21,7 +21,7 @@ class Storage {
 
     /**
      * 连接分布式文件系统
-     * @access public
+     * @access Public
      * @param string $type 文件类型
      * @param array $options  配置数组
      * @return void

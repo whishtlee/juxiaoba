@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Copyright (c) FanJian">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>{$title} - {$setting["site_name"]}</title>
+
+    <meta name="keywords" content="<if condition="$keywords neq NULL">{$keywords}<else/>{$title}</if>"/>
+    <meta name="description" content="<if condition="$description neq NULL">{$description}<else/>{$title}</if>"/>
+
+    <link rel="alternate" type="application/rss+xml" title="{$setting["site_name"]}" href="{$setting['site_url']|str_replace='http://www.','',###}/rss"/>
+
+    <link rel="apple-touch-icon" href="" sizes="152x152">
+    <link rel="apple-touch-icon" href="" sizes="120x120">
+    <link rel="apple-touch-icon" href="" sizes="76x76">
+    <link rel="apple-touch-icon" href="" sizes="60x60">
+
+    <link rel="stylesheet" href="/Public/css/basis.css?201706021919">
+    <link rel="stylesheet" href="/Public/css/list.css?201706021919">
+    <link rel="stylesheet" href="/Public/css/shop.css?201706021919">
+    <link rel="stylesheet" href="/Public/css/swiper.min.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- QQ WeiBo -->
+    {$setting['qq_code']|htmlspecialchars_decode}
+    {$setting['sina_code']|htmlspecialchars_decode}
+
+    <script type="text/javascript">
+        var siteUrl = 'http://www.juxaoba.com/';
+    </script>
+
+    <script type="text/javascript">
+        <!--跳m站-->
+        function getCookie(nm) {
+            var arr, reg = new RegExp("(^| )" + nm + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg)) {
+                return unescape(arr[2]);
+            } else {
+                return null;
+            }
+        }
+        if ((navigator.userAgent.match(/(iPhone|iPod|Android|Windows Phone)/i))) {
+            if (getCookie('juxiaoba') == null) {
+                var url = window.location.href;
+                url = url.replace('http://www.', 'http://m.');
+                url = url.replace('https://www.', 'http://m.');
+                location.replace(url);
+            }
+        }
+    </script>
+
+    <?php
+        $url = $_SERVER["REQUEST_URI"];
+    ?>
+</head>
+
+<!-- 头部导航 -->
+<body>
+<div class="all-top">
+    <div class="all-top-box clearfix">
+        <a href="http://www.fanjian.net/" target="_self" class="all-top-logo">犯贱志</a>
+        <ul class="all-top-nav clearfix">
+            <li><a href="http://www.fanjian.net/markets" target="_blank">商城</a><sup class="sup-new">new</sup></li>
+            <li><a href="http://www.fanjian.net/jbk" target="_self">贱百科</a></li>
+            <li><a href="http://www.fanjian.net/laosiji" target="_self">老司机</a></li>
+            <li><a href="http://zb.fanjian.net" target="_blank">装B神器</a></li>
+            <li><a href="http://app.fanjian.net" target="_blank">犯贱APP</a></li>
+        </ul>
+        <ul class="all-top-act clearfix">
+            <if condition="$user eq NULL">
+                <li class="unland"><a class="quick-land">登录</a><span class="sp">|</span><a href="http://www.fanjian.net/user/reg" target="_self">注册</a></li>
+            <else/>
+                <li class="message"><a href="http://www.fanjian.net/user/login" target="_blank" class="icon-top" title="消息"><i>消息</i><span class=" icon iconfont">&#xe60c;</span></a></li>
+                <li><a href="http://www.fanjian.net/user/login" target="_blank" class="icon-top" title="历史"><i>历史</i><span class="icon iconfont">&#xe617;</span></a></li>
+                <li><a href="http://www.fanjian.net/user/login" target="_blank" class="icon-top" title="收藏"><i>收藏</i><span class="icon iconfont">&#xe603;</span></a></li>
+                <li><a href="http://app.fanjian.net" target="_blank" class="icon-top" title="App"><i>App</i><span class="icon iconfont">&#xe60f;</span></a></li>
+                <li><a href="http://www.fanjian.net/user/login" target="_blank" class="icon-top" title="投稿"><i>投稿</i><span class="icon iconfont">&#xe614;</span></a></li>
+            </if>
+        </ul>
+        <div class="all-top-search">
+            <form method="get" class="clearfix" action="http://www.fanjian.net/search" target="_blank">
+                <fieldset>
+                    <legend class="hidden">犯贱志搜索</legend>
+                    <label class="hidden">搜索关键字</label>
+                    <input type="text" class="input-text all-top-search-input" name="k" placeholder="搜索">
+                    <input type="submit" value="&#xe605;" title="搜索" class="icon iconfont submit-button all-top-search-button">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 头部导航 -->

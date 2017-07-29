@@ -19,7 +19,7 @@ class Pgsql extends Driver{
 
     /**
      * 解析pdo连接的dsn信息
-     * @access public
+     * @access Public
      * @param array $config 连接信息
      * @return string
      */
@@ -33,7 +33,7 @@ class Pgsql extends Driver{
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getFields($tableName) {
@@ -57,11 +57,11 @@ class Pgsql extends Driver{
 
     /**
      * 取得数据库的表信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getTables($dbName='') {
-        $result =   $this->query("select tablename as Tables_in_test from pg_tables where  schemaname ='public'");
+        $result =   $this->query("select tablename as Tables_in_test from pg_tables where  schemaname =PPublic);
         $info   =   array();
         foreach ($result as $key => $val) {
             $info[$key] = current($val);

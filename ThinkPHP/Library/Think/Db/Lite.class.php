@@ -71,7 +71,7 @@ class Lite {
 
     /**
      * 架构函数 读取数据库配置信息
-     * @access public
+     * @access Public
      * @param array $config 数据库配置数组
      */
     public function __construct($config=''){
@@ -85,7 +85,7 @@ class Lite {
 
     /**
      * 连接数据库方法
-     * @access public
+     * @access Public
      */
     public function connect($config='',$linkNum=0) {
         if ( !isset($this->linkID[$linkNum]) ) {
@@ -107,7 +107,7 @@ class Lite {
 
     /**
      * 解析pdo连接的dsn信息
-     * @access public
+     * @access Public
      * @param array $config 连接信息
      * @return string
      */
@@ -115,7 +115,7 @@ class Lite {
 
     /**
      * 释放查询结果
-     * @access public
+     * @access Public
      */
     public function free() {
         $this->PDOStatement = null;
@@ -123,7 +123,7 @@ class Lite {
 
     /**
      * 执行查询 返回数据集
-     * @access public
+     * @access Public
      * @param string $str  sql指令
      * @param array $bind  参数绑定
      * @return mixed
@@ -165,7 +165,7 @@ class Lite {
 
     /**
      * 执行语句
-     * @access public
+     * @access Public
      * @param string $str  sql指令
      * @param array $bind  参数绑定
      * @return integer
@@ -211,7 +211,7 @@ class Lite {
 
     /**
      * 启动事务
-     * @access public
+     * @access Public
      * @return void
      */
     public function startTrans() {
@@ -227,7 +227,7 @@ class Lite {
 
     /**
      * 用于非自动提交状态下面的查询提交
-     * @access public
+     * @access Public
      * @return boolean
      */
     public function commit() {
@@ -244,7 +244,7 @@ class Lite {
 
     /**
      * 事务回滚
-     * @access public
+     * @access Public
      * @return boolean
      */
     public function rollback() {
@@ -273,7 +273,7 @@ class Lite {
 
     /**
      * 获得查询次数
-     * @access public
+     * @access Public
      * @param boolean $execute 是否包含所有查询
      * @return integer
      */
@@ -283,7 +283,7 @@ class Lite {
 
     /**
      * 获得执行次数
-     * @access public
+     * @access Public
      * @return integer
      */
     public function getExecuteTimes(){
@@ -292,7 +292,7 @@ class Lite {
 
     /**
      * 关闭数据库
-     * @access public
+     * @access Public
      */
     public function close() {
         $this->_linkID = null;
@@ -301,7 +301,7 @@ class Lite {
     /**
      * 数据库错误信息
      * 并显示当前的SQL语句
-     * @access public
+     * @access Public
      * @return string
      */
     public function error() {
@@ -326,7 +326,7 @@ class Lite {
     /**
      * 获取最近一次查询的sql语句 
      * @param string $model  模型名
-     * @access public
+     * @access Public
      * @return string
      */
     public function getLastSql($model='') {
@@ -335,7 +335,7 @@ class Lite {
 
     /**
      * 获取最近插入的ID
-     * @access public
+     * @access Public
      * @return string
      */
     public function getLastInsID() {
@@ -344,7 +344,7 @@ class Lite {
 
     /**
      * 获取最近的错误信息
-     * @access public
+     * @access Public
      * @return string
      */
     public function getError() {
@@ -353,7 +353,7 @@ class Lite {
 
     /**
      * SQL指令安全过滤
-     * @access public
+     * @access Public
      * @param string $str  SQL字符串
      * @return string
      */
@@ -363,7 +363,7 @@ class Lite {
 
     /**
      * 设置当前操作模型
-     * @access public
+     * @access Public
      * @param string $model  模型名
      * @return void
      */
@@ -453,7 +453,7 @@ class Lite {
 
    /**
      * 析构方法
-     * @access public
+     * @access Public
      */
     public function __destruct() {
         // 释放查询

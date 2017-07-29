@@ -23,7 +23,7 @@ class Think {
 
     /**
      * 应用程序初始化
-     * @access public
+     * @access Public
      * @return void
      */
     static public function start() {
@@ -209,7 +209,7 @@ class Think {
 
     /**
      * 自定义异常处理
-     * @access public
+     * @access Public
      * @param mixed $e 异常对象
      */
     static public function appException($e) {
@@ -233,7 +233,7 @@ class Think {
 
     /**
      * 自定义错误处理
-     * @access public
+     * @access Public
      * @param int $errno 错误类型
      * @param string $errstr 错误信息
      * @param string $errfile 错误文件

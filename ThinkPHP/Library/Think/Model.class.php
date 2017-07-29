@@ -64,7 +64,7 @@ class Model {
     /**
      * 架构函数
      * 取得DB类的实例对象 字段检查
-     * @access public
+     * @access Public
      * @param string $name 模型名称
      * @param string $tablePrefix 表前缀
      * @param mixed $connection 数据库连接信息
@@ -125,7 +125,7 @@ class Model {
 
     /**
      * 获取字段信息并缓存
-     * @access public
+     * @access Public
      * @return void
      */
     public function flush() {
@@ -169,7 +169,7 @@ class Model {
 
     /**
      * 设置数据对象的值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @param mixed $value 值
      * @return void
@@ -181,7 +181,7 @@ class Model {
 
     /**
      * 获取数据对象的值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @return mixed
      */
@@ -191,7 +191,7 @@ class Model {
 
     /**
      * 检测数据对象的值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @return boolean
      */
@@ -201,7 +201,7 @@ class Model {
 
     /**
      * 销毁数据对象的值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @return void
      */
@@ -211,7 +211,7 @@ class Model {
 
     /**
      * 利用__call方法实现一些特殊的Model方法
-     * @access public
+     * @access Public
      * @param string $method 方法名称
      * @param array $args 调用参数
      * @return mixed
@@ -291,7 +291,7 @@ class Model {
 
     /**
      * 新增数据
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @param boolean $replace 是否replace
@@ -366,7 +366,7 @@ class Model {
 
     /**
      * 通过Select方式添加记录
-     * @access public
+     * @access Public
      * @param string $fields 要插入的数据表字段名
      * @param string $table 要插入的数据表名
      * @param array $options 表达式
@@ -388,7 +388,7 @@ class Model {
 
     /**
      * 保存数据
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @param array $options 表达式
      * @return boolean
@@ -462,7 +462,7 @@ class Model {
 
     /**
      * 删除数据
-     * @access public
+     * @access Public
      * @param mixed $options 表达式
      * @return mixed
      */
@@ -531,7 +531,7 @@ class Model {
 
     /**
      * 查询数据集
-     * @access public
+     * @access Public
      * @param array $options 表达式参数
      * @return mixed
      */
@@ -611,7 +611,7 @@ class Model {
 
     /**
      * 生成查询SQL 可用于子查询
-     * @access public
+     * @access Public
      * @return string
      */
     public function buildSql() {
@@ -713,7 +713,7 @@ class Model {
 
     /**
      * 查询数据
-     * @access public
+     * @access Public
      * @param mixed $options 表达式参数
      * @return mixed
      */
@@ -799,7 +799,7 @@ class Model {
 
     /**
      * 处理字段映射
-     * @access public
+     * @access Public
      * @param array $data 当前数据
      * @param integer $type 类型 0 写入 1 读取
      * @return array
@@ -827,7 +827,7 @@ class Model {
     /**
      * 设置记录的某个字段值
      * 支持使用数据库字段和方法
-     * @access public
+     * @access Public
      * @param string|array $field  字段名
      * @param string $value  字段值
      * @return boolean
@@ -843,7 +843,7 @@ class Model {
 
     /**
      * 字段值增长
-     * @access public
+     * @access Public
      * @param string $field  字段名
      * @param integer $step  增长值
      * @param integer $lazyTime  延时时间(s)
@@ -865,7 +865,7 @@ class Model {
 
     /**
      * 字段值减少
-     * @access public
+     * @access Public
      * @param string $field  字段名
      * @param integer $step  减少值
      * @param integer $lazyTime  延时时间(s)
@@ -888,7 +888,7 @@ class Model {
     /**
      * 延时更新检查 返回false表示需要延时
      * 否则返回实际写入的数值
-     * @access public
+     * @access Public
      * @param string $guid  写入标识
      * @param integer $step  写入步进值
      * @param integer $lazyTime  延时时间(s)
@@ -916,7 +916,7 @@ class Model {
 
     /**
      * 获取一条记录的某个字段值
-     * @access public
+     * @access Public
      * @param string $field  字段名
      * @param string $spea  字段数据间隔符号 NULL返回数组
      * @return mixed
@@ -993,7 +993,7 @@ class Model {
 
     /**
      * 创建数据对象 但不保存到数据库
-     * @access public
+     * @access Public
      * @param mixed $data 创建数据
      * @param string $type 状态
      * @return mixed
@@ -1094,7 +1094,7 @@ class Model {
 
     /**
      * 使用正则验证数据
-     * @access public
+     * @access Public
      * @param string $value  要验证的数据
      * @param string $rule 验证规则
      * @return boolean
@@ -1119,7 +1119,7 @@ class Model {
 
     /**
      * 自动表单处理
-     * @access public
+     * @access Public
      * @param array $data 创建数据
      * @param string $type 创建类型
      * @return mixed
@@ -1306,7 +1306,7 @@ class Model {
 
     /**
      * 验证数据 支持 in between equal length regex expire ip_allow ip_deny
-     * @access public
+     * @access Public
      * @param string $value 验证数据
      * @param mixed $rule 验证表达式
      * @param string $type 验证方式 默认为正则验证
@@ -1357,7 +1357,7 @@ class Model {
 
     /**
      * 存储过程返回多数据集
-     * @access public
+     * @access Public
      * @param string $sql  SQL指令
      * @param mixed $parse  是否需要解析SQL
      * @return array
@@ -1368,7 +1368,7 @@ class Model {
 
     /**
      * SQL查询
-     * @access public
+     * @access Public
      * @param string $sql  SQL指令
      * @param mixed $parse  是否需要解析SQL
      * @return mixed
@@ -1384,7 +1384,7 @@ class Model {
 
     /**
      * 执行SQL语句
-     * @access public
+     * @access Public
      * @param string $sql  SQL指令
      * @param mixed $parse  是否需要解析SQL
      * @return false | integer
@@ -1400,7 +1400,7 @@ class Model {
 
     /**
      * 解析SQL语句
-     * @access public
+     * @access Public
      * @param string $sql  SQL指令
      * @param boolean $parse  是否需要解析SQL
      * @return string
@@ -1424,7 +1424,7 @@ class Model {
 
     /**
      * 切换当前的数据库连接
-     * @access public
+     * @access Public
      * @param integer $linkNum  连接序号
      * @param mixed $config  数据库连接信息
      * @param boolean $force 强制重新连接
@@ -1459,7 +1459,7 @@ class Model {
 
     /**
      * 得到当前的数据对象名称
-     * @access public
+     * @access Public
      * @return string
      */
     public function getModelName() {
@@ -1476,7 +1476,7 @@ class Model {
 
     /**
      * 得到完整的数据表名
-     * @access public
+     * @access Public
      * @return string
      */
     public function getTableName() {
@@ -1494,7 +1494,7 @@ class Model {
 
     /**
      * 启动事务
-     * @access public
+     * @access Public
      * @return void
      */
     public function startTrans() {
@@ -1505,7 +1505,7 @@ class Model {
 
     /**
      * 提交事务
-     * @access public
+     * @access Public
      * @return boolean
      */
     public function commit() {
@@ -1514,7 +1514,7 @@ class Model {
 
     /**
      * 事务回滚
-     * @access public
+     * @access Public
      * @return boolean
      */
     public function rollback() {
@@ -1523,7 +1523,7 @@ class Model {
 
     /**
      * 返回模型的错误信息
-     * @access public
+     * @access Public
      * @return string
      */
     public function getError(){
@@ -1532,7 +1532,7 @@ class Model {
 
     /**
      * 返回数据库的错误信息
-     * @access public
+     * @access Public
      * @return string
      */
     public function getDbError() {
@@ -1541,7 +1541,7 @@ class Model {
 
     /**
      * 返回最后插入的ID
-     * @access public
+     * @access Public
      * @return string
      */
     public function getLastInsID() {
@@ -1550,7 +1550,7 @@ class Model {
 
     /**
      * 返回最后执行的sql语句
-     * @access public
+     * @access Public
      * @return string
      */
     public function getLastSql() {
@@ -1563,7 +1563,7 @@ class Model {
 
     /**
      * 获取主键名称
-     * @access public
+     * @access Public
      * @return string
      */
     public function getPk() {
@@ -1572,7 +1572,7 @@ class Model {
 
     /**
      * 获取数据表字段信息
-     * @access public
+     * @access Public
      * @return array
      */
     public function getDbFields(){
@@ -1599,7 +1599,7 @@ class Model {
 
     /**
      * 设置数据对象值
-     * @access public
+     * @access Public
      * @param mixed $data 数据
      * @return Model
      */
@@ -1620,7 +1620,7 @@ class Model {
 
     /**
      * 指定当前的数据表
-     * @access public
+     * @access Public
      * @param mixed $table
      * @return Model
      */
@@ -1638,7 +1638,7 @@ class Model {
 
     /**
      * USING支持 用于多表删除
-     * @access public
+     * @access Public
      * @param mixed $using
      * @return Model
      */
@@ -1656,7 +1656,7 @@ class Model {
 
     /**
      * 查询SQL组装 join
-     * @access public
+     * @access Public
      * @param mixed $join
      * @param string $type JOIN类型
      * @return Model
@@ -1679,7 +1679,7 @@ class Model {
 
     /**
      * 查询SQL组装 union
-     * @access public
+     * @access Public
      * @param mixed $union
      * @param boolean $all
      * @return Model
@@ -1713,7 +1713,7 @@ class Model {
 
     /**
      * 查询缓存
-     * @access public
+     * @access Public
      * @param mixed $key
      * @param integer $expire
      * @param string $type
@@ -1732,7 +1732,7 @@ class Model {
 
     /**
      * 指定查询字段 支持字段排除
-     * @access public
+     * @access Public
      * @param mixed $field
      * @param boolean $except 是否排除
      * @return Model
@@ -1754,7 +1754,7 @@ class Model {
 
     /**
      * 调用命名范围
-     * @access public
+     * @access Public
      * @param mixed $scope 命名范围名称 支持多个 和直接定义
      * @param array $args 参数
      * @return Model
@@ -1789,7 +1789,7 @@ class Model {
 
     /**
      * 指定查询条件 支持安全过滤
-     * @access public
+     * @access Public
      * @param mixed $where 条件表达式
      * @param mixed $parse 预处理参数
      * @return Model
@@ -1821,7 +1821,7 @@ class Model {
 
     /**
      * 指定查询数量
-     * @access public
+     * @access Public
      * @param mixed $offset 起始位置
      * @param mixed $length 查询数量
      * @return Model
@@ -1836,7 +1836,7 @@ class Model {
 
     /**
      * 指定分页
-     * @access public
+     * @access Public
      * @param mixed $page 页数
      * @param mixed $listRows 每页数量
      * @return Model
@@ -1851,7 +1851,7 @@ class Model {
 
     /**
      * 查询注释
-     * @access public
+     * @access Public
      * @param string $comment 注释
      * @return Model
      */
@@ -1862,7 +1862,7 @@ class Model {
 
     /**
      * 获取执行的SQL语句
-     * @access public
+     * @access Public
      * @param boolean $fetch 是否返回sql
      * @return Model
      */
@@ -1873,7 +1873,7 @@ class Model {
 
     /**
      * 参数绑定
-     * @access public
+     * @access Public
      * @param string $key  参数名
      * @param mixed $value  绑定的变量及绑定参数
      * @return Model
@@ -1896,7 +1896,7 @@ class Model {
 
     /**
      * 设置模型的属性值
-     * @access public
+     * @access Public
      * @param string $name 名称
      * @param mixed $value 值
      * @return Model

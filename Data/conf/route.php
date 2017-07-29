@@ -1,7 +1,5 @@
 <?php
-/**
- *网站路由配置
- **/
+// 网站路由配置
 return array(
 	/*路由设置*/
 	'URL_MODEL' 			=>	2,				//URL访问模式
@@ -120,12 +118,12 @@ return array(
 		'account/logout'  => 'Account/logout',
 		'account'  => 'Account/index',
 		//公共
-		'public/token' => 'Public/token',
-		'public/uploadify'  => 'Public/uploadify',
-		'public/uploadimg'  => 'Public/uploadimg',
-		'public/uploadvedio'  => 'Public/uploadvedio',
-		'public/uploadfile'  => 'Public/uploadfile',
-		'public/verify' => 'Public/verify',
-		'public'  => 'Public/index',
+		'Public/token' => 'Public/token',
+		'Public/uploadify'  => 'Public/uploadify',
+		'Public/uploadimg'  => 'Public/uploadimg',
+		'Public/uploadvedio'  => 'Public/uploadvedio',
+		'Public/uploadfile'  => 'Public/uploadfile',
+		'Public/verify' => 'Public/verify',
+		'Public'  => 'Public/index',
 	),
 );

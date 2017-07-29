@@ -42,7 +42,7 @@ class Log {
     /**
      * 记录日志 并且会过滤未经设置的级别
      * @static
-     * @access public
+     * @access Public
      * @param string $message 日志信息
      * @param string $level  日志级别
      * @param boolean $record  是否强制记录
@@ -57,7 +57,7 @@ class Log {
     /**
      * 日志保存
      * @static
-     * @access public
+     * @access Public
      * @param integer $type 日志记录方式
      * @param string $destination  写入目标
      * @return void
@@ -82,7 +82,7 @@ class Log {
     /**
      * 日志直接写入
      * @static
-     * @access public
+     * @access Public
      * @param string $message 日志信息
      * @param string $level  日志级别
      * @param integer $type 日志记录方式

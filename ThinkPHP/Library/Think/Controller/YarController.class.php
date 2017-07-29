@@ -16,7 +16,7 @@ class YarController {
 
    /**
      * 架构函数
-     * @access public
+     * @access Public
      */
     public function __construct() {
         //控制器初始化
@@ -33,7 +33,7 @@ class YarController {
 
     /**
      * 魔术方法 有不存在的操作的时候执行
-     * @access public
+     * @access Public
      * @param string $method 方法名
      * @param array $args 参数
      * @return mixed
