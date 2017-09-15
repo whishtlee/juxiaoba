@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
+<?php if (!defined('THINK_PATH')) exit();?><!-- 头部 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,9 +61,9 @@
 <body>
 <div class="all-top">
     <div class="all-top-box clearfix">
-        <a href="http://www.fanjian.net/" target="_self" class="all-top-logo">犯贱志</a>
+        <a href="<?php echo ($setting['site_domain']); ?>" target="_self" class="all-top-logo">犯贱志</a>
         <ul class="all-top-nav clearfix">
-            <li><a href="http://www.fanjian.net/markets" target="_blank">商城</a><sup class="sup-new">new</sup></li>
+            <li><a href="/shop" target="_blank">商城</a><sup class="sup-new">new</sup></li>
             <li><a href="http://www.fanjian.net/jbk" target="_self">贱百科</a></li>
             <li><a href="http://www.fanjian.net/laosiji" target="_self">老司机</a></li>
             <li><a href="http://zb.fanjian.net" target="_blank">装B神器</a></li>
@@ -91,6 +91,7 @@
     </div>
 </div>
 <!-- 头部导航 -->
+<!-- 头部 -->
 
 <div class="page">
     <div class="page-nav">
@@ -107,7 +108,7 @@
     </div>
     <div class="banner">
         <a href="http://www.fanjian.net/markets" target="_blank">
-            <img class="lazy" src="/Public/images/logo-bg.jpg" alt="犯贱志积分商城" height="150" width="1920">
+            <img class="lazy" src="http://ww1.rs.fanjian.net/i/ce/9a/6a/dfce019bd89a37a8bc6ab0f374e317d3.jpg" alt="犯贱志积分商城" height="150" width="1920">
         </a>
     </div>
     <div class="page-body clearfix">
@@ -127,476 +128,54 @@
                     <div class="h-reload fr"><a class="icon iconfont fc-gray reload" title="刷新页面">&#xe619;</a></div>
                 </div>
                 <div class="b">
+                    <!-- 笑话 -->
                     <ul class="cont-list">
-                        <li class="cont-item">
-                            <div class="title-tag">贱原创</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118340" target="_blank"
-                                                           title="一周热评|有什么临死愿望，说来我帮你实现" data-id="118340">一周热评|有什么临死愿望，说来我帮你实现</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-26
-                                16:48<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/14802" target="_blank" title="枇杷膏"
-                                   class="fc-gray cont-list-editor">枇杷膏</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 22710
-                            </div>
-                            <div class="cont-list-reward" rid="118340"><a href="http://www.fanjian.net/user/14802"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118340_4802" title="枇杷膏"><img
-                                    src="http://ww1.rs.fanjian.net/a/1b/97/11/db1b45711a978d3dab11263205d36d10.gif"
-                                    alt="枇杷膏" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p>一周热评又来啦，</p>
-                                <p>今天翻牌翻的我腰痛。</p>
-                                <p>认真看哟。</p>
-                                <p>想被翻拍的小贱贱们，多留言多点赞~！</p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/4c/4f/78/ac4ce39bf24f9a80fe7854e7c28a0fee.gif"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118340" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/31971" target="_blank">一周热评</a>
-                                    <a class="fc-gray" href="http://www.fanjian.net/tag/33419" target="_blank">愿望成真</a>
-                                    <a class="fc-gray" href="http://www.fanjian.net/tag/173" target="_blank">球迷</a>
-                                </div>
-                                <div class="cont-list-tools" rid="118340" tid="118340"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>97</i></a> <a class="fc-gray unlike"
-                                                                                             title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>0</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118340#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>29</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118340"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <div class="title-tag">贱原创</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118931" target="_blank"
-                                                           title="一周热评|真相只有一个！侦探无数个!" data-id="118931">一周热评|真相只有一个！侦探无数个!</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-07-03
-                                17:21<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/14802" target="_blank" title="枇杷膏"
-                                   class="fc-gray cont-list-editor">枇杷膏</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 23281
-                            </div>
-                            <div class="cont-list-reward" rid="118931"><a href="http://www.fanjian.net/user/14802"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118931_4802" title="枇杷膏"><img
-                                    src="http://ww1.rs.fanjian.net/a/1b/97/11/db1b45711a978d3dab11263205d36d10.gif"
-                                    alt="枇杷膏" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p>这周的热评让我看到了无数贱友广阔的胸襟、缜密的斯文和一本正经胡说八道的本领！</p>
-                                <p>让我呼吸紧凑，久久不能平静！</p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/b0/12/f1/52b0ff374412850096f1def7e3671730.gif"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118931" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/15779" target="_blank">贱友热评</a>
-                                    <a class="fc-gray" href="http://www.fanjian.net/tag/31971" target="_blank">一周热评</a>
-                                </div>
-                                <div class="cont-list-tools" rid="118931" tid="118931"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>99</i></a> <a class="fc-gray unlike"
-                                                                                             title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>1</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118931#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>22</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118931"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <div class="title-tag">贱原创</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118015" target="_blank"
-                                                           title="犯贱大讲堂|那些乱七八糟奇奇怪怪的病症" data-id="118015">犯贱大讲堂|那些乱七八糟奇奇怪怪的病症</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-22
-                                17:56<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/14802" target="_blank" title="枇杷膏"
-                                   class="fc-gray cont-list-editor">枇杷膏</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 23563
-                            </div>
-                            <div class="cont-list-reward" rid="118015"><a href="http://www.fanjian.net/user/14802"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118015_4802" title="枇杷膏"><img
-                                    src="http://ww1.rs.fanjian.net/a/1b/97/11/db1b45711a978d3dab11263205d36d10.gif"
-                                    alt="枇杷膏" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/b1/1e/1e/a8b1cad7e61e82ac1e1e53584e76e93c.jpg"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118015" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/23007"
-                                        target="_blank">犯贱大讲堂</a> <a class="fc-gray"
-                                                                     href="http://www.fanjian.net/tag/3297"
-                                                                     target="_blank">奇怪</a> <a class="fc-gray"
-                                                                                               href="http://www.fanjian.net/tag/33171"
-                                                                                               target="_blank">异手</a> <a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/33172" target="_blank">鬼压床</a>
-                                </div>
-                                <div class="cont-list-tools" rid="118015" tid="118015"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>104</i></a> <a class="fc-gray unlike"
-                                                                                              title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>0</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118015#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>20</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118015"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <div class="title-tag">贱原创</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118639" target="_blank"
-                                                           title="犯贱大讲堂|神奇天气在哪里？" data-id="118639">犯贱大讲堂|神奇天气在哪里？</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-29
-                                18:54<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/14802" target="_blank" title="枇杷膏"
-                                   class="fc-gray cont-list-editor">枇杷膏</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 23367
-                            </div>
-                            <div class="cont-list-reward" rid="118639"><a href="http://www.fanjian.net/user/14802"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118639_4802" title="枇杷膏"><img
-                                    src="http://ww1.rs.fanjian.net/a/1b/97/11/db1b45711a978d3dab11263205d36d10.gif"
-                                    alt="枇杷膏" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/08/73/cf/c1082cb4bd739cd601cf46721484debf.jpg"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118639" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/23007"
-                                        target="_blank">犯贱大讲堂</a> <a class="fc-gray"
-                                                                     href="http://www.fanjian.net/tag/3471"
-                                                                     target="_blank">天气</a></div>
-                                <div class="cont-list-tools" rid="118639" tid="118639"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>102</i></a> <a class="fc-gray unlike"
-                                                                                              title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>0</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118639#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>14</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118639"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <div class="title-tag">贱原创</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/120495" target="_blank"
-                                                           title="犯贱大讲堂|“巨乳”一词的来历" data-id="120495">犯贱大讲堂|“巨乳”一词的来历</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-07-20
-                                18:17<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/14802" target="_blank" title="枇杷膏"
-                                   class="fc-gray cont-list-editor">枇杷膏</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 8914
-                            </div>
-                            <div class="cont-list-reward" rid="120495"><a href="http://www.fanjian.net/user/14802"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="120495_4802" title="枇杷膏"><img
-                                    src="http://ww1.rs.fanjian.net/a/1b/97/11/db1b45711a978d3dab11263205d36d10.gif"
-                                    alt="枇杷膏" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/61/41/04/b161f8840d418e3f4004511dc75bcbf6.jpg"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/120495" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/35103" target="_blank">大讲堂</a>
-                                    <a class="fc-gray" href="http://www.fanjian.net/tag/846" target="_blank">巨乳</a>
-                                </div>
-                                <div class="cont-list-tools" rid="120495" tid="120495"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>39</i></a> <a class="fc-gray unlike"
-                                                                                             title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>1</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/120495#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>14</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/120495"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <div class="title-tag">贱友投稿</div>
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/117918" target="_blank"
-                                                           title="美国流浪汉刺死中国留学生，被判无罪释放，网友拍手叫好？【长文】" data-id="117918">美国流浪汉刺死中国留学生，被判无罪释放，网友拍手叫好？【长文】</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-22
-                                09:48<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/41408" target="_blank" title="云淡风轻41408"
-                                   class="fc-gray cont-list-editor">云淡风轻41408</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 26121
-                            </div>
-                            <div class="cont-list-reward" rid="117918"><a href="http://www.fanjian.net/user/41408"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="117918_31408" title="云淡风轻41408"><img
-                                    src="http://qzapp.qlogo.cn/qzapp/101267057/BC89EE2FDA416CBD7BA3DE383C1C28D7/100"
-                                    alt="云淡风轻41408" height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/dd/12/7e/4fddddb96b126f0c1b7e05d207609215.jpg"
-                                        alt=""/></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/117918" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/33103" target="_blank">这会真的是教你重新做人了</a>
-                                </div>
-                                <div class="cont-list-tools" rid="117918" tid="117918"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>110</i></a> <a class="fc-gray unlike"
-                                                                                              title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>1</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/117918#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>147</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/117918"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118352" target="_blank"
-                                                           title="今天我吃了一坨小黄屎【长图】" data-id="118352">今天我吃了一坨小黄屎【长图】</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-26
-                                22:01<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jiantu" target="_blank" class="fc-gray">贱图</a><span
-                                        class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span> <a
-                                        href="http://www.fanjian.net/user/10004" target="_blank" title="小花妹妹"
-                                        class="fc-gray cont-list-editor">小花妹妹</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 27114
-                            </div>
-                            <div class="cont-list-reward" rid="118352"><a href="http://www.fanjian.net/user/10004"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118352_4" title="小花妹妹"><img
-                                    src="http://ww2.sinaimg.cn/large/8f40c578jw1f8frbmavjpj2050050aaf.jpg" alt="小花妹妹"
-                                    height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p><img src="http://ww1.rs.fanjian.net/c/7d/de/35/d87d3a70e1de7b379135b62a505657b4.png"
-                                        alt=""/></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118352" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/33428"
-                                        target="_blank">佛山的小新寄的</a></div>
-                                <div class="cont-list-tools" rid="118352" tid="118352"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>129</i></a> <a class="fc-gray unlike"
-                                                                                              title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>0</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118352#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>144</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118352"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/119023" target="_blank"
-                                                           title="【贱公告】在评论区满嘴生殖器的用户直接禁言" data-id="119023">【贱公告】在评论区满嘴生殖器的用户直接禁言</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-07-04
-                                18:10<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/10001" target="_blank" title="一剑"
-                                   class="fc-gray cont-list-editor">一剑</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 22995
-                            </div>
-                            <div class="cont-list-reward" rid="119023"><a href="http://www.fanjian.net/user/10001"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="119023_1" title="一剑"><img
-                                    src="http://ww4.sinaimg.cn/large/8f40c578jw1fazd1mrf0jj205k05kaa7.jpg" alt="一剑"
-                                    height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p>这几天收到私信我和举报里大量的谩骂评论，今天早上删了一部分，评论截图就不贴了。虽然大家都不是什么素质多高的人，但作为一名成年男性，骂人能不能不要这么LOW！</p>
-                                <p>以后评论区就事论事讨论，可以开玩笑可以嘲讽，争论一件事的时候举例子说道理，争不过就认怂。</p>
-                                <p>争不过或一言不合就开启喷子模式，先发制人的进行人身攻击和问候别人家人者，禁言一周。屡次或连续多条谩骂者禁永久。</p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/119023" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/15963"
-                                        target="_blank">犯贱志公告</a> <a class="fc-gray"
-                                                                     href="http://www.fanjian.net/tag/17910"
-                                                                     target="_blank">禁言</a></div>
-                                <div class="cont-list-tools" rid="119023" tid="119023"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>140</i></a> <a class="fc-gray unlike"
-                                                                                              title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>4</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/119023#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>132</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/119023"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/120286" target="_blank"
-                                                           title="地狱空荡荡，恶魔在人间。【多图】"
-                                                           data-id="120286">地狱空荡荡，恶魔在人间。【多图】</a></h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-07-18
-                                23:25<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jianwen" target="_blank"
-                                        class="fc-gray">贱文</a><span class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span>
-                                <a href="http://www.fanjian.net/user/10001" target="_blank" title="一剑"
-                                   class="fc-gray cont-list-editor">一剑</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 19526
-                            </div>
-                            <div class="cont-list-reward" rid="120286"><a href="http://www.fanjian.net/user/10001"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="120286_1" title="一剑"><img
-                                    src="http://ww4.sinaimg.cn/large/8f40c578jw1fazd1mrf0jj205k05kaa7.jpg" alt="一剑"
-                                    height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p>
-                                    陕西渭南6岁男童鹏鹏，在跟随生父和继母共同生活期间，被惨无人道地虐待，头骨缺失四分之三，很可能会双目失明。膝盖因整夜被罚跪而磨烂。虎毒尚不食子，鹏鹏的生父居然伙同后妻及后妻之子共同殴打亲生儿子鹏鹏。而鹏鹏的爷爷奶奶，因嫌弃鹏鹏母亲出身农村，唆使鹏鹏父母离婚。</p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/c0/cd/16/1fc06fa1efcdfaf624164d10e2be48ed.jpg"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/120286" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/34952" target="_blank">编辑完后心里堵得慌</a>
-                                </div>
-                                <div class="cont-list-tools" rid="120286" tid="120286"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>86</i></a> <a class="fc-gray unlike"
-                                                                                             title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>0</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/120286#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>97</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/120286"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cont-item">
-                            <h2 class="cont-list-title"><a href="http://www.fanjian.net/post/118035" target="_blank"
-                                                           title="【贱问贱答】第一次与你啪啪啪的人现在跟你什么关系？" data-id="118035">【贱问贱答】第一次与你啪啪啪的人现在跟你什么关系？</a>
-                            </h2>
-                            <div class="cont-list-info fc-gray"><span class="icon iconfont">&#xe608;</span> 2017-06-22
-                                23:42<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe61f;</span> <a
-                                        href="http://www.fanjian.net/jiantu" target="_blank" class="fc-gray">贱图</a><span
-                                        class="sp">&nbsp;</span><span class="icon iconfont">&#xe62a;</span> <a
-                                        href="http://www.fanjian.net/user/10004" target="_blank" title="小花妹妹"
-                                        class="fc-gray cont-list-editor">小花妹妹</a><span class="sp">&nbsp;</span><span
-                                        class="icon iconfont">&#xe620;</span> 26831
-                            </div>
-                            <div class="cont-list-reward" rid="118035"><a href="http://www.fanjian.net/user/10004"
-                                                                          target="_blank" class="user-head"
-                                                                          data-id="118035_4" title="小花妹妹"><img
-                                    src="http://ww2.sinaimg.cn/large/8f40c578jw1f8frbmavjpj2050050aaf.jpg" alt="小花妹妹"
-                                    height="180" width="180"></a></div>
-                            <div class="cont-list-main">
-                                <p>
-                                <p><img class="lazy"
-                                        data-src="http://ww1.rs.fanjian.net/c/bd/57/08/9ebd6f44dd5737b8e108cacfb65fc138.jpg"
-                                        alt=""/></p></p>
-                            </div>
-                            <div class="cont-list-in"><a href="http://www.fanjian.net/post/118035" target="_blank"
-                                                         class="fc-blue">浏览原文 &raquo;</a></div>
-                            <div class="cont-list-sub clearfix">
-                                <div class="cont-list-tags"><span class="icon iconfont fc-gray">&#xe612;</span><a
-                                        class="fc-gray" href="http://www.fanjian.net/tag/33192" target="_blank">断了联系</a>
-                                </div>
-                                <div class="cont-list-tools" rid="118035" tid="118035"><a class="fc-gray like"
-                                                                                          title="赞"><b
-                                        class="icon iconfont ">&#xe600;</b> <i>97</i></a> <a class="fc-gray unlike"
-                                                                                             title="踩"><b
-                                        class="icon iconfont ">&#xe625;</b> <i>1</i></a> <a class="fc-gray" title="评论"
-                                                                                            href="http://www.fanjian.net/post/118035#anchor-comment"
-                                                                                            target="_blank"><b
-                                        class="icon iconfont">&#xe611;</b> <i>90</i></a> <a
-                                        class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a> <a
-                                        class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
-                                    <div class="bdsharebuttonbox share"><a href="http://www.fanjian.net/post/118035"
-                                                                           class="bds_more" data-cmd="more"></a></div>
-                                </div>
-                            </div>
-                        </li>
+    <?php if(is_array($user_joke)): $i = 0; $__LIST__ = $user_joke;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><li class="cont-item">
+            <div class="title-tag"><?php if($val.user_info.id == 1 ): ?>原创 <?php else: ?> 聚友投稿<?php endif; ?></div>
+            <h2 class="cont-list-title">
+                <a href="/xiaohua/<?php echo ($val["id"]); ?>.html" target="_blank" title="<?php echo ($val["title"]); ?>" data-id="<?php echo ($val["id"]); ?>"><?php echo ($val["title"]); ?></a>
+            </h2>
+            <div class="cont-list-info fc-gray">
+                <span class="icon iconfont">&#xe608;</span> <?php echo (date('Y-m-d H:i',$val['audit_time'])); ?>
+                <!--<span class="sp">&nbsp;</span>-->
+                <!--<span class="icon iconfont">&#xe61f;</span>-->
+                <!--<a href="http://www.fanjian.net/jianwen" target="_blank" class="fc-gray">贱文</a>-->
+                <span class="sp">&nbsp;</span>
+                <span class="icon iconfont">&#xe62a;</span>
+                <a href="/user/<?php echo ($val["user_info"]["id"]); ?>" target="_blank" title="<?php echo ($val["user_info"]["username"]); ?>" class="fc-gray cont-list-editor"><?php echo ($val["user_info"]["username"]); ?></a>
+                <!--<span class="sp">&nbsp;</span><span class="icon iconfont">&#xe620;</span> 22710-->
+            </div>
+            <div class="cont-list-reward" rid="<?php echo ($val["user_info"]["id"]); ?>">
+                <a href="/user/<?php echo ($val["user_info"]["id"]); ?>" target="_blank" class="user-head" data-id="118340_4802" title="<?php echo ($val["user_info"]["username"]); ?>">
+                    <img src="<?php echo ($val["user_info"]["avatar"]); ?>" alt="<?php echo ($val["user_info"]["username"]); ?>" height="180" width="180">
+                    <i class="headstyle hs0101"></i>
+                </a>
+            </div>
+            <div class="cont-list-main">
+                <?php
+ if($val['type'] == 3) { $content = htmlspecialchars_decode(stripcslashes($val['content'])); $image = str_replace('m_','',$val['image']); $image = str_replace('/w5','',$image); $content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" src="'.$val['image'].'"',$content); $content = str_replace('alt=""','alt="'.$val['title'].'"',$content); echo $content; echo '<span class="gif-play-btn" style="display:none">播放GIF</span>'; }else if($val['type'] == 2){ $image = $val['image']; $content = htmlspecialchars_decode(stripcslashes($val['content'])); $content = str_replace('alt=""','alt="'.$val['title'].'"',$content); $pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i"; preg_match_all($pattern,$content,$match); $count = count($match[0]); if($count > 1){ echo '<div class="article-content">' . "\r\n"; echo '	<div class="multiple-article-wrapper">' . "\r\n"; echo '	  <div class="multiple-article-zone clearfix">' . "\r\n"; echo '	    <div class="multiple-article-arrow prev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n"; echo '	    <div class="multiple-pics-wrapper">' . "\r\n"; echo '	      <div class="multiple-pics-zone">' . "\r\n"; echo '	        <ul class="multiple-pics-list">' . "\r\n"; for($i=0;$i<$count;$i++){ if($i == 0){ echo '<li class="active">'.$match[0][$i].'</li>' . "\r\n"; }else{ echo '<li>'.$match[0][$i].'</li>' . "\r\n"; } } echo '</ul>' . "\r\n"; echo '	      </div>' . "\r\n"; echo '	    </div>' . "\r\n"; echo '	    <div class="multiple-article-arrow next"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n"; echo '	  </div>' . "\r\n"; echo '	  <div class="multiple-thumbnail-zone clearfix">' . "\r\n"; echo '	    <div class="multiple-thumbnail-arrow thumbprev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n"; echo '	    <div class="multiple-thumbnail-area">' . "\r\n"; echo '	      <ul class="multiple-thumbnail-list">' . "\r\n"; echo '</ul>' . "\r\n"; echo '	    </div>' . "\r\n"; echo '	    <div class="multiple-thumbnail-arrow thumbnext"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n"; echo '	  </div>' . "\r\n"; echo '	</div>' . "\r\n"; echo '</div>' . "\r\n"; }else{ $content = htmlspecialchars_decode(stripcslashes($val['content'])); $content = str_ireplace("alt=\"\"" ,"alt=\"".$val['title']."\" ",$content); echo $content; } }else if($val['type'] == 4){ echo '<div id="video-'.$val['id'].'" style="width:600px;height:340px; margin-left:auto; margin-right:auto"></div>'; }else{ if(strlen(htmlspecialchars_decode(stripcslashes($val['content']))) > 400) { echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($val['content']))),0,400,'utf-8').'……'; echo '<br/>'; echo '<div><a href="/xiaohua/'.$val['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>'; }else { echo htmlspecialchars_decode(stripcslashes($val['content'])); } } ?>
+            </div>
+            <div class="cont-list-in"><a href="/xiaohua/<?php echo ($val["id"]); ?>.html" target="_blank" class="fc-blue">浏览原文 &raquo;</a></div>
+            <div class="cont-list-sub clearfix">
+                <div class="cont-list-tags">
+                    <span class="icon iconfont fc-gray">&#xe612;</span>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/31971" target="_blank">一周热评</a>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/33419" target="_blank">愿望成真</a>
+                    <a class="fc-gray" href="http://www.fanjian.net/tag/173" target="_blank">球迷</a>
+                </div>
+                <div class="cont-list-tools" rid="<?php echo ($val["id"]); ?>" tid="<?php echo ($val["id"]); ?>">
+                    <a class="fc-gray like" title="赞"><b class="icon iconfont ">&#xe600;</b> <i><?php echo ($val["good_num"]); ?></i></a>
+                    <a class="fc-gray unlike" title="踩"><b class="icon iconfont ">&#xe625;</b> <i><?php echo ($val["bad_num"]); ?></i></a>
+                    <a class="fc-gray" title="评论" href="/xiaohua/<?php echo ($val["id"]); ?>.html#anchor-comment" target="_blank"><b class="icon iconfont">&#xe611;</b> <i><?php echo (review($val["id"])); ?></i></a>
+                    <a class="icon iconfont fc-gray mark " title="收藏">&#xe603;</a>
+                    <a class="icon iconfont fc-gray report ts_report" title="投诉">&#xe62e;</a>
+                    <div class="bdsharebuttonbox share"><a href="/xiaohua/<?php echo ($val["id"]); ?>.html" class="bds_more" data-cmd="more"></a></div>
+                </div>
+            </div>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
+</ul>
+                    <!-- 笑话 -->
 
-
-                    </ul>
                     <div class="pager"><a class="icon iconfont pager-before" href="#">&#xe610;</a><i>1</i><a
                             href="http://www.fanjian.net/hot-2">2</a><a href="http://www.fanjian.net/hot-3">3</a><a
                             href="http://www.fanjian.net/hot-4">4</a><a href="http://www.fanjian.net/hot-5">5</a><a

@@ -69,20 +69,20 @@
                         echo '	</div>' . "\r\n";
                     echo '</div>' . "\r\n";
                     }else{
-                    $content = htmlspecialchars_decode(stripcslashes($val['content']));
-                    $content = str_ireplace("alt=\"\"" ,"alt=\"".$val['title']."\" ",$content);
-                    echo $content;
+                        $content = htmlspecialchars_decode(stripcslashes($val['content']));
+                        $content = str_ireplace("alt=\"\"" ,"alt=\"".$val['title']."\" ",$content);
+                        echo $content;
                     }
                     }else if($val['type'] == 4){
-                    echo '<div id="video-'.$val['id'].'" style="width:600px;height:340px; margin-left:auto; margin-right:auto"></div>';
+                        echo '<div id="video-'.$val['id'].'" style="width:600px;height:340px; margin-left:auto; margin-right:auto"></div>';
                     }else{
-                    if(strlen(htmlspecialchars_decode(stripcslashes($val['content']))) > 400) {
-                    echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($val['content']))),0,400,'utf-8').'……';
-                    echo '<br/>';
-                    echo '<div><a href="/xiaohua/'.$val['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
-                    }else {
-                    echo htmlspecialchars_decode(stripcslashes($val['content']));
-                    }
+                        if(strlen(htmlspecialchars_decode(stripcslashes($val['content']))) > 400) {
+                            echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($val['content']))),0,400,'utf-8').'……';
+                            echo '<br/>';
+                            echo '<div><a href="/xiaohua/'.$val['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+                        }else {
+                            echo htmlspecialchars_decode(stripcslashes($val['content']));
+                        }
                     }
                 ?>
             </div>

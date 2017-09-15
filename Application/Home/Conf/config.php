@@ -9,7 +9,7 @@ $tpl = require('./Data/conf/tpl.php'); // 模板配置
 
 
 $array = array(
-    // 'TMPL_FILE_DEPR' => '_' // 简化模板的目录层次
+    //'TMPL_FILE_DEPR' => '_' // 简化模板的目录层次
 
 );
 

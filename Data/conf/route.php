@@ -37,7 +37,7 @@ return array(
 		'hot/week'  => 'Hot/week',
 		'/^hot\/index_(\d*)$/'  => 'Hot/index?p=:1',
 		'hot'  => 'Hot/index',
-		
+
 		//标签
 		'/^tags\/(\d*)_(\d*)$/'  => 'Tags/info?id=:1&p=:2',
 		'tags'  => 'Tags/index',
@@ -50,7 +50,7 @@ return array(
 		'/^shop\/list_(\d*)$/'  => 'Shop/index?p=:1',
 		'shop'  => 'Shop/index',
 
-		//关于FirstHumor
+		//关于juxiaoba
 		'about/jianjie'  => 'About/jianjie',
 		'about/gonggao'  => 'About/gonggao',
 		'about/shengming'  => 'About/shengming',
@@ -84,6 +84,7 @@ return array(
 		'xiaohua/record'  => 'Xiaohua/record',
 		'xiaohua/getreview'  => 'Xiaohua/getreview',
 		'xiaohua/:id\d'  => 'Xiaohua/index',
+
 		//用户中心
 		'user/feed'  => 'User/feed',
 		'user/joke'  => 'User/joke',

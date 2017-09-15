@@ -1,0 +1,339 @@
+<include file="Public:header" />
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<!-- 主体内容-开始 -->
+
+<div class="main clearfix" style="position:relative;">
+    <div class="main-left fl xiaoxie_info" id="j-main-list">
+
+        <!-- 详细-开始 -->
+
+        <dl class="main-list">
+            <dt> <a href="/user/{$user_joke.user_info.id}" target="_blank"> <img src="{$user_joke.user_info.avatar}" alt="{$user_joke.user_info.username}"> </a>
+            <p class="user">
+                <a href="/user/{$user_joke.user_info.id}" title="{$user_joke.user_info.username}">{$user_joke.user_info.username}</a>
+                <a href="/about/shengji.html" class="level_icon icon_lv{$user_joke.user_info.username|level}" title="{$user_joke.user_info.username|levelname}" target="_blank"></a>
+
+                <span class="fr">
+					<if condition="$user neq NULL">
+          	<if condition="$user['id'] neq $user_joke['user_info']['id']">
+					<a href="javascript:void(0);" title="私信" data-username="{$user_joke.user_info.username}" data-userid="{$user_joke.user_info.id}" class="user-dm">私信</a>
+                <?php
+	        if(check_follow($user['id'],$user_joke['user_info']['id']) == 0){
+	        ?>
+                <a href="javascript:void(0);" data-ajax="follow" data-userid="{$user_joke.user_info.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+                <?php
+	        }else{
+	        ?>
+                <a href="javascript:void(0);" data-ajax="follow" data-userid="{$user_joke.user_info.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+                <?php }?>
+					</if>
+					</if>&nbsp;{$user_joke['audit_time']|date='Y-m-d H:i:s',###}
+          </span>
+            </p>
+            <span class="title">{$user_joke.title}</span> </dt>
+            <dd class="content<php>if($user_joke['type'] == 3 || $user_joke['type'] == 2){echo ' content-pic'; }</php>">
+                <?php
+        if($user_joke['type'] == 3) {
+          $content = htmlspecialchars_decode(stripcslashes($user_joke['content']));
+          $content = str_replace('alt=""','alt="'.$user_joke['title'].'"',$content);
+          echo $content;
+        }else if($user_joke['type'] == 4) {
+          echo '<div id="video" style="width:600px;height:340px; margin-left:auto; margin-right:auto"></div>';
+    }else if($user_joke['type'] == 2){
+    $content = htmlspecialchars_decode(stripcslashes($user_joke['content']));
+    $content = str_replace('alt=""','alt="'.$user_joke['title'].'"',$content);
+    $pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+    preg_match_all($pattern,$content,$match);
+    $count = count($match[0]);
+    if($count > 1){
+    echo '<div class="article-content">' . "\r\n";
+    echo '  <div class="multiple-article-wrapper">' . "\r\n";
+        echo '    <div class="multiple-article-zone clearfix">' . "\r\n";
+            echo '      <div class="multiple-article-arrow prev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n";
+            echo '      <div class="multiple-pics-wrapper">' . "\r\n";
+                echo '        <div class="multiple-pics-zone">' . "\r\n";
+                    echo '          <ul class="multiple-pics-list">' . "\r\n";
+                        for($i=0;$i<$count;$i++){
+                        if($i == 0){
+                        echo '<li class="active">'.$match[0][$i].'</li>' . "\r\n";
+                        }else{
+                        echo '<li>'.$match[0][$i].'</li>' . "\r\n";
+                        }
+                        }
+                        echo '</ul>' . "\r\n";
+                    echo '        </div>' . "\r\n";
+                echo '      </div>' . "\r\n";
+            echo '      <div class="multiple-article-arrow next"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n";
+            echo '    </div>' . "\r\n";
+        echo '    <div class="multiple-thumbnail-zone clearfix">' . "\r\n";
+            echo '      <div class="multiple-thumbnail-arrow thumbprev"> <a href="javascript:;" class="deactive"> <i class="icon-left-open-big"></i> </a> </div>' . "\r\n";
+            echo '      <div class="multiple-thumbnail-area">' . "\r\n";
+                echo '        <ul class="multiple-thumbnail-list">' . "\r\n";
+                    // for($i=0;$i<$count;$i++){
+                    //   if($i == 0){
+                    //     echo '<li class="active"><a href="javascript:;">'.$match[0][$i].'</a></li>' . "\r\n";
+                    //   }else{
+                    //     echo '<li><a href="javascript:;">'.$match[0][$i].'</a></li>' . "\r\n";
+                    //   }
+                    // }
+                    echo '</ul>' . "\r\n";
+                echo '      </div>' . "\r\n";
+            echo '      <div class="multiple-thumbnail-arrow thumbnext"> <a href="javascript:;"> <i class="icon-right-open-big"></i> </a> </div>' . "\r\n";
+            echo '    </div>' . "\r\n";
+        echo '  </div>' . "\r\n";
+    echo '</div>' . "\r\n";
+    }else{
+    $content = htmlspecialchars_decode(stripcslashes($user_joke['content']));
+    $content = str_replace('alt=""','alt="'.$user_joke['title'].'"',$content);
+    echo $content;
+    }
+    }else{
+    echo htmlspecialchars_decode($user_joke['content']);
+    }?>
+    </dd>
+    <dd class="x_tags">
+        看点：<volist id="tag" name="joke_tags"><a href="/tags/{$tag.id}_1.html" target="_blank">{$tag.name}</a>&nbsp;</volist>
+    </dd>
+    <dd class="direction clearfix">
+        <if condition="$rel_joke['pre_joke_id'] gt 0"> <a href="/xiaohua/{$rel_joke['pre_joke_id']}.html" class="fl direction-before" title="上一条"></a> </if>
+        <if condition="$rel_joke['next_joke_id'] gt 0"> <a href="/xiaohua/{$rel_joke['next_joke_id']}.html" class="fr direction-after" title="下一条"></a> </if>
+    </dd>
+    <dd class="operation clearfix">
+        <div class="operation-btn"> <a href="javascript:void(0);" data-id="{$user_joke.id}" class="ding <if condition="($user_joke.record neq NULL) AND ($user_joke['record']['type'] eq 'good')">ding-hover
+            </if>
+            " title="顶">
+            <div class="dingcai"> <span></span> <i>{$user_joke.good_num}</i> </div>
+            </a>
+            <div class="operation-line"></div>
+        </div>
+        <div class="operation-btn"> <a href="javascript:void(0);" data-id="{$user_joke.id}" class="cai <if condition="($user_joke.record neq NULL) AND ($user_joke['record']['type'] eq 'bad')">cai-hover
+            </if>
+            " title="踩">
+            <div class="dingcai"> <span></span> <i>{$user_joke.bad_num}</i> </div>
+            </a>
+            <div class="operation-line"></div>
+        </div>
+        <div class="operation-btn"> <a href="javascript:void(0);" data-id="{$user_joke.id}" class="detail-comment comment" title="评论">
+            <div class="dingcai"><span></span><i>{$user_joke.id|review}</i></div>
+        </a>
+            <div class="operation-line"></div>
+        </div>
+        <div class="share-box">
+						<span class="action-btn sharebtn" data-id="{$user_joke.id}"><img src="/Public/images/fen.png" h_src="/Public/images/fen-h.png" alt="分享" style="height: 18px;">
+							<div style="display:none" id="sharedata-{$user_joke.id}">{$user_joke.title}（来自:{$setting["site_name"]}）|#|{$setting.site_domain}/xiaohua/{$user_joke.id}.html|#|{$user_joke['image']}|#|{$setting.site_domain}/xiaohua/{$user_joke.id}.html</div>
+							<span class="bdsharebuttonbox bdsharebtn" style="display:none">
+								<a href="javascript:void(0);" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+								<a href="javascript:void(0);" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+								<a href="javascript:void(0);" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+								<a href="javascript:void(0);" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+							</span>
+						</span>
+        </div>
+        <if condition="($user_joke.record eq NULL) OR ($user_joke['record']['award'] eq 0)"> <a class="reward" href="javascript:void(0)" data-award="{$user_joke.award_num}" data-id="{$user_joke.id}">打赏</a> </if>
+        <if condition="($user_joke.record neq NULL) AND ($user_joke['record']['award'] gt 0)"> <a class="rewarded" href="javascript:void(0)">已打赏</a> </if>
+        <if condition="($user_joke.is_package eq 1) AND ($user_joke.package_user_id eq 0)"> <a class="buy" href="javascript:void(0)" data-id="{$user_joke.id}" data-fee="{$user_joke.package_fee}">包养</a> </if>
+        <if condition="($user_joke.is_package eq 1) AND ($user_joke.package_user_id gt 0)">
+            <div class="kepted"> <a href="/user/{$user_joke['record']['package_info']['id']}">{$user_joke['record']['package_info']['username']}</a> <span>包养了Ta</span> </div>
+        </if>
+    </dd>
+    </dl>
+
+    <!-- 详细-结束 -->
+
+    <div class="object-comment comment" id="object-comment" >
+        <div class="title" id="comment-num-data" total="0" >{$setting["site_name"]}评论(<span>{$user_joke.id|review}</span>条评论)</div>
+        <div class="comment-input">
+            <form id="comment">
+                <textarea name="content" id="comment-content" class="comment-input-text" title="吐槽一下吧，您的神回复将名垂青史" style="color: rgb(201, 201, 201);"></textarea>
+                <input type="hidden" name="id" id="joke_id" value="{$user_joke.id}" />
+                <input type="hidden" name="at_user_id" class="at_user_id" />
+                <p id="text-length" style="display:none;">0/140字</p>
+                <div>
+                    <p><span>发评论，奖积分，积分可以换礼品哦!</span><span class="message"></span></p>
+                    <input type="button" id="comment-submit" value="评论" />
+                </div>
+            </form>
+        </div>
+        <if condition="review eq NULL">
+            <ul class="comment-list" id="comment-list">
+                <li class="nocomment">还没有人评论过，赶快抢沙发吧！</li>
+            </ul>
+            <else/>
+            <input type="hidden" id="Ccount" name="Ccount" value="{$Ccount}" >
+            <div id="comment-box">
+                <ul class="comment-list" id="comment-list">
+                    <volist name="review" id="val" key="k">
+                        <li>
+                            <div class="comment-content"> <a class="user_id" data-id="{$val.user_info.id}" href="/user/{$val.user_info.id}"><img src="{$val.user_info.avatar}" alt="{$val.user_info.username}" /><i></i></a>
+                                <p class="comment-username"><a href="/user/{$val.user_info.id}">{$val.user_info.username}</a></p>
+                                <p class="p-content">{$val.content}</p>
+                            </div>
+                            <div class="comment-ding">
+                                <?php $num = ($Ccount - ((1 - 1) * 5))-($k-1); ?>
+                                <span>{$num} 楼</span> <a href="javascript:void(0);" class="comment-ding-icon" rel="nofollow" data-id="{$val.id}">{$val.good_num}</a> <a class="comment-reply" href="javascript:void(0);" rel="nofollow">回复</a> </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="page"></div>
+        </if>
+        <div class="joke-ba joke-ba-bottom clearfix">
+            <if condition="$rel_joke['pre_joke_id'] gt 0"> <a href="/xiaohua/{$rel_joke['pre_joke_id']}.html" class="joke-before" title="上一条"></a> </if>
+            <if condition="$rel_joke['next_joke_id'] gt 0"> <a href="/xiaohua/{$rel_joke['next_joke_id']}.html" class="joke-after" title="下一条"></a> </if>
+        </div>
+    </div>
+    <div id="reward" class="joke-buy-box" style="display: none; top: 0; left: 0;"> </div>
+</div>
+<div class="main-right fr">
+    <include file="Public:tags" />
+    <include file="Public:pic" />
+    <include file="Public:text" />
+</div>
+
+</div>
+
+<!-- 主体内容-结束 -->
+
+<include file="Public:footer" />
+<if condition="$user_joke['type'] eq 4">
+    <!--视频播放api--><script type="text/javascript">
+    var ivaInstance = new Iva(
+        'video',
+        {
+            appkey: '{$setting["site_appkey"]}',
+            live: false,
+            video: '{$user_joke.content}',
+            title: '{$user_joke.title}',
+            cover: '{$user_joke.image|default="/Public/images/fengmian.png"}',
+        }
+    );
+</script><!--End-->
+</if>
+<script type="text/javascript">
+    seajs.use(['app','user','share','page','template'], function(App,user,share) {
+
+
+        $(window).load(function(){
+            user.jokeList(test);
+        });
+
+        var commentBox = $('#comment-box');
+        commentBox.on('click','.comment-ding-icon',function(){
+            var self = $(this),
+                id = self.data('id');
+            user.commentDing(self,id);
+        });
+        commentBox.on('click','.comment-reply',function(){
+            var box = $('#comment'),
+                input = $('#comment-content'),
+                at_user = box.find('.at_user_id'),
+                self = $(this).parents('li'),
+                id = self.find('.user_id').data('id'),
+                p = self.find('.p-content').text(),
+                username = self.find('.comment-username a').text();
+            var str = '//@'+username+' '+p+' ';
+            at_user.val(id);
+            input.val(str);
+        });
+
+
+        //分页
+        var Ccount = $('#Ccount').val(),
+            joke_id = $('#joke_id').val();
+        if(Ccount>=5){
+            $('.page').pagination(Ccount, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: view,
+                items_per_page: 5, //每页显示1项
+                prev_text: '前一页',
+                next_text: '后一页'
+            });
+        };
+
+        //评论
+        var submit = $('#comment-submit'),
+            form = $('#comment'),
+            commentList = $('#comment-list');
+        submit.click(function(){
+            if(!user.isLogin()){
+                user.loginDialog();
+                return;
+            };
+            var data = form.serializeObject();
+            if(!data.content || data.content.length > 150){
+                App.alert('回复内容不能为空！最大长度150个字符！');
+                return;
+            };
+            App.request({
+                url : '/ajax/review',
+                data : data,
+                success : function(result){
+                    var re = result || {};
+                    if(re.err){
+                        $('#comment-content').val('');
+                        App.alert('评论成功，请耐心等待审核！');
+                        return;
+                        var obj = re.msg[0];
+                        var _html = '<li>\
+									<div class="comment-content">\
+										<a class="user_id" href="/user/'+obj.user_info.id+'" data-id="'+obj.user_info.id+'"> <img src="'+obj.user_info.avatar+'" alt="'+obj.user_info.username+'" /><i></i> </a>\
+										<p class="comment-username"><a href="/user/'+obj.user_info.id+'">'+obj.user_info.username+'</a></p>\
+										<p class="p-content">'+obj.content+'</p>\
+									</div>\
+									<div class="comment-ding">\
+										<span>'+(parseInt(Ccount)+1)+'楼</span>\
+										<a href="javascript:void(0);" class="comment-ding-icon" data-id="'+obj.id+'">0</a>\
+										<a class="comment-reply" href="javascript:void(0);">回复</a>\
+									</div>\
+							</li>';
+                        commentList.prepend(_html);
+                    }else{
+                        App.alert(re.msg);
+                    };
+                }
+            });
+        });
+
+
+
+
+        var flag = false,
+            html = '<ul class="comment-list" id="comment-list">\
+				<% for(var i in list) { %>\
+				<li>\
+					<div class="comment-content">\
+						<a href="/user/<%=list[i].user_id%>"><img src="<%=list[i].user_info.avatar%>" alt="<%=list[i].user_info.username%>"><i></i></a>\
+						<p class="comment-username"><a href="/user/<%=list[i].user_id%>"><%=list[i].user_info.username%></a></p>\
+						<p><%=list[i].content%></p>\
+					</div>\
+					<div class="comment-ding">\
+						<span><%=start--%> 楼</span>\
+						<a href="javascript:void(0);" class="comment-ding-icon" rel="nofollow" data-id="<%=list[i].id%>"><%=list[i].good_num%></a>\
+						<a class="comment-reply" href="javascript:void(0);" rel="nofollow">回复</a>\
+					</div>\
+				</li>\
+				<% } %>\
+				</ul>';
+        function view(i,obj){
+            if(!i && !flag) return;
+            flag = true;
+            App.request({
+                url : '/xiaohua/getreview',
+                data : {id : joke_id,p : i+1},
+                success : function(result){
+                    var re = result || {};
+                    if(re.err){
+                        var obj = {list : re.msg};
+                        obj.start = Ccount - ((i) * 5);
+                        commentBox.html(template.compile(html)(obj));
+                    }else{
+                        App.alert(re.msg);
+                    };
+                }
+            });
+        };
+
+        window._bd_share_config={"common":{"bdSnsKey":{"tsina":"","tqq":""},"bdMini":"2","bdMiniList":false,"bdStyle":"1","bdSize":"16","onBeforeClick":function(cmd){if(cmd == 'weixin'){return {bdUrl:shareweixin};}return {bdUrl:shareurl,bdPic:sharepic,bdText:sharecon}},"bdCustomStyle":'/Public/images/bdshare.css'},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];$('.sharebtn').on({mouseover:function(){$(this).children('span').stop().fadeIn();$(this).children('img').attr('src','/Public/images/fen-h.png');shareid = $(this).attr('data-id');var data = $('#sharedata-'+shareid).text().split('|#|');sharecon = data[0];shareurl = data[1];sharepic = data[2];shareweixin = data[3];},mouseout:function(){$(this).children('img').attr('src','/Public/images/fen.png');$(this).children('span').stop().fadeOut();}});});
+</script>

@@ -16,12 +16,12 @@ return array(
 	'TMPL_L_DELIM'		=>'{', //模板引擎普通标签开始标记
 	'TMPL_R_DELIM'		=>'}',				//模板引擎普通标签结束标记
 
-	'DEFAULT_MODULE'		=>'Home',  // 默认模块
-	'DEFAULT_CONTROLLER'	=>'Index', // 默认控制器名称
-	'DEFAULT_ACTION'		=>'index', // 默认操作名
-	'APP_AUTOLOAD_PATH'	=> '@.TagLib', // 自动加载的路径
+	'DEFAULT_MODULE'		=> 'Home',  // 默认模块
+	'DEFAULT_CONTROLLER'	=> 'Index', // 默认控制器名称
+	'DEFAULT_ACTION'		=> 'index', // 默认操作名
+	'APP_AUTOLOAD_PATH'	    => '@.TagLib', // 自动加载的路径
 	'SESSION_EXPIRE' 		=> 600,
-	'SITE_DOMAIN' 		=> 'http://www.q600.net',
+	'SITE_DOMAIN' 		    => 'http://www.q600.net',
 
     //'SHOW_PAGE_TRACE'	=>true,
 
