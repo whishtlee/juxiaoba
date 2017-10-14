@@ -1,0 +1,37 @@
+<include file="Public:header" />
+<section id="J_wrapper" class="wrapper">
+	<section id="J_scroller" class="scroller">
+		<header class="header menu-header">
+			<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+			<h1><a href="{$setting['site_murl']}">登录</a></h1>
+		</header>
+		<dl class="fast-login">
+			<dt><hr><span>快速登录</span></dt>
+			<dd class="share-channel f-l-login">
+				<a href="/account/qqlogin" class="s-sqq"><span><i></i></span><p>QQ登录</p></a>
+				<a href="/account/wblogin" class="s-tsina"><span><i></i></span><p>新浪微博</p></a>
+			</dd>
+		</dl>
+		<div class="p-login">
+			<form id="login_form" name="login_form">
+				<ul>
+					<li class="l-username"><input type="text" id="username" name="username" placeholder="邮箱/手机号/用户名" autocomplete="off" required></li>
+					<li class="l-password"><input type="password" id="password" name="password" placeholder="密码" autocomplete="off" required></li>
+					<li class="l-message" id="l-message"></li>
+					<li><input type="hidden" name="is_save" id="keep" value="30" checked>
+						<buttom class="l-submit">登录</buttom>
+					</li>
+					<li><a href="/account/register">注册账号</a></li>
+				</ul>
+			</form>
+		</div>
+		<include file="Public:footer" />
+	</section>
+</section>
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	index.login();
+});
+</script>
+</body>
+</html>

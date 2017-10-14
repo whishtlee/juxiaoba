@@ -1,0 +1,48 @@
+<include file="Public:header" />
+<header class="header menu-header">
+	<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">笑豆商城</a></h1>
+	<a class="h-home right" href="/"><i></i></a>
+</header>
+<div class="gift-main">
+	<ul class="gift-tags">
+		<li><a<php>if($_GET['cate_id'] == ''){echo ' class="hover"';}</php> href="/shop">全部</a></li>
+		<volist name="cate" id="c_data">
+		<li><a<php>if($_GET['cate_id'] == $c_data['id']){echo ' class="hover"';}</php> href="/shop/cate_id/{$c_data.id}" title="{$c_data.name}">{$c_data.name}</a></li>
+		</volist>
+	</ul>
+	<ul class="joke gift-list">
+		<volist name="gift" id="p_data">
+		<li>
+			<a href="/shop/detail_{$p_data.id}" title="{$p_data.title}"><img src="{$p_data.image}"></a>
+			<p class="gift-name"><a href="/shop/detail_{$p_data.id}">{$p_data.title}</a></p>
+			<p class="gift-score">
+				<span>{$p_data.price}</span>笑豆
+				<a href="/shop/exchange_{$p_data.id}">兑换</a>
+			</p>
+		</li>
+		</volist>
+	</ul>
+	<div class="j-page">
+		<php>
+		$cate_id=$_GET['cate_id'];
+		
+			$p = $_GET['p'];
+			if($p == '' || $p == 1){
+				$p = 1;
+			}
+			$count = count($gift);
+			if($count >= 10){
+				$p = $p + 1;
+		if($cate_id==''){
+			echo '<a href="/shop/p/'.$p.'" class="mahua j-page-next-a">下一页</a>';
+		}else{
+			echo '<a href="/shop/cate_id/'.$cate_id.'/p/'.$p.'" class="mahua j-page-next-a">下一页</a>';
+		}
+			}
+		</php>
+	</div>
+	</div>
+<include file="Public:footer" />
+</body>
+</html>

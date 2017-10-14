@@ -1,0 +1,24 @@
+<include file="Public:header" />
+<header class="header menu-header">
+	<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">我的礼品</a></h1>
+<include file="Public:menu" />
+	</header>
+<div class="m-message-main">
+	<ul>
+		<if condition="$gift eq NULL">
+				<li>
+        <p style="font-size:.4rem;text-align:center;margin-top:.2rem;padding-bottom:.4rem;">没有兑换过任何礼品</p>
+        </li>
+    </if>
+		<volist name="gift" id="list">
+		<li> <p> {$list['created_time']}  我兑换了 <a href="/shop/detail_{$list['gift_info']['id']}" target="_blank">{$list['gift_info']['title']}</a></p></li>
+		</volist>
+	</ul>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

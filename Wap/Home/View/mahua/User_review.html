@@ -1,0 +1,32 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">我的评论</a></h1>
+	<include file="Public:menu" />
+	</header>
+</div>
+<div class="m-message-main">
+	<ul>
+		<volist name="review" id="list">
+		<li>
+		<div class="content-details">
+			<p>{$list['created_time']|date='Y-m-d H:i:s',###}<a href="/user/{$list['user_info']['id']}">{$list['user_info']['username']}</a>在<a href="/xiaohua/{$list['joke_info']['id']}.html">{$list['joke_info']['title']}</a>的笑话评论中@了我：
+			</p>
+			<div class="reply-box">
+				<div class="reply-comment-content">
+					<p>“<a href="/user/{$list['user_info']['id']}" title="{$list['user_info']['username']}" class="at">@{$list['user_info']['username']}</a>”</p>
+				</div>
+			</div>
+			<p></p>
+		</div>
+		</li>
+		</volist>
+	</ul>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

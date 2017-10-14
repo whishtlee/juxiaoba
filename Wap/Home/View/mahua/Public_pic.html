@@ -1,0 +1,13 @@
+<dl class="img-list">
+	<dt>
+		<a href="javascript:;" target="_blank"><h2>精彩搞笑图片</h2></a>
+	</dt>
+	<dd class="clearfix">
+		<volist name="pic" id="val">
+		<a href="/xiaohua/{$val.id}.html" target="_blank">
+			<img alt="" src="{$val.image}">
+			<span>{$val.title}</span>
+		</a>
+		</volist>
+	</dd>
+</dl>

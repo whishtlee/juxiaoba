@@ -1,0 +1,31 @@
+<include file="Public:header" />
+<div id="header">
+	<header class="header menu-header">
+		<a class="h-user" href="/user"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">{$setting["site_name"]}</a></h1>
+		<include file="Public:menu" />
+	</header>
+	<include file="Public:nav" />
+</div>
+		<div class="sarch-results">
+			为您找到与“<span>{$key}</span>”相关的笑话 {$count}条
+		</div>
+	<include file="Public:joke" />
+	<div class="j-page">
+	<php>
+		$p = $_GET['p'];
+		if($p == '' || $p == 1){
+			$p = 1;
+		}
+		$count = count($user_joke);
+		if($count >= 10){
+			$p = $p + 1;
+			echo '<a href="/index_'.$p.'.html" class="joke j-page-next-a">下一页</a>';
+		}
+	</php>
+	</div>
+	<include file="Public:footer_nav" />
+	<include file="Public:footer" />
+	<include file="Index:jsconfig" />
+</body>
+</html>

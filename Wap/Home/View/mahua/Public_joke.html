@@ -1,0 +1,117 @@
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<ul class="joke-list">
+<volist name="user_joke" id="jd">
+<li data-j-id="{$jd.id}">
+	<div class="u-info">
+		<a class="j-u-avatar" href="/user/{$jd.user_info.id}"><img src="{$jd.user_info.avatar}"></a>
+		<p class="j-u-name">
+			<a href="/user/{$jd.user_info.id}">{$jd.user_info.username}</a>
+			<span class="fr">{$jd['audit_time']|date='Y-m-d H:i:s',###}</span>
+		</p>
+		<p class="j-title"><a href="/xiaohua/{$jd.id}.html">{$jd.title}</a></p>
+	</div>
+	<div class="j-content<php>if($jd['type'] == 3 || $jd['type'] == 2){echo ' content-pic'; }</php>"<php>if($jd['type'] != 4){</php> onclick="javascript:location.href='/xiaohua/{$jd['id']}.html'"<php>}</php>>
+		<?php
+			if($jd['type'] == 3) {
+				$content = htmlspecialchars_decode(stripcslashes($jd['content']));
+				$image = str_replace('m_','',$jd['image']);
+				$image = str_replace('/w5','',$image);
+				$content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" alt="'.$jd['title'].'" src="'.$jd['image'].'"',$content);
+				echo $content;
+				echo '<span class="gif-play-btn">播放GIF</span>';
+
+			}else if($jd['type'] == 2){
+					$content = htmlspecialchars_decode(stripcslashes($jd['content']));
+					$content = str_replace('src="'.$image.'"','alt="'.$jd['title'].'" src="'.$jd['image'].'"',$content);
+        	$pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+        	preg_match_all($pattern,$content,$match);
+        	$count = count($match[0]);
+        	if($count > 1){
+						echo '<div class="swiper-content">' . "\r\n";
+						echo '	<div class="swiper-container gallery-top">' . "\r\n";
+						echo '		<div class="swiper-wrapper">' . "\r\n";
+						for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide"><img src="'.$match[1][$i].'"></div>' . "\r\n";
+            }
+						echo '		</div>' . "\r\n";
+						//echo '		<div class="swiper-button-next swiper-button-white"></div>' . "\r\n";
+						//echo '		<div class="swiper-button-prev swiper-button-white"></div>' . "\r\n";
+						echo '	</div>' . "\r\n";
+						echo '	<div class="swiper-container gallery-thumbs">' . "\r\n";
+						echo '		<div class="swiper-wrapper">' . "\r\n";
+						for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide" style="background-image:url('.$match[1][$i].')"></div>' . "\r\n";
+            }
+						echo '		</div>' . "\r\n";
+						echo '	</div>' . "\r\n";
+						echo '</div>' . "\r\n";
+        	}else{
+        		$content = htmlspecialchars_decode(stripcslashes($jd['content']));
+						$content = str_ireplace("alt=\"\"" ,"alt=\"".$jd['title']."\" ",$content);
+        		echo $content;
+        	}
+			}else if($jd['type'] == 4){
+				preg_match('#sid/(.*?)/v\.swf#i',htmlspecialchars_decode($jd['content']),$matches);
+			?>
+				<div id="video-{$jd.id}" style="width:100%;height:5rem"></div>
+			<?php
+			}else{
+				if(strlen(htmlspecialchars_decode(stripcslashes($jd['content']))) > 400) {
+					echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($jd['content']))),0,400,'utf-8').'……';
+					echo '<br/>';
+					echo '<div><a href="/xiaohua/'.$jd['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+				}else {
+          echo htmlspecialchars_decode(stripcslashes($jd['content']));
+				}
+			}
+		?>
+	</div>
+	<div class="j-access-score">
+		<if condition="($jd.record eq NULL) OR ($jd['record']['award'] eq 0)">
+			<!-- 打赏 -->
+			<a href="javascript:void(0)" rel="nofollow" class="j-maryane" total-score="0" user-score="{$jd.award_num}">打赏</a>
+		</if>
+		<if condition="($jd.record neq NULL) AND ($jd['record']['award'] gt 0)">
+			<a class="rewarded" href="javascript:void(0)">已打赏</a>
+		</if>
+		<if condition="($jd.is_package eq 1) AND ($jd.package_user_id eq 0)">
+			<!-- 包养 -->
+			<a href="javascript:void(0)" rel="nofollow" class="j-kept" data-id="{$jd.id}" data-fee="{$jd.package_fee}">包养</a>
+		</if>
+
+		<if condition="($jd.is_package eq 1) AND ($jd.package_user_id gt 0)">
+		<!-- 已被包养 -->
+			<div class="kepted">
+				<a href="/user/{$jd['record']['package_info']['id']}">{$jd['record']['package_info']['username']}</a>
+				<span>包养了Ta</span>
+			</div>
+		</if>
+				<if condition="$user neq NULL">
+        <if condition="$user['id'] neq $jd['user_info']['id']">
+        <span class="fr">
+        <a href="javascript:void(0);" title="私信" data-username="{$jd.user_info.username}" data-userid="{$jd.user_info.id}" class="user-dm">私信</a>
+        <?php
+	        if(check_follow($user['id'],$jd['user_info']['id']) == 0){
+	        ?>
+        <a href="javascript:void(0);" data-ajax="follow" data-userid="{$jd.user_info.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+        <?php
+	        }else{
+	        ?>
+        <a href="javascript:void(0);" data-ajax="follow" data-userid="{$jd.user_info.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+        <?php }?>
+        </span>
+        </if>
+        </if>
+	</div>
+	<div class="j-vote">
+		<a href="javascript:void(0)" rel="nofollow" class="<if condition="($jd.record neq NULL) AND ($jd['record']['type'] eq 'good')">j-gooded<else/>j-good</if>" title="顶"><i>{$jd.good_num}</i></a>
+		<a href="javascript:void(0)" rel="nofollow" class="<if condition="($jd.record neq NULL) AND ($jd['record']['type'] eq 'bad')">j-baded<else/>j-bad</if>" title="踩"><i>{$jd.bad_num}</i></a>
+		<a href="/xiaohua/{$jd.id}.html" class="j-comment" title="评论"><i>{$jd.id|review}</i></a>
+		<a href="javascript:void(0)" rel="nofollow" class="j-share" title="分享" data-title="{$jd.title}" data-pic="{$jd.image}" data-url="{$setting['site_murl']}/xiaohua/{$jd.id}.html"><i></i></a>
+	</div>
+</li>
+</volist>
+</ul>
+<!--视频播放api-->
+<script type="text/javascript"><volist name="user_joke" id="val"><if condition="$val['type'] eq 4">var ivaInstance = new Iva('video-{$val.id}',{appkey: '{$setting["site_appkey"]}',live: false,video: '{$val.content}',title: '{$val.title}',cover:'{$val.image|default="/Public/images/fengmian.png"}'});</if></volist></script>

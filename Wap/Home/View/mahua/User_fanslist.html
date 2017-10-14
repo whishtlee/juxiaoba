@@ -1,0 +1,35 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+    <h1><a href="{$setting['site_murl']}">我的粉丝</a></h1>
+	<include file="Public:menu" />
+  </header>
+</div>
+<ul class="user-follows-list">
+  <volist name="follow" id="val">
+  <li>
+    <a href="/user/{$val.id}" title="{$val.username}"><img src="{$val.avatar}" alt="{$val.username}"></a>
+    <h3><a href="/user/{$val.id}" title="{$val.username}">{$val.username}</a></h3>
+    <div>
+        投稿：{$val.send_num}&nbsp;&nbsp;|&nbsp;&nbsp;关注：{$val.follows}&nbsp;&nbsp;|&nbsp;&nbsp;粉丝：{$val.fans}
+      </div>
+      <div class="usertools">
+        <if condition="$user['id'] neq $val['id']">
+            <a href="javascript:void(0);" title="私信" data-username="{$val.username}" data-userid="{$val.id}" class="user-dm">私信</a>
+            <if condition="(check_follow($user['id'],$val['id']) eq 1)">
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$val.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+            <else/>
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$val.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+            </if>
+        </if>
+        </div>
+  </li>
+  </volist>
+</ul>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

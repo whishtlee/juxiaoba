@@ -1,0 +1,137 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+    <h1><a href="{$setting['site_murl']}">好友动态</a></h1>
+    <include file="Public:menu" />
+	</header>
+</div>
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<ul class="joke-list" style="margin:0;padding:.2rem;">
+<volist name="joke" id="list">
+<li data-j-id="{$list.id}">
+  <div class="u-info">
+    <a class="j-u-avatar" href="/user/{$list.user_info.id}"><img src="{$list.user_info.avatar}"></a>
+    <p class="j-u-name"><a href="/user/{$list.user_info.id}">{$list.user_info.username}</a><span class="fr">{$list['audit_time']|date='Y-m-d H:i:s',###}</span></p>
+    <p class="j-title"><a href="/xiaohua/{$list.id}.html">{$list.title}</a></p>
+  </div>
+  <div class="j-content"<php>if($list['type'] != 4){</php> onclick="javascript:location.href='/xiaohua/{$list['id']}.html'"<php>}</php>>
+    <?php
+      if($list['type'] == 3) {
+        $content = htmlspecialchars_decode(stripcslashes($list['content']));
+        $image = str_replace('m_','',$list['image']);
+        $image = str_replace('/w5','',$image);
+        $content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" alt="'.$list['title'].'" src="'.$list['image'].'"',$content);
+        echo $content;
+        echo '<span class="gif-play-btn">播放GIF</span>';
+
+      }else if($list['type'] == 2){
+        $content = htmlspecialchars_decode(stripcslashes($list['content']));
+          $pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+          preg_match_all($pattern,$content,$match);
+          $count = count($match[0]);
+          if($count > 1){
+            echo '<div class="swiper-content">' . "\r\n";
+            echo '  <div class="swiper-container gallery-top">' . "\r\n";
+            echo '    <div class="swiper-wrapper">' . "\r\n";
+            for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide"><img src="'.$match[1][$i].'"></div>' . "\r\n";
+            }
+            echo '    </div>' . "\r\n";
+            //echo '    <div class="swiper-button-next swiper-button-white"></div>' . "\r\n";
+            //echo '    <div class="swiper-button-prev swiper-button-white"></div>' . "\r\n";
+            echo '  </div>' . "\r\n";
+            echo '  <div class="swiper-container gallery-thumbs">' . "\r\n";
+            echo '    <div class="swiper-wrapper">' . "\r\n";
+            for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide" style="background-image:url('.$match[1][$i].')"></div>' . "\r\n";
+            }
+            echo '    </div>' . "\r\n";
+            echo '  </div>' . "\r\n";
+            echo '</div>' . "\r\n";
+          }else{
+            echo htmlspecialchars_decode($list['content']);
+          }
+      }else if($list['type'] == 4){
+        preg_match('#sid/(.*?)/v\.swf#i',htmlspecialchars_decode($list['content']),$matches);
+      ?>
+        <div id="video-{$list.id}" style="width:100%;height:5rem"></div>
+      <?php
+      }else{
+        if(strlen(htmlspecialchars_decode(stripcslashes($list['content']))) > 400) {
+              echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($list['content']))),0,400,'utf-8').'……';
+              echo '<br/>';
+              echo '<div><a href="/xiaohua/'.$list['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+            }else {
+              echo htmlspecialchars_decode(stripcslashes($list['content']));
+            }
+      }
+    ?>
+  </div>
+  <div class="j-access-score">
+    <if condition="($list.record eq NULL) OR ($list['record']['award'] eq 0)">
+      <!-- 打赏 -->
+      <a href="javascript:void(0)" rel="nofollow" class="j-maryane" total-score="0" user-score="{$list.award_num}">打赏</a>
+    </if>
+    <if condition="($list.record neq NULL) AND ($list['record']['award'] gt 0)">
+      <a class="rewarded" href="javascript:void(0)">已打赏</a>
+    </if>
+    <if condition="($list.is_package eq 1) AND ($list.package_user_id eq 0)">
+      <!-- 包养 -->
+      <a href="javascript:void(0)" rel="nofollow" class="j-kept" data-id="{$list.id}" data-fee="{$list.package_fee}">包养</a>
+    </if>
+
+    <if condition="($list.is_package eq 1) AND ($list.package_user_id gt 0)">
+    <!-- 已被包养 -->
+      <div class="kepted">
+        <a href="/user/{$list['record']['package_info']['id']}">{$list['record']['package_info']['username']}</a>
+        <span>包养了Ta</span>
+      </div>
+    </if>
+
+        <if condition="$user['id'] neq $val['user_info']['id']">
+        <span class="fr">
+        <a href="javascript:void(0);" title="私信" data-username="{$list.user_info.username}" data-userid="{$list.user_info.id}" class="user-dm">私信</a>
+
+        <if condition="(check_follow($user['id'],$list['user_info']['id']) eq 1)">
+        <a href="javascript:void(0);" data-ajax="follow" data-userid="{$list.user_info.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+        <else/>
+        <a href="javascript:void(0);" data-ajax="follow" data-userid="{$list.user_info.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+        </if>
+        </span>
+        </if>
+  </div>
+  <div class="j-vote">
+    <a href="javascript:void(0)" rel="nofollow" class="<if condition="($list.record neq NULL) AND ($list['record']['type'] eq 'good')">j-gooded<else/>j-good</if>" title="顶"><i>{$list.good_num}</i></a>
+    <a href="javascript:void(0)" rel="nofollow" class="<if condition="($list.record neq NULL) AND ($list['record']['type'] eq 'bad')">j-baded<else/>j-bad</if>" title="踩"><i>{$list.bad_num}</i></a>
+    <a href="/xiaohua/{$list.id}.html" class="j-comment" title="评论"><i>{$list.id|review}</i></a>
+    <a href="javascript:void(0)" rel="nofollow" class="j-share" title="分享" data-title="{$list.title}" data-pic="{$list.image}" data-url="{$setting['site_murl']}/xiaohua/{$list.id}.html"><i></i></a>
+  </div>
+</li>
+</volist>
+</ul>
+<div class="j-page">
+  <php>
+    $p = $_GET['p'];
+    if($p == '' || $p == 1){
+      $p = 1;
+    }
+    $count = count($joke);
+    if($count >= 10){
+      $p = $p + 1;
+      echo '<a href="/user/followinfo/p/'.$p.'.html" class="joke j-page-next-a">下一页</a>';
+    }
+  </php>
+  </div>
+<!--视频播放api-->
+<script type="text/javascript"><volist name="joke" id="val"><if condition="$val['type'] eq 4">var ivaInstance = new Iva('video-{$val.id}',{appkey: '{$setting["site_appkey"]}',live: false,video: '{$val.content}',title: '{$val.title}',cover:'{$val.image|default="/Public/images/fengmian.png"}',});</if></volist></script>
+<include file="Public:footer" />
+<include file="jsconfig" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+  index.list();
+});
+</script>
+</body>
+</html>

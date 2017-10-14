@@ -1,0 +1,95 @@
+<include file="Public:header" />
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<div style="height:100%;overflow:scroll;">
+		<header class="header">
+			<a class="h-home left" href="/"><i></i></a>
+			<h1><a href="{$setting['site_murl']}">审稿</a></h1>
+			<if condition="$joke neq NULL"><a class="h-report a-btn right" data-id="{$joke.id}" data-type="3" href="javascript:;"><i></i>举报</a></if>
+		</header>
+		<div class="audit-main">
+			<if condition="$joke eq NULL">
+			<dl class="joke no-joke">
+				<dd class="j-content">
+					<p class="title">你的效率太高，笑友们的速度远远跟不上，暂时没有投稿可以评审了！</p>
+					<p>你可以<a href="/">随便看看</a>或<a href="/joke/publish">投稿</a></p>
+				</dd>
+			</dl>
+			<else/>
+			<dl class="joke">
+				<dt>{$joke.title}</dt>
+				<dd class="j-content">
+					<?php
+			if($joke['type'] == 3) {
+				$content = htmlspecialchars_decode(stripcslashes($joke['content']));
+				$image = str_replace('m_','',$joke['image']);
+				$image = str_replace('/w5','',$image);
+				$content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" alt="'.$joke['title'].'" src="'.$joke['image'].'"',$content);
+				echo $content;
+				echo '<span class="gif-play-btn">播放GIF</span>';
+
+			}else if($joke['type'] == 2){
+				$content = htmlspecialchars_decode(stripcslashes($joke['content']));
+        	$pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+        	preg_match_all($pattern,$content,$match);
+        	$count = count($match[0]);
+        	if($count > 1){
+						echo '<div class="swiper-content">' . "\r\n";
+						echo '	<div class="swiper-container gallery-top">' . "\r\n";
+						echo '		<div class="swiper-wrapper">' . "\r\n";
+						for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide"><img src="'.$match[1][$i].'"></div>' . "\r\n";
+            }
+						echo '		</div>' . "\r\n";
+						//echo '		<div class="swiper-button-next swiper-button-white"></div>' . "\r\n";
+						//echo '		<div class="swiper-button-prev swiper-button-white"></div>' . "\r\n";
+						echo '	</div>' . "\r\n";
+						echo '	<div class="swiper-container gallery-thumbs">' . "\r\n";
+						echo '		<div class="swiper-wrapper">' . "\r\n";
+						for($i=0;$i<$count;$i++){
+              echo '<div class="swiper-slide" style="background-image:url('.$match[1][$i].')"></div>' . "\r\n";
+            }
+						echo '		</div>' . "\r\n";
+						echo '	</div>' . "\r\n";
+						echo '</div>' . "\r\n";
+        	}else{
+        		echo htmlspecialchars_decode($joke['content']);
+        	}
+			}else if($joke['type'] == 4){
+				preg_match('#sid/(.*?)/v\.swf#i',htmlspecialchars_decode($joke['content']),$matches);
+			?>
+				<div id="video-{$joke.id}" style="width:100%;height:5rem"></div>
+			<?php
+			}else{
+				if(strlen(htmlspecialchars_decode(stripcslashes($joke['content']))) > 400) {
+							echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($joke['content']))),0,400,'utf-8').'……';
+							echo '<br/>';
+							echo '<div><a href="/xiaohua/'.$joke['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+						}else {
+              echo htmlspecialchars_decode(stripcslashes($joke['content']));
+						}
+			}
+		?>
+				</dd>
+			</dl>
+			</if>
+		</div>
+</div>
+<if condition="$joke neq NULL">
+<div class="audit-vote">
+	<a class="audit-good a-btn" data-id="{$joke.id}" data-type="1" href="javascript:void(0);" rel="nofollow"><i></i>好笑</a>
+	<a class="audit-bad a-btn" data-id="{$joke.id}" data-type="2" href="javascript:void(0);" rel="nofollow"><i></i>不好笑</a>
+	<a class="audit-skip a-btn" data-id="{$joke.id}" data-type="4" href="javascript:void(0);" rel="nofollow"><i></i>跳过</a>
+</div>
+</if>
+<div style="display:none">{$setting.site_tongji_code|htmlspecialchars_decode}</div>
+<script type="text/javascript" src="__PUBLIC__/wap/js/sea.js"></script>
+<script type="text/javascript" src="__PUBLIC__/wap/js/sea_config.js"></script>
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	index.audit();
+});
+</script>
+<!--视频播放api--><script type="text/javascript"><if condition="$joke['type'] eq 4">var ivaInstance = new Iva('video-{$joke.id}',{appkey:'{$setting["site_appkey"]}',live:false,video:'{$joke.content}',title:'{$joke.title}',cover:'{$joke.image|default="/Public/images/fengmian.png"}',});</if></script>
+</body>
+</html>

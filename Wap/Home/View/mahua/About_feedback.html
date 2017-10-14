@@ -1,0 +1,30 @@
+<include file="Public:header" />
+<header class="header">
+	<a class="h-home left" href="/"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">意见反馈</a></h1>
+</header>
+<div class="main-fankui">
+	<form id="fankui">
+		<ul>
+			<li>
+				<input type="tel" placeholder="请输入您的手机号或QQ" name="contact" class="text-input">
+			</li>
+			<li>
+				<textarea placeholder="请输入您的意见，建议..." name="content" class="fankui"></textarea>
+			</li>
+			<li style="position:relative;background:#fff;">
+				<input type="text" id="code" name="code" class="vcode" placeholder="验证码" maxlength="4">
+				<img style="position:absolute;top:.1rem;right:.1rem;" src="/public/verify" onclick="this.src =  '/public/verify/' + Math.random();" id="vcode" alt="验证码" title="换一换">
+			</li>
+			<li><a href="javascript:(0)" class="l-submit">提交反馈</a></li>
+		</ul>
+	</form>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+		index.feedback();
+	});
+</script>
+</body>
+</html>

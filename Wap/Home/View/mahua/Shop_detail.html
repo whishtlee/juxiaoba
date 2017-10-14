@@ -1,0 +1,27 @@
+<include file="Public:header" />
+<header class="header menu-header">
+	<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">礼品详情</a></h1>
+	<a class="h-home right" href="/"><i></i></a>
+</header>
+<div class="gift-main gift-view">
+	<ul>
+		<li class="gift-img"><img src="{$gift.image}"><!--图片大小为640*272--></li>
+		<li class="gift-title">{$gift.title}</li>
+		<li class="gift-change">
+			<p class="gift-mabi"><span>{$gift.price}</span>笑豆</p>
+			<a class="g-c-toExchange" href="/shop/exchange_{$gift.id}">立即兑换</a>
+		</li>
+		<li class="gift-content">
+			{$gift.description}
+		</li>
+	</ul>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app'],function(app) {
+	$('.gift-content').find('img').attr('width','100%');
+});
+</script>
+</body>
+</html>

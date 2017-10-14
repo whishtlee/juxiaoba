@@ -1,0 +1,40 @@
+<include file="Public:header" />
+<section id="J_wrapper" class="wrapper">
+	<section id="J_scroller" class="scroller">
+		<header class="header menu-header">
+			<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+			<h1><a href="{$setting['site_murl']}">注册</a></h1>
+		</header>
+		<dl class="fast-login">
+			<dt><hr><span>快速登录</span></dt>
+			<dd class="share-channel f-l-login">
+				<a href="/account/qqlogin" class="s-sqq"><span><i></i></span><p>QQ登录</p></a>
+				<a href="/account/wblogin" class="s-tsina"><span><i></i></span><p>新浪微博</p></a>
+			</dd>
+		</dl>
+		<div class="p-login">
+			<form id="register_form" name="register_form">
+				<input type="hidden" id="sex" name="sex" value="1">
+				<ul>
+					<li class="r-email"><input type="email" id="email" name="email" placeholder="邮箱" autocomplete="off" required></li>
+					<li class="l-username"><input type="email" id="username" name="username" placeholder="用户名" autocomplete="off" required></li>
+					<li class="l-password"><input type="password" id="password" name="password" placeholder="密码" autocomplete="off" required></li>
+					<li class="l-passconf"><input type="password" id="confirm_password" name="confirm_password" placeholder="确认密码" autocomplete="off" required></li>
+					<li style="text-indent:.5rem;position: relative;background:#fff;"><input type="text" name="code" class="vcode" placeholder="验证码" maxlength="4">
+							<img style="position:absolute;top:0;right:0;" src="/public/verify" id="vcode" onclick="this.src =  '/public/verify'" alt="验证码" title="换一换"></li>
+					<li>
+						<buttom class="l-submit">提交注册</buttom>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<include file="Public:footer" />
+	</section>
+</section>
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	index.register();
+});
+</script>
+</body>
+</html>

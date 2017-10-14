@@ -1,0 +1,32 @@
+<include file="Public:header" />
+<header class="header menu-header">
+	<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">我的信息</a></h1>
+<include file="Public:menu" />
+	</header>
+<div class="m-message-main">
+	<ul>
+		<volist name="trace" id="list" empty="暂时没有数据">
+		<li> {$list.content}</li>
+		</volist>
+	</ul>
+	<div class="j-page">
+	<php>
+		$p = $_GET['p'];
+		if($p == '' || $p == 1){
+			$p = 1;
+		}
+		$count = count($trace);
+		if($count >= 10){
+			$p = $p + 1;
+			echo '<a href="/user/feed/p/'.$p.'/" class="joke j-page-next-a">下一页</a>';
+		}
+	</php>
+</div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

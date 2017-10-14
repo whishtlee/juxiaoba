@@ -1,0 +1,93 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+    <h1><a href="{$setting['site_murl']}">个人中心</a></h1>
+		<include file="Public:menu" />
+  </header>
+  <include file="Public:nav" />
+	<div class="h-u-info" style="border-bottom:1px solid #EBECEF;">
+    <div>
+  		<div class="h-u-info-avatar">
+  			<img src="{$user_info.avatar}" alt="{$user_info.username}">
+  			<i>{$user_info.level}</i>
+  		</div>
+  		<dl class="h-u-info-details">
+  			<dt>{$user_info.username}</dt>
+        <dd>豆子：<span class="s-color-red">{$user_info.money}</span></dd>
+        <dd>被赞：{$user_info.good_num}</dd>
+        <dd>投稿：{$user_info.send_num}</dd>
+        <dd>审稿：{$user_info.audit_suc_num}</dd>
+  		</dl>
+      <div class="usertools">
+        <?php if(!empty($user)){ ?>
+        <if condition="$user['id'] neq $user_info['id']">
+            <a href="javascript:void(0);" title="私信" data-username="{$user_info.username}" data-userid="{$user_info.id}" class="user-dm">私信</a>
+            <?php
+            if(check_follow($user['id'],$user_info['id']) == 0){
+            ?>
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$user_info.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+            <?php
+            }else{
+            ?>
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$user_info.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+            <?php }?>
+        </if>
+        <?php }?>
+    </div>
+    </div>
+    <div class="level">
+      <span class="bg"></span><span class="red" style="width:{$user_info['online_time']/$user_level['minute']*100}%;"></span><p></p>
+      <i class="level_text text_lv{$user_info.level} level-left">LV{$user_info.level}</i>
+      <i class="level_time">{$user_info.online_time}/{$user_level.minute}分钟</i>
+      <i class="level_text text_lv{$user_info['level']+1} level-right">LV{$user_info['level']+1}</i>
+    </div>
+	</div>
+</div>
+<ul class="user-nav">
+    <li><a href="/user/{$user_info.id}">投搞 {$user_info.send_num}</a></li>
+    <li><a href="/user/follows/{$user_info.id}">关注 {$user_info.follows}</a></li>
+    <li><a class="hover" href="/user/fans/{$user_info.id}">粉丝 {$user_info.fans}</a></li>
+</ul>
+<ul class="user-follows-list">
+  <volist name="follow" id="val">
+  <li>
+    <a href="/user/{$val.id}" title="{$val.username}"><img src="{$val.avatar}" alt="{$val.username}"></a>
+    <h3><a href="/user/{$val.id}" title="{$val.username}">{$val.username}</a></h3>
+    <div>
+      投稿：{$val.send_num}&nbsp;&nbsp;|&nbsp;&nbsp;关注：{$val.follows}&nbsp;&nbsp;|&nbsp;&nbsp;粉丝：{$val.fans}
+    </div>
+      <div class="usertools">
+      <?php if(!empty($user)){ ?>
+        <if condition="$user['id'] neq $val['id']">
+            <a href="javascript:void(0);" title="私信" data-username="{$val.username}" data-userid="{$val.id}" class="user-dm">私信</a>
+            <if condition="(check_follow($user['id'],$val['id']) eq 1)">
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$val.id}" class="user-follow user-cancelfollow"><i class="icon icon10 icon-cut"></i>已关注</a>
+            <else/>
+            <a href="javascript:void(0);" data-ajax="follow" data-userid="{$val.id}" class="user-follow"><i class="icon icon10 icon-add-h"></i>关注</a>
+            </if>
+        </if>
+      <?php }?>
+    </div>
+  </li>
+  </volist>
+</ul>
+<div class="j-page">
+<php>
+  $p = $_GET['p'];
+  if($p == '' || $p == 1){
+    $p = 1;
+  }
+  $count = count($user_joke);
+  if($count >= 10){
+    $p = $p + 1;
+    echo '<a href="/user/fans/'.$user_info['id'].'/p/'.$p.'.html" class="joke j-page-next-a">下一页</a>';
+  }
+</php>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

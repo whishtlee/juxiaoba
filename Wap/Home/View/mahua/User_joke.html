@@ -1,0 +1,124 @@
+<include file="Public:header" />
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">我的投稿</a></h1>
+	<include file="Public:menu" />
+  </header>
+</div>
+<div class="tabnav">
+  <a href="/user/joke/type/all" <if condition="$type eq 'all'">class="on"</if>>全部</a><a href="/user/joke/type/2" <if condition="$type eq 2">class="on"</if>>通过</a><a href="/user/joke/type/1" <if condition="$type eq 1">class="on"</if>>待审核</a><a href="/user/joke/type/3" <if condition="$type eq 3">class="on"</if>>未通过</a>
+</div>
+<div class="m-message-main">
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<if condition="$joke eq NULL">
+  <dl class="main-lis class="gif-play-btn"t" style="height:100%;text-align:center;">
+    <p style="font-size:20px;text-align:center;margin-top:16px;padding-bottom:20px;">小伙伴新来的，啥也木有。</p>
+  </dl>
+</if>
+<ul class="joke-list" style="margin:0;">
+<volist name="joke" id="list">
+<li data-j-id="{$list.id}">
+  <div class="u-info">
+    <p class="j-title"><a href="<if condition="$list['status'] eq 2">/xiaohua/{$list.id}.html<else/>javascript:;</if>">{$list.title}</a><span class="created_time fr">{$list['created_time']|date='Y-m-d H:i:s',###}</span></p>
+  </div>
+  <div class="j-content" <php>if($list['type'] == 1){echo 'onclick="javascript:location.href="/xiaohua/'.$list['id'].'.html"';}</php>">
+    <?php
+      if($list['type'] == 3) {
+        $content = htmlspecialchars_decode(stripcslashes($list['content']));
+        $image = str_replace('m_','',$list['image']);
+        $image = str_replace('/w5','',$image);
+        $content = str_replace('src="'.$image.'"','class="gifimg" gifimg="'.$image.'" src="'.$list['image'].'"',$content);
+        $content = str_replace('alt=""','alt="'.$list['title'].'"',$content);
+        echo $content;
+        echo '<span class="gif-play-btn">播放GIF</span>';
+
+      }else if($list['type'] == 2){
+        $content = htmlspecialchars_decode(stripcslashes($list['content']));
+        $content = str_replace('<img ','<img alt="'.$list['title'].'"',$content);
+        $pattern="/<img\s[^<>]*?src=[\'\"]([^\'\"<>]+?)[\'\"][^<>]*?>/i";
+        preg_match_all($pattern,$content,$match);
+        $count = count($match[0]);
+        if($count > 1){
+          echo '<div class="swiper-content">' . "\r\n";
+          echo '  <div class="swiper-container gallery-top">' . "\r\n";
+          echo '    <div class="swiper-wrapper">' . "\r\n";
+          for($i=0;$i<$count;$i++){
+            echo '<div class="swiper-slide"><img src="'.$match[1][$i].'"></div>' . "\r\n";
+          }
+          echo '    </div>' . "\r\n";
+          //echo '    <div class="swiper-button-next swiper-button-white"></div>' . "\r\n";
+          //echo '    <div class="swiper-button-prev swiper-button-white"></div>' . "\r\n";
+          echo '  </div>' . "\r\n";
+          echo '  <div class="swiper-container gallery-thumbs">' . "\r\n";
+          echo '    <div class="swiper-wrapper">' . "\r\n";
+          for($i=0;$i<$count;$i++){
+            echo '<div class="swiper-slide" style="background-image:url('.$match[1][$i].')"></div>' . "\r\n";
+          }
+          echo '    </div>' . "\r\n";
+          echo '  </div>' . "\r\n";
+          echo '</div>' . "\r\n";
+        }else{
+          echo htmlspecialchars_decode($list['content']);
+        }
+      }else if($list['type'] == 4){
+        preg_match('#sid/(.*?)/v\.swf#i',htmlspecialchars_decode($list['content']),$matches);
+      ?>
+        <div id="video-{$list.id}" style="width:100%;height:5rem"></div>
+      <?php
+      }else{
+        if(strlen(htmlspecialchars_decode(stripcslashes($list['content']))) > 400) {
+              echo mb_substr(strip_tags(htmlspecialchars_decode(stripcslashes($list['content']))),0,400,'utf-8').'……';
+              echo '<br/>';
+              echo '<div><a href="/xiaohua/'.$list['id'].'.html" style="text-decoration:underline;"> >>查看更多</a></div>';
+            }else {
+              echo htmlspecialchars_decode(stripcslashes($list['content']));
+            }
+      }
+    ?>
+  </div>
+  <div class="m-j-state">
+      <if condition="$list.status eq 1">
+        <p><span class="m-j-state_3">待审核</span>聚笑吧笑友们正在认真审核您的投稿，请耐心等待。</p>
+      </if>
+      <if condition="$list.status eq 2">
+        <p><span class="m-j-state_1">审核通过</span>哇哦！你的笑话已经成功把笑婶笑晕了！</p>
+      </if>
+      <if condition="$list.status eq 3">
+        <p><span class="m-j-state_2">未通过</span>原因：重复上传/不是很好笑/法律龟腚...</p>
+      </if>
+  </div>
+  <div class="j-vote">
+    <a href="javascript:void(0)" rel="nofollow" class="j-good" title="顶"><i>{$list.good_num}</i></a>
+    <a href="javascript:void(0)" rel="nofollow" class="j-bad" title="踩"><i>{$list.bad_num}</i></a>
+    <a href="/xiaohua/{$list.id}.html" class="j-comment" title="评论"><i>{$list.id|review}</i></a>
+    <a href="javascript:void(0)" rel="nofollow" class="j-share" title="分享"  data-title="{$list.title}" data-pic="{$list.image}" data-url="{$setting['site_murl']}/xiaohua/{$list.id}.html"><i></i></a>
+  </div>
+</li>
+</volist>
+</ul>
+<div class="j-page">
+<php>
+  $p = $_GET['p'];
+  $type = $_GET['type'];
+  if($p == '' || $p == 1){
+    $p = 1;
+  }
+  $count = count($joke);
+  if($count >= 10){
+    $p = $p + 1;
+     echo '<a href="/user/joke/type/'.$type.'/p/'.$p.'.html" class="joke j-page-next-a">下一页</a>';
+  }
+</php>
+</div>
+<!--视频播放api--><script type="text/javascript"><volist name="joke" id="val"><if condition="$val['type'] eq 4">var ivaInstance = new Iva('video-{$val.id}',{appkey: '{$setting["site_appkey"]}',live: false,video: '{$val.content}',title: '{$val.title}',cover:'{$val.image|default="/Public/images/fengmian.png"}',});</if></volist></script>
+
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

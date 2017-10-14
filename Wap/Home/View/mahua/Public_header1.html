@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="imagemode" content="force">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8" />
+<title>{$title} - juxiaoba手机版</title>
+<meta name="keywords" content="<if condition="$keywords neq NULL">{$keywords}<else/>{$title}</if>" />
+<meta name="description" content="<if condition="$description neq NULL">{$description}<else/>{$title}</if>" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://up.d5.nz:2000/upload/css/up.css" />
+<php>
+echo htmlspecialchars_decode($setting['mqq_code']);
+echo htmlspecialchars_decode($setting['msina_code']);
+</php>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/wap/css/main.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/wap/js/layer.mobile-v1.7/need/layer.css">
+<link rel="stylesheet" type="text/css" href="/Public/wap/js/swiper/css/swiper.min.css">
+<script>
+	//document.getElementsByTagName("html")[0].style.fontSize=window.screen.width / 8 + "px";
+</script>
+</head>
+<body <if condition="$user eq NULL">id="loginture"</if>>
+<div class="warp">

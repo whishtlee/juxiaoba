@@ -9,7 +9,12 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-// 应用入口文件
+// 应用入口文件 - 手机用户访问跳转手机页面
+header("Content-type: text/html; charset=utf-8");
+if($_SERVER['HTTP_HOST'] == 'm.juxiaoba.com') {
+    require('wap.php');
+    die();
+}
 
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');

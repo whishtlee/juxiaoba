@@ -1,0 +1,103 @@
+<include file="Public:header" />
+<form id="publish_form"  method="POST" enctype="multipart/form-data">
+<div id="jspublish">
+	<header class="header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">投稿</a></h1>
+	<include file="Public:menu" />
+	</header>
+  <include file="Public:nav" />
+	<div class="publish-main">
+
+			<ul>
+				<li class="p-message" id="p-message"></li>
+				<li class="p-j-title">
+					<input type="text" name="title" placeholder="起个逗逼点的标题">
+					<input type="hidden" name="image" id="image">
+				</li>
+				<li>
+					<select name="type" id="type" style="width:100%;padding:10px;">
+						<option value="1">段子</option>
+						<option value="2" selected>图片</option>
+						<option value="3">GIF动态图</option>
+						<option value="4">视频上传</option>
+						<option value="5">视频外链</option>
+					</select>
+					<input type="hidden" id="is_video" name="is_video" value="0"/>
+				</li>
+				<li class="ptypetab">
+				    <a class="cur" href="javascript:;">笑点:</a><p class="tips">请点击选择</p>
+				</li>
+				<div class="ptypetab_content">
+					<div class="item" id="news" style="display:block">
+						<li class="p-j-pic-box" id="container">
+							<span id="fileuploader">插入图片</span>
+						</li>
+						<li class="p-j-content">
+							<div id="content" name="content" contenteditable="true"></div>
+						</li>
+					</div>
+					<div class="item" id="url">
+						<div id="container2">
+							<span id="vedio_cover">上传封面</span>
+						</div>
+						<div class="vedio_link" style="display:none">
+							<span>支持腾讯视频、优酷视频观看地址。示例：<br><a href="http://v.youku.com/v_show/id_XMTY1NDM0MzA5Ng==.html" target="_blank">1、http://v.youku.com/v_show/id_XMTY1NDM0MzA5Ng==.html</a><br><a href="http://v.qq.com/x/cover/020wvklhoy14vpv.html" target="_blank">2、http://v.qq.com/x/cover/020wvklhoy14vpv.html</a><br><a href="http://mvvideo1.meitudata.com/5798360b8ae9d4286.mp4" target="_blank">3、http://mvvideo1.meitudata.com/5798360b8ae9d4286.mp4</a></span>
+							<input type="text" name="url" placeholder="视频网站观看地址" id="title" style="color: rgb(190, 190, 190);">
+						</div>
+						<!-- <span id="vedio_cover_url" style="display:none"></span> -->
+						<div class="upvideo">
+							<input type="hidden" name="vedio_type" value="1" id="vedio_type" />
+			      	<input type="hidden" name="vedio_url" value="" id="vedio_url" />
+			      	<div id="container3">
+								<span class="file_select_btn" id="fileuploadervedio">选择视频上传</span>
+							</div>
+							<p style="text-align: center;font-size:.3rem;">上传视频格式：swf、mpg、flv、mp4<br><br>温馨提示：请暂时使用优酷等外链视频，暂不支持本地上传</p>
+						</div>
+					</div>
+				</div>
+				<li class="p-j-kept">
+					<dl>
+						<dt><i></i><span>我想被包养</span></dt>
+						<dd>
+							<a href="javascript:void(0);" data-id="50"><span>50笑豆</span></a>
+							<a href="javascript:void(0);" data-id="100"><span>100笑豆</span></a>
+							<a href="javascript:void(0);" data-id="200"><span>200笑豆</span></a>
+							<input type="hidden" name="is_package" id="is_package" value="0">
+							<input type="hidden" name="package_fee" id="package_fee">
+						</dd>
+					</dl>
+				</li>
+				<li><a class="l-submit checkPublish" href="javascript:void(0);">提交</a></li>
+			</ul>
+	</div>
+	<include file="Public:footer" />
+</div>
+<div id="tagsbox">
+		<div id="tags-select">
+		<p>最多选择3个标签<span class="close fr"></span></p>
+		<volist name="list" id="v">
+			<label><input value="{$v.id}" type="checkbox" name="tags_id[]" />{$v.name}</label>
+		</volist>
+		</div>
+		<a id="selecok" href="javascript:;">确定</a>
+	</div>
+</form>
+<script type="text/javascript" src="__PUBLIC__/js/plupload/plupload.full.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/qiniu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/ui.js"></script>
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	$('.ptypetab').click(function(){$('#tagsbox').css({"opacity":"1","z-index":"2"});});$('#selecok,.close').click(function(){$('#tagsbox').css({"opacity":"0","z-index":"0"});});$('#tags-select').find('input[type=checkbox]').click(function(){var _t=$(this);var ta=$('.ptypetab');var p=ta.find('p');if(p.length>0){p.remove();};if(_t.prop('checked')){_t.parent('label').addClass('clecked');ta.append('<a href="javascript:;" id="tid'+_t.val()+'">'+_t.parent('label').text()+'</a>');}else{_t.prop("checked",false);_t.parent('label').removeClass('clecked');$('#tid'+_t.val()).remove();};if($('#tags-select').find('label').find('input:checked').length>=4)
+{_t.parent('label').removeClass('clecked');_t.removeAttr("checked");$('#tid'+_t.val()).remove();};});
+
+
+<if condition="$setting['file_save_type'] eq 1">
+	index.publishqiniu('{$setting["qiniu_domain"]}','{$setting["qiniu_imgstyle"]}');
+<else/>
+	index.publish();
+</if>
+});
+</script>
+</body>
+</html>

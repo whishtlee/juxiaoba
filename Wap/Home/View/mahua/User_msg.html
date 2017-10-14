@@ -1,0 +1,51 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+    <h1><a href="{$setting['site_murl']}">我的私信</a></h1>
+	<include file="Public:menu" />
+  </header>
+</div>
+<ul class="private-msg">
+  <if condition="$msg eq NULL">
+    <p style="font-size:.4rem;text-align:center;margin-top:.2rem;padding-bottom:.4rem;">还没有收到过私信</p>
+  </if>
+  <volist name="msg" id="list">
+  <li>
+    <a href="/user/{$list.send_uid}" class="private-msg-avatar effect-rotate link-gray">
+      <img src="{$list.user.avatar}" alt="{$list.user.username}">
+    </a>
+    <div class="private-msg-con">
+      <div class="private-msg-title">
+          <span class="fl link-gray">来自<a href="/user/{$list.send_uid}" class="link-blue">{$list.user.username}</a>的私信
+              <i class="private-msg-new"></i>
+          </span>
+          <span class="private-msg-time">{$list['created_time']|date='Y-m-d H:i:s',###}</span>
+      </div>
+      <div class="private-msg-dialog">
+        <span class="icon-uicon-dialog-left"></span>
+        <p>{$list.content}</p>
+      </div>
+    </div>
+  </li>
+  </volist>
+</ul>
+<div class="j-page">
+<php>
+  $p = $_GET['p'];
+  if($p == '' || $p == 1){
+    $p = 1;
+  }
+  $count = count($msg);
+  if($count >= 10){
+    $p = $p + 1;
+    echo '<a href="/user/msg/'.$user_info['id'].'/p/'.$p.'.html" class="joke j-page-next-a">下一页</a>';
+  }
+</php>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<include file="Public:header" />
+<div id="header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">{$setting["site_name"]}</a></h1>
+		<include file="Public:menu" />
+	</header>
+  <include file="Public:nav" />
+</div>
+<div class="search">
+	<div class="input-group">
+		<input type="text" id="key" class="search-text" placeholder="你想找点啥 ?" title="你想找点啥 ?" name="key" style="color: rgb(204, 204, 204);">
+		<input type="hidden" name="p" value="1" />
+	</div>
+	<span class="input-group-btn"><button type="submit" class="search-submit"><i class="search-icon"></i></button></span>
+</div>
+	<div class="main main-tags">
+		<!--笑点 -开始-->
+		<ul>
+			<volist name="tags" id="val">
+			<li><a href="/tags/{$val.id}_1.html" title="{$val.name}">{$val.name}</a></li>
+			</volist>
+		</ul>
+		<!--笑点 -结束-->
+	</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	index.list();
+});
+</script>
+</body>
+</html>

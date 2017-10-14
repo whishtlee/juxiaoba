@@ -1,0 +1,11 @@
+<php>
+$url = $_SERVER['PHP_SELF'];
+</php>
+<nav class="nav clearfix">
+    <a<php>if(strpos($url,'wap') > 0){echo ' class="active"';}</php> href="/">全部</a>
+    <a<php>if(strpos($url,'pic') > 0){echo ' class="active"';}</php> href="/pic">图片</a>
+    <a<php>if(strpos($url,'text') > 0){echo ' class="active"';}</php> href="/text">段子</a>
+    <a<php>if(strpos($url,'gif') > 0){echo ' class="active"';}</php> href="/gif">动图</a>
+	<a<php>if(strpos($url,'video') > 0){echo ' class="active"';}</php> href="/video">视频</a>
+    <a<php>if(strpos($url,'tags') > 0){echo ' class="active"';}</php> href="/tags">笑点</a>
+</nav>

@@ -1,0 +1,57 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">我的资料</a></h1>
+	<include file="Public:menu" />
+	</header>
+</div>
+<div class="edit-data-main">
+	<ul class="joke">
+		<li class="e-d-avatar">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">
+					<img src="{$user.avatar}" alt="{$user.username}">
+					<em></em>
+				</span>
+			</a>
+		</li>
+		<li class="e-d-nickname">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">昵称</span>
+				<span>{$user.username}</span>
+			</a>
+		</li>
+		<li class="e-d-gender">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">性别</span>
+				<span>
+				{$user['sex'] == 1 ? '女':'男'}</span>
+			</a>
+		</li>
+		<li class="e-d-email">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">邮箱</span>
+				<span>{$user.email}</span>
+			</a>
+		</li>
+		<li class="e-d-qq">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">QQ</span>
+				<span>{$user.qq}</span>
+			</a>
+		</li>
+		<li class="e-d-mobile">
+			<a href="javascript:void(0)">
+				<span class="e-d-span-left">手机号</span>
+				<span>{$user.phone}</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

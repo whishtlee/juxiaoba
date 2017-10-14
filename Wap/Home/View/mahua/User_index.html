@@ -1,0 +1,62 @@
+<include file="Public:header" />
+<div class="my-header">
+	<header class="header menu-header">
+		<a class="h-home left" href="/"><i></i></a>
+		<h1>个人中心</h1>
+		<a class="h-publish right" href="/joke/publish/" rel="nofollow"><i></i></a>
+	</header>
+	<div class="h-u-info">
+		<div>
+			<div class="h-u-info-avatar">
+				<img src="{$user.avatar}" alt="{$user.username}">
+				<i>{$user.level}</i>
+			</div>
+			<dl class="h-u-info-details">
+				<dt>{$user.username}<span>{$user.username|levelname}<i></i></span></dt>
+				<dd>笑豆：<span class="s-color-red">{$user.money}</span></dd>
+				<dd>被赞：{$good_num}</dd>
+				<dd>投稿：{$user.send_num}</dd>
+				<dd>审稿：{$user.audit_suc_num}</dd>
+			</dl>
+		</div>
+		<div class="level">
+			<span class="bg"></span><span class="red" style="width:{$user['online_time']/$next_level['minute']*100}%;"></span><p></p>
+			<i class="level_text text_lv{$user.level} level-left">LV{$user.level}</i>
+			<i class="level_time">{$user.online_time}/{$next_level.minute}分钟</i>
+			<i class="level_text text_lv{$user['level']+1} level-right">LV{$user['level']+1}</i>
+		</div>
+	</div>
+</div>
+<!--未签到-->
+<div class="calendar" id="ysign-box" <?php if($is_sign == 1){echo 'style="display:none"';}?>>立即签到</div>
+
+<!--已签到-->
+<div class="calendar" id="nosign-box" <?php if($is_sign != 1){echo 'style="display:none"';}?>>已签到</div>
+
+<div class="my-main">
+	<ul class="joke">
+		<li class="m-message"><a href="/user/feed"><span>我的信息</span><i></i></a></li>
+		<li class="m-publish"><a href="/user/joke/type/all"><span>我的投稿</span><i></i></a></li>
+		<li class="m-at"><a href="/user/review"><span>我的评论</span><i></i></a></li>
+		<li class="m-data"><a href="/user/info"><span>我的资料</span><i></i></a></li>
+
+		<li class="m-follow"><a href="/user/followlist"><span>我的关注 {$user.follows}</span><i></i></a></li>
+		<li class="m-fans"><a href="/user/fanslist"><span>我的粉丝 {$user.fans}</span><i></i></a></li>
+		<li class="m-msg"><a href="/user/msg"><span>我的私信 {$user.msg}</span><i></i></a></li>
+		<li class="m-fans"><a href="/user/followinfo"><span>好友动态</span><i></i></a></li>
+
+
+		<li class="m-gift"><a href="/user/gift"><span>我的礼品</span><i></i></a></li>
+	</ul>
+	<ul class="joke">
+		<li class="m-lipin"><a href="/shop"><span>积分商城</span><i></i></a></li>
+		<li class="m-feedback"><a href="/about/feedback"><span>意见反馈</span><i></i></a></li>
+		<li class="m-exit"><a href="/account/logout"><span>退出</span><i></i></a></li>
+	</ul>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {});
+</script>
+</body>
+</html>

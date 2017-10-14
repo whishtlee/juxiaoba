@@ -1,0 +1,23 @@
+<include file="Public:header" />
+<style>.joke-list{margin-top:0}</style>
+<script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+<div id="header">
+	<header class="header menu-header">
+		<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+		<h1><a href="{$setting['site_murl']}">{$tag_info.name}</a></h1>
+		<include file="Public:menu" />
+	</header>
+  <include file="Public:nav" />
+</div>
+<div id="j-main-list" style="position: relative;">
+<include file="Tags:joke" />
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index'],function(app,index) {
+	index.list();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<include file="Public:header" />
+<header class="header menu-header">
+	<a class="h-goback left" href="javascript:history.go(-1);"><i></i></a>
+	<h1><a href="{$setting['site_murl']}">礼品兑换确认</a></h1>
+	<a class="h-home right" href="/"><i></i></a>
+</header>
+<div class="gift-main">
+	<ul class="joke gift-list">
+		<li>
+			<img src="{$gift.image}">
+			<div class="gift-info">
+				<p>{$gift.title}</p>
+			</div>
+		</li>
+	</ul>
+	<form class="form-gift" id="form_gift">
+		<div id="gift_box_1">
+			<ul class="exchange-gift-number joke">
+				<li>
+					<div class="e-g-n-left">礼品价格：</div>
+					<div class="e-g-n-right" id="giftScore"><span>{$gift.price|number_format=2}</span>笑豆</div>
+				</li>
+				<li>
+					<div class="e-g-n-left">兑换数量：</div>
+					<div class="e-g-n-right" data-gift-score="{$user.price|number_format=0}" data-user-score="{$user.money|number_format=0}">
+						<input type="button" value="-" class="e-g-n-subtract"><input type="text" class="gift-num" id="num" name="num" value="1" readonly><input type="button" value="+" class="e-g-n-add">
+					</div>
+				</li>
+				<li>
+					<div class="e-g-n-left">可用积分：</div>
+					<div class="e-g-n-right e-g-n-user-score"><span>{$user.money|number_format=2}</span>笑豆</div>
+				</li>
+			</ul>
+			<if condition="$user['money'] gt $gift['price']">
+			<dl class="gift-address joke">
+				<dt>填写收货信息</dt>
+				<dd>
+					<div class="address-edit">
+						<select id="g_province" name="province"></select>
+					</div>
+					<div class="address-edit address-edit-city">
+						<select id="g_city" name="city">
+							<option value="">所在城市</option>
+						</select>
+					</div>
+					<div class="address-edit address-edit-county">
+						<select id="g_area" name="area">
+							<option value="">所在地区</option>
+						</select>
+					</div>
+				</dd>
+				<dd><input type="text" name="address" class="g_input_text g_street" title="街道地址" placeholder="街道地址"></dd>
+				<dd><input type="text" name="username" class="g_input_text g_name" title="收货人姓名" placeholder="收货人姓名" ></dd>
+				<dd><input type="text" name="phone" class="g_input_text g_phone_number" title="手机号码" placeholder="手机号码"></dd>
+				<input type="hidden" value="{$gift.id}" name="gift_id">
+				<dd><a href="javascript:(0)" class="g_submit">确认兑换</a></dd>
+			</dl>
+			<else />
+			<p class="joke" style="color:#FE0000;padding:.5rem;">您当前拥有的豆子数量为{$user.money|number_format=0}个,不足以支付此次消费。</p>
+			</if>
+		</div>
+	</form>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+seajs.use(['app','index','city'],function(app,index,city) {
+	index.exchange();
+});
+</script>
+</body>
+</html>
