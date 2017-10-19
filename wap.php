@@ -1,13 +1,13 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
-if($_SERVER['HTTP_HOST'] == 'juxiaoba.com') {
-	header('Location: http://www.juxiaoba.com');
+if($_SERVER['HTTP_HOST'] == '1003.com') {
+	header('Location: http://www.1003.com');
 	die();
-}else if($_SERVER['HTTP_HOST'] == 'www.juxiaoba.com/wap.php') {
-	header('Location: http://www.juxiaoba.com/');
+}else if($_SERVER['HTTP_HOST'] == 'www.1003.com/wap.php') {
+	header('Location: http://www.1003.com/');
 	die();
-}else if($_SERVER['HTTP_HOST'] == 'm.juxiaoba.com/wap.php') {
-	header('Location: http://m.juxiaoba.com/');
+}else if($_SERVER['HTTP_HOST'] == 'm.1003.com/wap.php') {
+	header('Location: http://m.1003.com/');
 	die();
 }
 
@@ -48,7 +48,10 @@ define('APP_NAME', 'juxiaoba');
 // 上传文件保存目录
 define('UPLOAD_PATH','./Uploads/');
 
+// 绑定Home模块到当前入口文件
+define('BIND_MODULE','Home');
+
 // 定义应用目录
 define('APP_PATH','./Wap/');
 
-require('./ThinkPHP/ThinkPHP.php');
+require './ThinkPHP/ThinkPHP.php';

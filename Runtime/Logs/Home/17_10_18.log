@@ -1,0 +1,175 @@
+[ 2017-10-18T14:42:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-10-18T15:55:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-10-18T15:55:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-10-18T15:56:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+
+[ 2017-10-18T15:56:54+08:00 ] 127.0.0.1 /Public/wap/js/layer.mobile-v1.7/need/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:56:55+08:00 ] 127.0.0.1 /Public/wap/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:56:56+08:00 ] 127.0.0.1 /Public/wap/js/sea.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:56:57+08:00 ] 127.0.0.1 /Public/wap/js/sea_config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:56:58+08:00 ] 127.0.0.1 /Public/wap/js/swiper/css/swiper.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:57:29+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:57:30+08:00 ] 127.0.0.1 /Public/js/jquery.form.js?_=1508313448636
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:57:31+08:00 ] 127.0.0.1 /Public/wap/js/swiper/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:17+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:18+08:00 ] 127.0.0.1 /Public/js/jquery.form.js?_=1508313496131
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:19+08:00 ] 127.0.0.1 /Public/wap/js/swiper/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:27+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:28+08:00 ] 127.0.0.1 /Public/js/jquery.form.js?_=1508313505946
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `jxb_setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `jxb_setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_seo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_seo`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jxb_adv` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `jxb_adv`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `jxb_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `jxb_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:29+08:00 ] 127.0.0.1 /Public/wap/js/swiper/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:36+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:58:39+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+ERR: 模板不存在:./Application/Home/View/jxb/Public/404.html
+
+[ 2017-10-18T15:59:25+08:00 ] 127.0.0.1 /Public/wap/page.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Ture - assumed 'Ture' C:\Users\Administrator\Desktop\juxiaoba\Data\conf\config.php 第 4 行.
+

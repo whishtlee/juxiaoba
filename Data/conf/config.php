@@ -3,7 +3,7 @@ return array(
 	'DB_CHARSET'		=>  'utf8', // 数据库编码默认采用utf8
 	'URL_CASE_INSENSITIVE'	=>  Ture, //url地址大小写不敏感设置
 
-	'SHOW_PAGE_TRACE'	=> true, //让页面显示追踪日志信息
+	'SHOW_PAGE_TRACE'	=> false, //让页面显示追踪日志信息
 	'APP_AUTOLOAD_PATH'	=> '@.ORG',
 	'OUTPUT_ENCODE'		=> true, //页面压缩输出
 	'PAGE_NUM'			=> 15,

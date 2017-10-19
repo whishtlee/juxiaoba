@@ -178,7 +178,7 @@ class BaseController extends Controller {
 	private function get_audit_user($time) {
 		$where = "j.status=" . C('JOKE_STATUS_AUDIT') . ' and a.type < 4 and a.created_time >=' . $time;
 		$field = "j.id,j.status,a.joke_id,a.user_id";
-		$join = "a left join yi_user_joke j on a.joke_id=j.id";
+		$join = "a left join jxb_user_joke j on a.joke_id=j.id";
 		$audit = D('user_audit') -> field($field) -> join($join) -> where($where) -> select();
 		$user_list = array();
 		foreach ($audit as $key => $value) {

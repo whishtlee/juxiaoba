@@ -9,6 +9,6 @@ $route = require('./Data/conf/route.php');
 $constants = require('./Data/conf/constants.php');
 $tpl = require('./Data/conf/tpl.php');
 
-$array = array('TMPL_FILE_DEPR'	=>'_','DEFAULT_THEME'	=> 'mahua');
-
-return array_merge($db,$tp,$route,$mail,$constants,$tpl,$array);
+//$array = array('TMPL_FILE_DEPR' => '_', 'DEFAULT_THEME' => 'juxiaoba');
+$array = array('DEFAULT_THEME' => 'juxiaoba');
+return array_merge($db, $tp, $route, $mail, $constants, $tpl, $array);

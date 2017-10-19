@@ -2,103 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60992f6b-2441-4d01-9a0a-d68ac60f09ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Common/Common/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Common/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Common/function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Common/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Conf/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Conf/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/AboutController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/AccountController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/AjaxController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/EmptyController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/HotController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/IndexController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/JokeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/MainController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/PublicController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/ShopController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/TagsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/UserController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Controller/XiaohuaController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/Model/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/About_feedback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Account_login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Account_register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Godreply_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_gif.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_godreply.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_hotjoke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_jsconfig.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_pic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_text.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Index_video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Joke_audit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Joke_publish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Joke_search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Main_fans.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Main_follows.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Main_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_footer_nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_header1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_joke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_pic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Public_user_joke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Shop_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Shop_exchange.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Shop_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Tags_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Tags_info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Tags_joke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_fanslist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_feed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_followinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_followlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_gift.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_joke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_msg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/User_review.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/mahua/Xiaohua_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Cache/Home/cb57fd9e7c71d4384bb2b4ff0dcf9cd5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_adv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_flink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_level.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_seo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_setting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user_audit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user_joke.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_adv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_flink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_level.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_seo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_setting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_audit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_joke.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_record.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_review.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Data/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Temp/68c03a76152dc53fdd2c7c7ab07f2721.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Temp/c9e9a848920877e76685b2e4e76de38d.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/Temp/d57ac45256849d9b13e2422d91580fb9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/common~runtime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Runtime/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/m/images/iconfont/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/m/images/iconfont/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/m/images/iconfont/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/m/images/iconfont/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Account/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/header.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Cache/Home/cb57fd9e7c71d4384bb2b4ff0dcf9cd5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_adv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_flink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_level.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_seo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_setting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user_audit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/1001.yi_user_joke.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_adv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_flink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_level.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_seo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_setting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_audit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_joke.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_record.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/_fields/juxiaoba.yi_user_review.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Data/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Temp/68c03a76152dc53fdd2c7c7ab07f2721.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Temp/c9e9a848920877e76685b2e4e76de38d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/Temp/d57ac45256849d9b13e2422d91580fb9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/common~runtime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Wap/Runtime/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/conf/config.php" afterPath="$PROJECT_DIR$/Data/conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wap/Home/Conf/config.php" afterPath="$PROJECT_DIR$/Wap/Home/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wap/Home/Controller/BaseController.class.php" afterPath="$PROJECT_DIR$/Wap/Home/Controller/BaseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap.php" afterPath="$PROJECT_DIR$/wap.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -109,14 +53,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="11" />
-              <folding>
-                <element signature="e#6#80#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,92 +66,18 @@
       <file leaf-file-name="wap.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="208">
+              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Wap/Home/Conf/config.php">
+      <file leaf-file-name="basic.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/m/css/basic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dispatcher.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Dispatcher.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="138" column="6" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/conf/route.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
-              <folding>
-                <marker date="1501658321255" expanded="true" signature="8362:8684" ph="..." />
-                <marker date="1501658321255" expanded="true" signature="8374:8684" ph="..." />
-                <marker date="1501658321255" expanded="true" signature="9344:9678" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmptyController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/EmptyController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="343">
+              <caret line="657" column="69" lean-forward="false" selection-start-line="657" selection-start-column="69" selection-end-line="657" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -245,6 +113,9 @@
       <find>DEFAULT_MODULE</find>
       <find>MODULE_ALLOW_LIST</find>
       <find>URL_ROUTER_ON</find>
+      <find>wap</find>
+      <find>__PUBLIC__</find>
+      <find>../images</find>
     </findStrings>
     <replaceStrings>
       <replace>#3cd088</replace>
@@ -289,24 +160,55 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/Data/conf/route.php" />
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Dispatcher.class.php" />
-        <option value="$PROJECT_DIR$/Data/conf/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Wap/Home/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Account/login.html" />
+        <option value="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/footer.html" />
+        <option value="$PROJECT_DIR$/Data/conf/config.php" />
+        <option value="$PROJECT_DIR$/Public/m/css/basic.css" />
         <option value="$PROJECT_DIR$/wap.php" />
+        <option value="$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/header.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -335,6 +237,72 @@
               <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
               <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="m" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="m" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="m" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="juxiaoba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="juxiaoba" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -343,24 +311,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiajiong" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ToolWindowFind.ShowToolbar" value="false" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\juxiaoba" />
-      <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\Common" />
-      <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\Controller" />
-      <recent name="C:\Users\Administrator\Desktop\juxiaoba\public\js\plugin\DatePicker\skin\default" />
-      <recent name="C:\Users\Administrator\Desktop\juxiaoba\public\js\plugin\DatePicker" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\View\jxb\Public" />
       <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\View\jxb\Index" />
       <recent name="C:\Users\Administrator\Desktop\juxiaoba\public\js\plugin" />
       <recent name="C:\Users\Administrator\Desktop\juxiaoba" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\juxiaoba\Public\m\images\iconfont" />
+      <recent name="C:\Users\Administrator\Desktop\juxiaoba" />
+      <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\Common" />
+      <recent name="C:\Users\Administrator\Desktop\juxiaoba\Application\Home\Controller" />
+      <recent name="C:\Users\Administrator\Desktop\juxiaoba\public\js\plugin\DatePicker\skin\default" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,20 +438,23 @@
       <workItem from="1505374172889" duration="4746000" />
       <workItem from="1505438544304" duration="9356000" />
       <workItem from="1506310740876" duration="1209000" />
-      <workItem from="1507942882456" duration="445000" />
+      <workItem from="1507942882456" duration="551000" />
+      <workItem from="1508383273065" duration="16000" />
+      <workItem from="1508398472393" duration="3591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68201000" />
+    <option name="totallyTimeSpent" value="71914000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.240625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="0" y="345" width="1280" height="293" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -493,7 +466,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -508,58 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/Validform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/page/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/lang/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/skin/datafiles/datepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/skin/datafiles/img.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/skin/datafiles/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/skin/WdatePicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/js/plugin/DatePicker/skin/whyGreen/bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -619,14 +539,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../main.css" />
     <entry file="file://$PROJECT_DIR$/sdas.html" />
-    <entry file="file://$PROJECT_DIR$/Data/conf/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/jxb/Public/joke.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="747">
@@ -638,15 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/conf/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,27 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/conf/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/conf/tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/JokeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,50 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
           <caret line="1152" column="9" lean-forward="false" selection-start-line="1152" selection-start-column="9" selection-end-line="1152" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/conf/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Dispatcher.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="138" column="6" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,32 +648,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="1023" column="9" lean-forward="false" selection-start-line="1023" selection-start-column="9" selection-end-line="1023" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Dispatcher.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="138" column="6" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/View/juxiaoba/Account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/View/mahua/Public_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="195">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="37" />
           <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
+            <element signature="e#6#80#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap.php">
+    <entry file="file://$PROJECT_DIR$/Data/conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/View/mahua/Account_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Wap/Home/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/conf/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/conf/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/conf/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/conf/tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/conf/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/wap/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1785">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <marker date="1472007703000" expanded="true" signature="10472:10486" ph="..." />
+            <marker date="1472007703000" expanded="true" signature="10671:10685" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/m/css/basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="657" column="69" lean-forward="false" selection-start-line="657" selection-start-column="69" selection-end-line="657" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wap/Home/View/juxiaoba/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="71" />
           <folding />
         </state>
       </provider>
