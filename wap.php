@@ -36,7 +36,7 @@ if (get_magic_quotes_gpc()) {
 }*/
 
 //关闭缓存，开发模式
-define('APP_DEBUG',false);
+define('APP_DEBUG',true);
 
 define('HTML_CACHE_ON','false');
 
